@@ -1,0 +1,792 @@
+{
+  "run_id": "976613a9-7416-430d-ab79-ecd747ae0d7c",
+  "timestamp_utc": "2026-03-30T04:35:53.114460+00:00",
+  "llm": "openrouter/anthropic/claude-haiku-4.5",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "samples_requested": 1080,
+  "samples_produced": 908,
+  "samples_per_prompt": 20,
+  "verify": true,
+  "verify_threshold": 0.6,
+  "optimized": false,
+  "prompt_approach": "default",
+  "duration_seconds": 1816.75,
+  "alignment_verification": {
+    "alignment_threshold": 0.6,
+    "max_retries": 3,
+    "attempts_used": 4,
+    "requested_samples": 1080,
+    "accepted_samples": 908,
+    "alignment_deficit": 172,
+    "termination_reason": "max_retries_reached",
+    "scores": {
+      "accepted": {
+        "count": 908,
+        "min": 0.6001,
+        "mean": 0.7723,
+        "max": 0.9897
+      },
+      "rejected": {
+        "count": 1260,
+        "min": 0.0094,
+        "mean": 0.364,
+        "max": 0.5996
+      }
+    },
+    "total_generated_across_retries": 2168,
+    "accepted_per_attempt": [
+      532,
+      225,
+      106,
+      45
+    ],
+    "attempt_trace": [
+      {
+        "attempt": 1,
+        "pending_in": 1080,
+        "accepted": 532,
+        "rejected": 548,
+        "accepted_added": 532,
+        "rejected_configs": 54,
+        "duration_ms": 192122
+      },
+      {
+        "attempt": 2,
+        "pending_in": 548,
+        "accepted": 225,
+        "rejected": 323,
+        "accepted_added": 225,
+        "rejected_configs": 51,
+        "duration_ms": 101157
+      },
+      {
+        "attempt": 3,
+        "pending_in": 323,
+        "accepted": 106,
+        "rejected": 217,
+        "accepted_added": 106,
+        "rejected_configs": 34,
+        "duration_ms": 64337
+      },
+      {
+        "attempt": 4,
+        "pending_in": 217,
+        "accepted": 45,
+        "rejected": 172,
+        "accepted_added": 45,
+        "rejected_configs": 24,
+        "duration_ms": 41638
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Operational — An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    }
+  ],
+  "source_run_id": "bcc8762f-dd85-4786-b2d4-51583e9ebfa7",
+  "warnings": [
+    "parsing_degraded",
+    "verification_deficit"
+  ]
+}

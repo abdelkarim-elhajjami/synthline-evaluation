@@ -1,0 +1,1097 @@
+{
+  "run_id": "9475dd36-d0d2-42f2-94e4-b3ff1d4c6c3a",
+  "timestamp_utc": "2026-03-11T04:45:31.111504+00:00",
+  "llm": "openrouter/meta-llama/llama-3.3-70b-instruct",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "samples_requested": 1080,
+  "samples_produced": 1080,
+  "verify": false,
+  "verify_threshold": null,
+  "optimized": true,
+  "prompt_approach": "default",
+  "duration_seconds": 2929.99,
+  "alignment_verification": false,
+  "prompts": [
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.0,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance semantic diversity, consider incorporating a wide range of performance aspects, including but not limited to:\n- User experience requirements, such as intuitive interface design.\n- Detailed security requirements, including compliance with specific healthcare data protection standards.\n- Requirements for adaptability to future healthcare standards and technologies.\n- Emphasis on data analytics and reporting capabilities tailored to healthcare decision-making.\n- Integration with various devices and applications, such as wearable devices or mobile health applications.\n- Edge cases and less common scenarios to enhance the classifier's ability to handle a wide range of inputs.\n- Negative requirements to provide boundaries of acceptable performance.\n- Trade-offs between different performance metrics, such as speed and accuracy, to add complexity and realism.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5146,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo ensure diversity and quality, the requirements should cover various aspects of the Healthcare Information System, such as data processing, patient record management, medical imaging, electronic prescriptions, security, reporting, data quality, and compliance. They should address different performance metrics, including average response time, 95th percentile response time, error rate, throughput, capacity, accuracy, and latency. The requirements should use varied and specific metrics, incorporate different types of requirements (functional, non-functional, and usability), and include detailed and descriptive language. The use of diverse sentence structures, wording, and verbs is encouraged to create semantic diversity. Additionally, the requirements should be concise, direct, and free of ambiguity, with specific thresholds and volumes where applicable.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5265,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: E-commerce Application, considering aspects such as mobile application performance, accessibility features, security, personalization, and backend integrations to ensure comprehensive coverage.\n3. StakeholderViewpoint: Business Analyst, focusing on performance metrics, user experience, and system capabilities that impact business operations, including sales events, payment methods, and review handling.\n4. Context: Usage, emphasizing scenarios like concurrent user handling, payment processing, search functionality, and system monitoring to reflect real-world usage patterns.\n5. DescriptionType: ProseNL, using natural language to describe each requirement in a clear and detailed manner.\n6. Language: English, ensuring all requirements are written in English to facilitate understanding and development.\n7. AbstractionLevel: DetailedLevel, providing specific metrics and performance targets, such as response times, concurrency levels, and data accuracy, to guide system development and testing.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5573,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws. Ensure that the requirements also consider security and data privacy aspects impacting performance).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel. The requirements should be written in a way that they are specific and concrete where possible, with varying levels of specificity to aid in classifier generalization, and should cover different scenarios, including peak traffic conditions, system failures, bulk ordering, and various operational conditions such as mobile optimization and integration with third-party services. Additionally, consider including diverse metrics and thresholds to measure performance and user experience, ensuring that the requirements are distinct and not overlapping, and provide clear targets for system design and testing.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5598,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo address the need for increased diversity, ensure that the generated requirements cover a wide range of aspects within the fleet management system, including but not limited to vehicle tracking, routing, maintenance, performance, data analysis, user experience, and security. Avoid similarity in requirements by focusing on different metrics, units, and scenarios, such as peak hours, varying network conditions, and different types of vehicles. Additionally, consider the integration of various system components and third-party services to further enhance diversity. Balance the level of specificity in requirements to ensure they are detailed yet not overly generic or too focused on a single aspect, aiming for a comprehensive set that supports downstream classifier generalization.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5681,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance semantic diversity, ensure that the requirements cover a broad range of scenarios, including but not limited to:\n- Real-time tracking and updates\n- Route optimization and traffic management\n- Vehicle and driver management\n- Fuel and maintenance management\n- Safety and emergency features\n- Integration with external systems and devices\n- Reporting and analytics\n- Data privacy and security\n- User interface and user experience specifications\n- Integration with other business systems (e.g., HR, finance)\n- Support for different types of vehicles (e.g., electric, hybrid)\n- System scalability and reliability requirements\n\nAdditionally, strive to include varied performance metrics (e.g., response time, throughput, latency, precision) and capacity specifications (e.g., concurrent users, data volumes) to ensure a comprehensive set of requirements. Aim for a set that is as diverse as possible, minimizing overlap between requirements and covering a wide range of aspects relevant to the Fleet Management System's performance.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4701,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Fleet Management System, with an emphasis on covering a broad range of aspects including real-time tracking, data processing, user interface optimization, reporting, scalability, data analysis, security, privacy, compliance, and system compatibility.\n3. StakeholderViewpoint: Business Analyst, focusing on operational and performance needs, as well as considerations for edge cases, error handling, and integration with other business systems.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system, and the system's ability to adapt to changing operational needs).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, with specific, detailed performance metrics and thresholds, and consideration for unique aspects of fleet management such as environmental impact, fuel efficiency, and dynamic routing adjustments.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5675,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes, considering various technical aspects such as security metrics, data analytics performance, mobile application performance, and edge cases.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, incorporating a wide range of specific technical metrics related to different e-commerce functionalities, modern e-commerce trends, and considerations such as user interface responsiveness, interaction feedback times, and system resource utilization, to enhance semantic diversity and support downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6048,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, ensure the requirements cover a wide range of performance aspects including, but not limited to, energy efficiency, environmental impact, accessibility, usability, data security, compliance with healthcare regulations, scalability, and flexibility. Additionally, consider incorporating requirements related to emerging technologies, detailed user experience metrics, and the system's performance in various scenarios such as low-bandwidth environments, high-usage periods, and integration with other systems. The requirements should also address different stakeholders' needs, including patients, medical staff, and administrators, to provide a comprehensive view of the healthcare information system's performance.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5787,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel. \n\nNote that the instruction is identical to the reference instruction as the critiques provided suggestions for improvement rather than indicating any deficiency in the instruction itself. The suggestions for additional considerations such as device/platform adaptability, accessibility, and internationalization are aimed at enhancing the output's semantic diversity, which does not require altering the original instruction.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5885,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes, and may also encompass aspects such as data quality, accuracy, completeness, security, usability, integration, and interoperability.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5092,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes, considering aspects such as cost optimization, route optimization, fuel management, vehicle maintenance scheduling, compliance reporting, return on investment (ROI) analysis, cost-benefit analysis, break-even point calculation, and key performance indicator (KPI) tracking.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst, focusing on performance, usability, operational aspects, and business analytics such as cost optimization, route optimization, and ROI analysis.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system, as well as security, data integrity, edge cases, error handling, environmental factors, and regulatory compliance).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5376,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System, including specific aspects such as clinical decision support systems, telemedicine, healthcare data analytics, patient engagement, personalized medicine, and public health surveillance, as well as diverse healthcare settings like rural vs. urban, pediatric vs. geriatric care.\n3. StakeholderViewpoint: End User, encompassing healthcare professionals, patients, administrators, IT staff, and family members of patients, with consideration for users with disabilities to ensure accessibility.\n4. Context: Technical, focusing on aspects such as system performance, data integrity, security, usability, interoperability standards (e.g., FHIR), cloud deployment, emerging technologies (e.g., AI, blockchain), and the integration of wearable devices and IoT in healthcare.\n5. DescriptionType: ProseNL, using clear and simple language to convey requirements without overly technical terms, and considering language accessibility features for non-English speaking users.\n6. Language: English, with consideration for support of multiple languages.\n7. AbstractionLevel: HighLevel, focusing on what the system should achieve in terms of performance without specifying implementation details, and considering abstract performance metrics or user-experience-focused requirements such as perceived performance, overall system usability, and support for workflows and decision-making processes in healthcare settings.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5798,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst, ensuring each requirement explicitly reflects this viewpoint, ideally starting with \"The business analyst requires that...\" to maintain uniformity and clarity.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices), with an emphasis on explicit mentions of how requirements interact with or depend on specific IT infrastructure components.\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, with a focus on precision, consistency in units of measurement, and clarity in wording, exploring a broad range of fleet management aspects including, but not limited to, energy efficiency, compatibility, integration with emerging technologies, user experience, and regulatory compliance.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5737,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, ensuring that the requirements cover a broad spectrum of performance aspects, various operational conditions, and balance user experience with technical robustness, including edge cases such as natural disasters, hardware failures, and unprecedented spikes in user demand, to support downstream classifier generalization across different performance metrics, environmental scenarios, and system designs.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5877,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst, with a focus on how the system's performance impacts business outcomes, strategic objectives, and competitiveness, while also considering the perspectives of other stakeholders such as customers and IT developers to ensure well-rounded requirements.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices), explicitly mentioning IT system capabilities and functionality.\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, focusing on what the system should achieve in terms of performance without delving into detailed technical specifications, while covering a wide range of performance aspects including scalability, reliability, security, usability, and business operations. The requirements should also encompass various scenarios and conditions, such as peak periods, network failures, and system recovery, to enhance semantic diversity and support downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6068,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes, as well as security, data integrity, and infrastructure aspects.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, and considerations for clinical decision support systems, patient engagement platforms, telemedicine integration, interoperability with medical devices, data analytics, and visualization).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, ensuring a wide range of topics and scenarios are covered, including but not limited to patient record retrieval, lab result processing, billing, insurance claims, telemedicine, clinical documentation, security requirements such as encryption and access control, and hardware or infrastructure aspects like server performance, network bandwidth, and storage capacity.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4788,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance diversity for downstream classifier generalization, consider incorporating requirements that cover a broad range of performance aspects, including but not limited to:\n- Integration with other healthcare systems (e.g., laboratory systems, pharmacy systems)\n- Specific performance needs for mobile or remote access\n- Detailed requirements for data analytics and reporting functionalities\n- Emphasis on user experience, including accessibility for users with disabilities\n- Considerations for compliance with a range of regulations and standards\n- Edge cases such as system failure and recovery, secure data transmission, and unique clinical decision support functionalities\n- Requirements addressing the system's ability to handle high volumes of data, support concurrent users, and maintain performance under various load conditions\n- Functionalities related to patient records management, medical imaging, appointment scheduling, billing, and data security.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5763,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes. To ensure comprehensive coverage, include a range of performance metrics such as memory usage, CPU utilization, network bandwidth consumption, and consider different operational scenarios like peak usage hours, network congestion, and hardware failures.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices. Consider security and compliance aspects, such as access controls, intrusion detection, data backup protocols, and adherence to relevant regulations or standards).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel. Ensure that the requirements are concise, clear, and unique, avoiding redundancy and ambiguity, and covering various aspects of the Fleet Management System, including but not limited to performance metrics, scalability, reliability, data consistency, system recovery, and network conditions.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5673,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel. Ensure the requirements cover a wide range of topics, including but not limited to external integrations, specific operational scenarios, user experience, and regulatory compliance aspects to enhance diversity and comprehensiveness.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5523,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditionally, ensure the generated requirements:\n- Cover a wide range of specific healthcare scenarios, such as emergency response times, telemedicine performance requirements, and patient data analytics.\n- Vary in specificity, with some requirements being highly specific (e.g., response times in milliseconds) and others more general (e.g., \"high-performance\").\n- Include edge cases and error handling, such as network failures, high traffic, and system downtime, to address how the system should perform under these conditions.\n- Encompass different types of healthcare professionals and their needs, as well as various IT infrastructure constraints and network conditions.\n- Consider the performance needs of mobile or tablet users, if applicable.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4831,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, consider incorporating a wide range of performance aspects, such as response times, data processing speeds, system capacity, scalability, availability, and data integrity, across various healthcare services and medical specialties (e.g., pediatrics, oncology, emergency response). Include specific metrics and targets, and consider different scenarios, such as peak usage hours, concurrent user access, data analytics, report generation, remote access, security and privacy, hardware or software failures, and variations in network conditions, to support downstream classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4265,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4213,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nNote: When generating the requirements, ensure a wide range of system aspects are covered, including but not limited to performance, security, usability, data management, and compliance. Incorporate diverse metrics, such as memory usage, network bandwidth consumption, and specific algorithms' execution times. Consider edge cases, error handling, interoperability with other systems or devices, and user experience aspects, including accessibility and compliance with standards like WCAG. Aim for variability in constraints and scenarios to enhance semantic diversity and support downstream classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6338,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer, with a focus on actions or responsibilities of the developer to ensure the system meets performance requirements.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system), covering a wide range of topics such as performance metrics, data processing, user experience, security, compliance, integration, and clinical decision support.\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, focusing on overall system performance, functionality, and capabilities without delving into detailed technical specifications, with an emphasis on broader performance goals rather than specific technical details.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4971,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure the requirements demonstrate a wide range of performance aspects including, but not limited to, response times, throughput, latency, precision of results, capacity for concurrent users, scalability, and system recovery. Also, consider technical stress conditions such as low memory, high CPU usage, security performance metrics like encryption/decryption times, and the impact of security measures on performance. Incorporate backend performance metrics such as server response times and database query optimization to enhance diversity and support for downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5272,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: E-commerce Application, with a focus on technical aspects such as system architecture, data security, scalability, inventory management, order fulfillment, customer service, affiliate marketing, and analytics and reporting.\n3. StakeholderViewpoint: Developer, ensuring all items are written from a developer's perspective, focusing on technical capabilities, performance, and system implementation.\n4. Context: Usage, focusing on aspects, characteristics, and context objects related to the usage of the system, including usage patterns, people, and other systems that directly or indirectly interact with the system.\n5. DescriptionType: ProseNL, with requirements written in clear, concise prose (natural language) to facilitate understanding and implementation.\n6. Language: English, with all requirements written in English to ensure consistency and clarity.\n7. AbstractionLevel: HighLevel, with requirements specified at a high level of abstraction, focusing on overall system performance, capabilities, and features without delving into low-level implementation details, and including diverse topics such as system recovery, data integrity, security, and edge cases to support downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5294,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes, as well as considerations for data quality, system reliability, security metrics, energy efficiency, environmental impact, scalability, and user experience.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, and integration with other systems like ERP, CRM).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5099,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System, focusing on various specialties (e.g., pediatrics, oncology), integration with medical devices, compliance with regulations (e.g., HIPAA), and support for different user types (e.g., doctors, nurses, patients).\n3. StakeholderViewpoint: Developer, considering aspects such as system scalability, data analytics, usability, disaster recovery, and integration with other healthcare systems.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, covering a wide range of topics including but not limited to data retrieval, search functionality, image processing, data encryption, system performance under load, and reporting, while ensuring a broad spectrum of requirements to support downstream classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5921,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, and considers varying conditions such as network latency, device specifications, and software configurations to ensure comprehensive coverage of IT system contexts).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5225,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure comprehensive coverage, consider including requirements that address data integration, user experience, regulatory compliance, and error handling and recovery. Additionally, strive for specificity and measurability in each requirement, and consider edge cases and the perspectives of various stakeholders, including patients and clinical workflow efficiency, to enhance the diversity and effectiveness of the requirements.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4939,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, ensure the requirements cover a wide range of performance aspects critical to an e-commerce application's success, including but not limited to:\n- User Interaction Performance\n- Transaction Processing\n- System Capacity and Scalability\n- Data Retrieval and Updates\n- Integration with Third-Party Services\n- Accessibility\n- Usability\n- Internationalization\n- Security\n- Maintenance and Support.\n\nThe requirements should be written to emphasize the usage context and user experience, with a focus on how the system should perform under various usage scenarios, including peak periods, concurrent user sessions, and different types of user interactions. Aim to include a variety of requirement types, such as those related to data analytics, personalization, or social media integration, to increase the semantic diversity of the output.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5665,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4909,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, ensure the generated requirements cover a wide range of scenarios and use cases within the Fleet Management System domain, including but not limited to: \n- Vehicle tracking and monitoring\n- Route optimization and planning\n- Driver management and performance reporting\n- System performance and scalability\n- Integration with other systems (e.g., fuel card systems)\n- User interface and experience\n- Administrative and financial aspects\n- Security, data storage, and backup and recovery procedures\n- Compliance with regulatory requirements\n- Customization and configuration options for end users\n- Support for different types of fleets\n- Integration with external systems (e.g., logistics, supply chain management).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5386,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Fleet Management System, including diverse scenarios such as international operations, multi-modal transportation fleets, and managing different types of vehicles.\n3. StakeholderViewpoint: End User, with a focus on explicitly stating how each requirement benefits the end user, considering various roles within the fleet management organization, such as drivers, dispatchers, and managers.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, ensuring that the requirements cover a wide range of performance aspects, including response times, system capacity, data processing, integration, user experience, and adaptability, while also considering additional metrics such as energy efficiency, storage capacity, and compatibility with future technologies to further enrich the dataset.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5436,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes, also considering security performance, compliance with regulatory requirements, scalability, and user experience aspects.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system, as well as diverse user roles such as drivers, fleet managers, and administrators).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, including specific metrics and thresholds for performance, as well as considerations for error handling, recovery processes, and system behavior under abnormal conditions.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4938,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsuring the requirements cover a broad spectrum of technical aspects, including but not limited to data analysis and reporting, predictive maintenance, diverse user roles, environmental considerations beyond weather (e.g., road conditions, air quality), and detailed system scalability considerations to enhance diversity for downstream classifier generalization. Additionally, incorporating varied and specific technical context elements such as handling different vehicle types, integration with a range of external systems, and deeper technical challenges like encryption protocols and system redundancy to further enrich the requirements set.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5029,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance the output's diversity and support downstream classifier generalization, ensure the requirements cover a broad spectrum of performance aspects, including but not limited to tracking, scheduling, data processing, system performance, and user interface updates. Additionally, consider incorporating requirements that focus on interoperability with other systems, security aspects, compliance with regulations, customization, scalability, and future-proofing, such as support for emerging technologies or integration with new data sources. This will provide a comprehensive set of requirements that cater to various facets of a fleet management system, enhancing the overall diversity and utility of the output.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4772,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes, with a focus on unique and non-duplicative metrics.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, with specific and detailed metrics, such as those related to mobile application performance, accessibility, product catalog management, order tracking, and technical challenges like cyberattacks and compliance with e-commerce regulations, while ensuring each requirement aligns closely with the performance aspect and avoids duplication or close resemblance to other requirements.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.521,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.0,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance semantic diversity, ensure the generated requirements encompass a wide range of performance aspects, including but not limited to:\n- Response Time: How quickly the system responds to user interactions or queries.\n- Throughput and Capacity: The system's ability to handle a certain number of users, transactions, or data records within specific time frames.\n- Accuracy and Precision: The importance of accurate data processing and retrieval.\n- System Integration and Scalability: The system's ability to integrate with other devices or systems and its scalability.\n- Uptime and Downtime: The system's availability and acceptable downtime.\nAdditionally, consider including requirements that address:\n- Security: Performance and capacity requirements related to security measures.\n- Data Volume Growth: How the system handles increasing volumes of data over time.\n- Geographical Distribution: Performance requirements for systems accessed by users in different geographical locations.\n- Backup and Recovery: Detailed performance and time requirements for system backups and recovery processes.\n- Healthcare-specific functionalities: Such as clinical decision support systems, telemedicine integration, or personalized medicine.\n- Diverse performance metrics: Including memory usage, disk space requirements, or network bandwidth utilization.\n- Stakeholder-centric requirements: Explicitly referencing the needs and concerns of various stakeholders, including patients, healthcare providers, and IT administrators.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4845,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5124,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel. The generated requirements should exhibit high semantic diversity to support downstream classifier generalization, covering a wide range of technical aspects relevant to fleet management, including but not limited to system security, data backup and recovery, integration with other systems, user interface and experience, system scalability and reliability, and error handling, while avoiding redundancy and similarity in structure or content.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6296,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes, and should also consider security, accessibility, and data privacy aspects.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, ensuring the requirements remain generic and applicable across various e-commerce platforms and technologies, covering a broad range of scenarios including scalability, data handling, integration with other systems, and technical standards compliance.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6086,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel. \nTo further improve diversity, consider adding requirements that focus on aspects like system security and data protection, user interface and experience, integration with other healthcare systems or services, data analytics and insights, compliance with regulatory requirements, and edge cases such as high-traffic periods, peak periods, and cases with high latency, as well as more detailed technical specifications, operational and maintenance scenarios, and specific user experience aspects.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5499,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel. To enhance semantic diversity, consider a broader range of e-commerce scenarios, including security performance, integration with third-party services, personalization, mobile application performance, energy efficiency, compliance with regulations, user authentication, accessibility, and usability for users with disabilities.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5051,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, with consideration of security performance, compatibility, accessibility, and scalability).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4163,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, the generated requirements should cover a wide range of aspects within the fleet management system, including but not limited to:\n- System performance metrics (response times, latency, throughput)\n- Data processing and analysis capabilities\n- User experience and interface usability\n- System reliability and uptime\n- Data security and encryption\n- Scalability and adaptability\n- Integration with other systems and devices\n- Specific fleet management functionalities (e.g., route optimization, fuel management, driver management)\n- Considerations for different types of vehicles or fleets (e.g., trucks, taxis, rental cars)\n- Integration with external services or systems (e.g., traffic information services, weather services)\n- Accessibility features for users with disabilities\n- Compatibility with different devices or browsers\n\nThe requirements should be written from the perspective of end users, focusing on their experience and expectations from the system. Each requirement should provide detailed specifications, including time metrics, user numbers, and system capacities, to ensure a detailed level of abstraction. The language used should be English, and the description type should be in prose (natural language). The context should consider the IT infrastructure, including hardware, software, and networking aspects. \n\nThe generated requirements should strive to minimize redundancy and overlap, aiming for concise and direct language. Consistency in terminology and formatting throughout the requirements is also desirable.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5066,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System, with a focus on specific medical specialties such as radiology, cardiology, pediatrics, or oncology, and considering the unique requirements and workflows of these domains.\n3. StakeholderViewpoint: Developer, with consideration of the needs and workflows of clinicians as end-users of the system, to ensure a comprehensive understanding of system performance from both technical and user experience perspectives.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws), with an emphasis on advanced security measures, compliance with healthcare regulations (e.g., HIPAA), and privacy protections.\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, with precise metrics for performance, data handling capabilities, and technical integration requirements, and including specific references to relevant healthcare regulations, standards, and technical specifications.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6119,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes, as well as considering mobile application performance, security-related metrics, and the impact of third-party integrations.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, and considering both customer-facing and back-office operational performance metrics).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, ensuring a balance between quantitative metrics (e.g., response times, throughput) and qualitative aspects (e.g., user satisfaction, overall shopping experience), and encompassing a wide range of scenarios including edge cases, security threats, and the performance of third-party integrations.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5287,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User, explicitly stated from the end-user's perspective, such as \"As a healthcare professional, I need the system to...\".\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, focusing on what the system should be able to do rather than how it should do it, and covering a broad range of performance aspects including security, privacy, compliance, user experience, maintenance, interoperability, and scalability.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.3626,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes, as well as considering security, scalability, usability, and integration aspects.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst, incorporating varied stakeholder preferences and priorities, including those of fleet operators, drivers, and maintenance personnel.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, and addressing edge cases and error handling such as network failures and vehicle malfunctions).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, focusing on what the system must do, including a wide range of metrics such as data throughput, user capacity, computational load, and system performance under various operational scenarios.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5198,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Performance — A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel. To enhance the diversity of the requirements for better downstream classifier generalization, consider including scenarios such as performance under varying network conditions, handling peak loads, integration with external services, security-related performance, and user experience metrics.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4575,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    }
+  ]
+}

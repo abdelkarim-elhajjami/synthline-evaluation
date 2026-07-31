@@ -1,0 +1,792 @@
+{
+  "run_id": "950a967f-0af3-41ca-9059-ace5692531f1",
+  "timestamp_utc": "2026-03-13T00:08:26.456508+00:00",
+  "llm": "openrouter/meta-llama/llama-3.3-70b-instruct",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "samples_requested": 1080,
+  "samples_produced": 820,
+  "verify": true,
+  "verify_threshold": 0.6,
+  "optimized": false,
+  "prompt_approach": "default",
+  "duration_seconds": 11442.47,
+  "alignment_verification": {
+    "alignment_threshold": 0.6,
+    "max_retries": 3,
+    "attempts_used": 4,
+    "requested_samples": 1080,
+    "accepted_samples": 820,
+    "alignment_deficit": 260,
+    "termination_reason": "max_retries_reached",
+    "scores": {
+      "accepted": {
+        "count": 820,
+        "min": 0.6001,
+        "mean": 0.7145,
+        "max": 0.9609
+      },
+      "rejected": {
+        "count": 1750,
+        "min": 0.0357,
+        "mean": 0.3788,
+        "max": 0.5996
+      }
+    },
+    "total_generated_across_retries": 2570,
+    "accepted_per_attempt": [
+      402,
+      211,
+      122,
+      85
+    ],
+    "attempt_trace": [
+      {
+        "attempt": 1,
+        "pending_in": 1080,
+        "accepted": 402,
+        "rejected": 678,
+        "accepted_added": 402,
+        "rejected_configs": 54,
+        "duration_ms": 75964
+      },
+      {
+        "attempt": 2,
+        "pending_in": 678,
+        "accepted": 211,
+        "rejected": 467,
+        "accepted_added": 211,
+        "rejected_configs": 53,
+        "duration_ms": 47497
+      },
+      {
+        "attempt": 3,
+        "pending_in": 467,
+        "accepted": 122,
+        "rejected": 345,
+        "accepted_added": 122,
+        "rejected_configs": 47,
+        "duration_ms": 32819
+      },
+      {
+        "attempt": 4,
+        "pending_in": 345,
+        "accepted": 85,
+        "rejected": 260,
+        "accepted_added": 85,
+        "rejected_configs": 41,
+        "duration_ms": 24856
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": false
+    }
+  ],
+  "samples_per_prompt": 20,
+  "source_run_id": "d694c778-9e18-4c93-b799-5f1b1512ca32",
+  "warnings": [
+    "parsing_degraded",
+    "verification_deficit"
+  ]
+}

@@ -1,0 +1,1098 @@
+{
+  "run_id": "a849a14c-ec92-4785-9e3c-3a26bd1ce43d",
+  "timestamp_utc": "2026-03-30T01:09:04.610270+00:00",
+  "llm": "openrouter/anthropic/claude-haiku-4.5",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "samples_requested": 1080,
+  "samples_produced": 1080,
+  "samples_per_prompt": 20,
+  "verify": false,
+  "verify_threshold": null,
+  "optimized": true,
+  "prompt_approach": "default",
+  "duration_seconds": 595.9,
+  "alignment_verification": false,
+  "prompts": [
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure requirements exhibit semantic diversity across the following dimensions with balanced representation:\n- Authentication and Access Control (5 requirements)\n- Data Protection and Encryption (4 requirements)\n- Input Validation and Application Security (3 requirements)\n- Audit, Logging, and Monitoring (4 requirements)\n- Network Infrastructure and Integration Security (2 requirements)\n- Environment Segregation and Deployment Security (1 requirement)\n- Vulnerability Detection and Malware Resistance (1 requirement)\n\nRequirements shall address distinct threat vectors and attack scenarios, minimize thematic overlap, and cover preventive, detective, and corrective security controls to support classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6118,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Guidance:**\n- Ensure requirements address distinct security dimensions including authentication, authorization, encryption, data integrity, audit/non-repudiation, attack surface reduction, environment isolation, and vulnerability management.\n- Cover varied threat vectors such as injection attacks, man-in-the-middle interception, session hijacking, data exfiltration, unauthorized access, account compromise, and code vulnerabilities.\n- Employ multiple protective mechanisms and technical approaches rather than repetitive solutions.\n- Address different data lifecycle stages: credentials at rest and in transit, stored data protection, audit log preservation, and cryptographic key management.\n- Include temporal aspects such as real-time monitoring, periodic rotation policies, retention requirements, and timeout mechanisms.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5486,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Constraints:**\n- Ensure semantic coverage across at least 11 distinct security mechanisms including: Access Control, Authentication, Encryption, Audit/Accountability, Data Protection, Session Management, Integrity Verification, Threat Detection, Network Security, Rate Limiting, and Non-repudiation/Digital Evidence.\n- Minimize clustering: distribute authentication/access control requirements proportionally; avoid concentrating encryption requirements on single asset types; ensure data protection requirements address distinct scenarios (minimization, anonymization, integrity, destruction).\n- Include underrepresented categories: at least one requirement addressing non-repudiation evidence (digital signatures, cryptographic verification); at least one addressing secure data disposal/destruction; at least one addressing integrity verification mechanisms (checksums, signatures); at least one addressing supply chain/third-party system security.\n- Avoid semantic overlap: do not use duplicate control mechanisms for similar assets; vary the threat models and usage patterns addressed; ensure each requirement introduces a distinct security concern or operational context.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5472,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Requirements for Diversity:**\n- Ensure semantic diversity across at least 8 distinct security domains (e.g., Access Control & Authorization, Authentication & Session Management, Data Encryption & Cryptography, Audit & Accountability, Input Validation & Attack Prevention, Data Lifecycle & Minimization, System Integration & External Security, Operational Security).\n- Each requirement must address a unique control mechanism or security concern; avoid substantial semantic overlap or redundancy between requirements.\n- Include specific technical parameters, standards, timeframes, and infrastructure components (e.g., encryption algorithms, protocol versions, retention periods, role definitions, timeout values) to maintain detailed abstraction level.\n- Ensure all requirements are framed from a business/organizational governance perspective addressing compliance, risk mitigation, data protection policies, and operational controls rather than low-level implementation details.\n- Verify that each requirement explicitly references healthcare-specific elements or IT infrastructure components relevant to healthcare information systems.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5588,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Requirements**:\n- Ensure balanced coverage across all seven security pillars (Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance), with non-repudiation and privacy-specific aspects represented proportionally (minimum 15% each).\n- Include requirements addressing distinct threat vectors including: DDoS mitigation, API security, insider threat detection, secure configuration management, third-party/vendor security assessment, and disaster recovery security.\n- Avoid semantic clustering; limit encryption-focused requirements to maximum 15% of items and ensure access control requirements represent varied contexts (cloud, APIs, medical devices, inter-system communication).\n- Incorporate governance dimensions including security policy enforcement, HIPAA/privacy compliance, secure development lifecycle integration, and data classification schemes.\n- Cover diverse IT infrastructure layers: storage, network transmission, databases, user access points, inter-system communication, medical device integration, and cloud platforms.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4929,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Diversity Requirements:\n- Ensure requirements span at least 10 distinct security control categories (e.g., Authentication, Encryption, Access Control, Audit Logging, Input Validation, Key Management, Network Security, Malware Protection, Data Protection, Patch Management, etc.).\n- Each requirement must address a different security dimension or attack vector to maximize semantic diversity.\n- Requirements must include specific technical implementation details (protocols, standards, metrics, timeframes, technologies).\n- Minimize semantic overlap between requirements; each should contribute unique security coverage.\n- Ensure coverage of preventive, detective, and corrective security controls across the complete attack surface (authentication, data transit, data at rest, APIs, mobile/on-device, databases, third-party integrations, infrastructure).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5935,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure semantic diversity across the following dimensions: (a) data encryption applied to distinct contexts (transmission, at-rest, field-level, backup); (b) access control mechanisms (RBAC, cross-tenant isolation, temporal access delegation, role-based data masking); (c) authentication and account management (MFA, certificate-based authentication, lockout policies, password policies); (d) audit, accountability, and non-repudiation (immutable logging, session tracking, digital signatures, compliance audit exports); (e) threat and attack prevention (API rate limiting, input validation, malware scanning, CSP headers); (f) data protection and privacy (secure data export, backup integrity procedures, personal data anonymization, organizational data segregation); and (g) incident response and vulnerability management (patch management procedures, third-party security assessments, incident remediation timelines, secure disposal protocols).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5831,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure the 20 requirements demonstrate semantic diversity across the following dimensions with minimal clustering or redundancy:\n- Authentication, Authorization, and Access Control mechanisms (avoid consolidating multiple similar password/MFA/RBAC requirements)\n- Encryption and Cryptography approaches, varying by scope (transport-layer vs. field-level vs. backup-level), technique (symmetric vs. format-preserving), and asset type\n- Data Integrity and Verification methods (checksums, digital signatures, hashing, tamper detection)\n- Audit, Logging, and Non-repudiation capabilities (activity tracking, cryptographic evidence, accountability trails)\n- Incident Response, Forensics, and Recovery (breach detection, forensic preservation, backup restoration security)\n- Third-Party and Supply Chain Security (vendor risk management, external service verification, dependency integrity)\n- Availability and Resilience under attack (DDoS mitigation, backup redundancy, failover security)\n- Vulnerability Management and Patch Security (firmware updates, dependency patching, security remediation)\n- Physical Security and Hardware Protection (facility access, hardware tampering detection, secure element usage)\n- Fleet-Specific Attack Surface Protection (GPS spoofing resistance, route integrity validation, driver identity verification, fuel/sensor data tampering detection, unauthorized vehicle command injection prevention)\n\nAvoid requirements that are domain-agnostic or could apply equally to non-fleet systems. Prioritize concrete fleet management contexts and threats.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5662,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance:**\n- Ensure diversity across security dimensions: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, and Resistance to threats.\n- Avoid consolidation of closely related security concepts (e.g., separate session isolation from session timeout, differentiate between encryption mechanisms, distinguish audit logging from compliance reporting).\n- Include coverage of: compliance and legal frameworks, network-level security infrastructure, malware and threat resistance, physical security considerations, and multiple data lifecycle stages (creation, transmission, storage, deletion).\n- Represent diverse operational contexts and user roles (drivers, dispatchers, mechanics, supervisors, administrators) across different fleet management scenarios.\n- Vary the specific security concern, threat vector, or IT infrastructure element addressed in each requirement to maximize semantic diversity.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4956,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure balanced coverage across all security dimensions including Confidentiality, Integrity, Authentication, Authorization, Accountability, Non-repudiation, and Resistance. Include explicit requirements addressing: compliance and regulatory frameworks (e.g., PCI-DSS, GDPR), incident response and recovery protocols, third-party and supply chain security, and physical security infrastructure. Minimize semantic overlap and clustering to achieve at least 95% diversity across the 20 requirements.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5414,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n8. SemanticDiversity: Requirements must address distinct security mechanisms across multiple domains including but not limited to: authentication methods, encryption approaches, access control models, audit and logging mechanisms, input/output protection, data protection scope, monitoring and detection systems, and compliance frameworks. Ensure minimal thematic overlap and balanced distribution across security dimensions to avoid concentration in any single control category (e.g., cryptographic controls should not exceed 20% of total requirements; administrative/audit controls should be distributed across multiple distinct purposes). Include coverage of modern e-commerce deployment models such as multi-tenancy, cloud infrastructure, and supply chain security considerations where applicable.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6337,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. Semantic Diversity Mandate: Distribute requirements across all six security dimensions (Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance) with balanced coverage. Ensure representation across multiple technical implementation categories (cryptography, access control, network security, data validation, audit & monitoring, data protection, vendor management, physical security, incident response). Minimize thematic and technical overlap; each requirement must address semantically distinct security concerns or attack vectors applicable to fleet management infrastructure.\"",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.52,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional Guidance:\n- Ensure semantic diversity across at least 8 distinct security dimensions including: Access Control, Confidentiality/Encryption, Accountability/Audit, Authentication, Data Integrity, Availability/Resilience, Threat Detection, and User Session Management.\n- Incorporate varied control types: preventive controls (e.g., password policies, input validation), detective controls (e.g., audit logs, intrusion detection), protective controls (e.g., encryption mechanisms), and administrative controls (e.g., privilege management, separation of duties).\n- Minimize redundancy by ensuring each requirement addresses a distinct technical mechanism or security concern; avoid repetition of the same control across multiple items.\n- Distribute requirements evenly across security dimensions to prevent over-concentration in any single area (e.g., avoid clustering more than 25% in encryption alone).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5664,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure the 20 requirements exhibit high semantic diversity across:\n- Multiple security mechanisms (encryption variants, access control models, authentication methods, audit logging, integrity checking, anomaly detection, data masking, key management);\n- Multiple threat models (unauthorized access, data exfiltration, insider threats, system compromise, malware, unauthorized modification);\n- Multiple operational contexts (data transmission, storage, user authentication, administrative actions, clinical communication);\n- Multiple user roles (healthcare providers, clinical staff, IT administrators, system users);\n- Multiple data protection layers (network, storage, field-level, records, communication channels);\n- Temporal dimensions (session management, historical audit trails, real-time monitoring, lifecycle management);\n- Both preventive, detective, corrective, and administrative control types.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5327,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Maximize diversity across distinct security dimensions—including access control models, data protection mechanisms (rest and transit), authentication schemes, audit and non-repudiation functions, threat prevention capabilities, network security controls, data classification governance, business continuity measures, compliance frameworks, and infrastructure integration points—to minimize semantic redundancy and support robust classifier generalization across varied healthcare security contexts. Avoid clustering similar requirements; each requirement should address a substantively different security concern or mechanism.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5009,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure the 20 requirements demonstrate high semantic diversity across distinct security mechanisms and threat models, avoiding redundancy. Requirements must span multiple orthogonal security dimensions including cryptographic controls, authentication and access control, audit and accountability, data protection, operational security, attack prevention, and non-repudiation. Each requirement shall address a unique security concern with specific implementation details such as encryption standards, timeframes, thresholds, protocols, and measurable parameters. Requirements shall be framed exclusively from the end-user perspective describing user interactions, access patterns, and usage-time security constraints. No two requirements shall specify identical or semantically overlapping security mechanisms.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5678,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure comprehensive coverage across all security dimensions (Confidentiality, Integrity, Authentication, Authorization, Non-repudiation, Accountability, Resistance) and emerging IT infrastructure security concerns including container security, secrets management, compliance frameworks (PCI-DSS, GDPR, SOC2), supply chain security, and dependency vulnerability management, in addition to traditional protection layers (network, application, data, access control) and control types (preventive, detective, administrative).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.479,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Semantic Diversity:**\nEnsure requirements span multiple security dimensions including: access control, authentication, audit & accountability, data protection, data integrity, session management, input validation, environment segregation, monitoring & detection, policy compliance, network security, endpoint protection, incident response, third-party/supply chain security, cryptographic key management, rate limiting, secure error handling, and security testing. Minimize clustering around single security concepts. Distribute requirements across these distinct security concern areas to maximize semantic diversity and ensure the generated set covers complementary security mechanisms appropriate for classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4685,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements are distributed across distinct security domains including: access control and authorization, encryption and confidentiality, audit logging and accountability, authentication mechanisms, data integrity and validation, malware and threat resistance, data lifecycle management, network security, physical security controls, certificate and key management, incident response and breach procedures, third-party and vendor security, security awareness and training, and session management. Minimize semantic clustering by avoiding near-duplicate requirements within the same security domain. Each requirement must address a unique aspect, threat vector, or control mechanism.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5363,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Requirements:**\n- Ensure balanced representation across all six security pillars (Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance), with no single pillar exceeding 5 items.\n- Include at least 2 requirements addressing availability and system resilience (backup, disaster recovery, redundancy).\n- Include at least 2 requirements addressing user-centric security concerns (breach notification, user consent, privacy preferences, user awareness, right to access personal data).\n- Include at least 1 requirement addressing cryptographic key management and lifecycle.\n- Include at least 1 requirement addressing third-party or vendor security obligations.\n- Minimize semantic redundancy within access control and authentication categories; ensure distinct technical approaches or operational contexts across all 20 items.\n- Distribute requirements across different data states (at-rest, in-transit, in-use) and IT infrastructure layers (endpoints, networks, databases, medical devices, external systems).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5002,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Semantic Diversity:**\nEnsure the 20 requirements comprehensively address security mechanisms across multiple dimensions:\n- **Encryption & Confidentiality** (at least 3 requirements covering different data types and technical layers)\n- **Authentication & Access Control** (at least 3 requirements with varying role-based or credential mechanisms)\n- **Audit, Logging & Non-Repudiation** (at least 3 requirements with different temporal and forensic aspects)\n- **Data Integrity & Verification** (at least 3 requirements addressing immutability, validation, and checksums)\n- **Resistance & Attack Prevention** (at least 3 requirements covering injection attacks, brute force mitigation, rate limiting, and anomaly detection)\n- **Accountability & Compliance** (at least 2 requirements addressing regulatory standards, password policies, or patch management)\n- **Third-Party & API Security** (at least 1 requirement for vendor access controls or integration point security)\n- **Physical Security & Device Hardening** (at least 1 requirement addressing GPS device tampering, OBD-II port protection, or hardware-level security)\n- **Real-Time Threat Detection** (at least 1 requirement for security event alerting or real-time operational threat response)\n- **Backup, Recovery & Resilience** (at least 1 requirement for encrypted backups or secure data restoration)\n\nMinimize overlap by applying each security mechanism to distinct data types, technical contexts, or system layers within fleet management operations.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6074,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**ADDITIONAL QUALITY REQUIREMENTS:**\n- Ensure semantic diversity across at least six distinct security principles: Confidentiality, Integrity, Authenticity, Non-repudiation, Accountability, and Resistance.\n- Cover at least eight distinct threat models: interception, unauthorized access, account takeover, session hijacking, fraud, injection attacks, cross-site scripting, and denial of service.\n- Employ at least eleven different security mechanisms across requirements: encryption (transit/rest), multi-factor authentication, session management, fraud detection, input validation, rate limiting, audit logging, anomaly detection, password hashing, content security policies, and role-based access control.\n- Protect at least six distinct data types: payment card data, personal profile information, authentication credentials, personally identifiable information (PII), user-generated content, and transaction history.\n- Address at least eight different user touchpoints: authentication, checkout, account management, data access, session handling, fraud scenarios, address modifications, and password reset.\n- Include requirements spanning at least seven technical layers: network/transport, application, database, session management, user interface, API, and content security.\n- Balance requirement types across preventive controls, detective controls, responsive controls, user empowerment controls, and reactive controls.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5647,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure requirements exhibit strong semantic diversity by covering distinct security dimensions (encryption mechanisms, access control strategies, authentication methods, audit and accountability controls, data integrity approaches, monitoring and detection capabilities, third-party integration security, network infrastructure controls, personnel security measures, and operational resilience mechanisms). Each requirement shall address a unique combination of security pillar, control type (preventive/detective/corrective), operational context (transmission/storage/processing), and IT infrastructure layer (application/system/network/organizational).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5607,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Requirements shall minimize redundancy and clustering across security dimensions. Specifically avoid excessive overlap in encryption (limit to 2-3 distinct requirements), access control (limit to 2-3 distinct requirements), and authentication (limit to 2-3 distinct requirements). Ensure balanced coverage across: Confidentiality, Integrity, Authenticity, Non-repudiation, Accountability, Audit Trail Management, Incident Response & Detection, Privacy & Data Minimization, Vendor/Third-party Risk Management, and Resistance to Threats. Each security dimension shall be represented by at least one requirement with distinct semantic scope.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5544,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Requirements shall comprehensively cover distinct security dimensions including Confidentiality, Integrity, Authenticity, Accountability, Non-repudiation, and Resistance across multiple attack vectors, threat models, and data lifecycle stages (in transit, at rest, in use, archival). Preventive and detective controls shall be balanced. Requirements shall address varied technical mechanisms (encryption protocols, network segmentation, authentication methods, data validation, audit logging, anomaly detection) and diverse fleet management contexts (vehicle telematics, GPS coordinates, driver profiles, maintenance records, route analytics, regulatory compliance). Semantic overlap and thematic clustering shall be minimized; each requirement shall introduce distinct security concerns or technical contexts.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5244,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure the 20 requirements demonstrate high semantic diversity across distinct security dimensions including: access control mechanisms, authentication and credential management, data encryption, audit and accountability logging, data integrity and non-repudiation, session management, transaction control, data anonymization and privacy, backup and recovery security, threat detection and malware resistance, data retention and lifecycle management, third-party and external access control, environment isolation, and administrative permission granularity. Vary usage contexts across different user roles (clinical staff, physicians, nurses, administrators, external users), interaction modes (direct access, mobile applications, external communications, backup operations, bulk data transfers), and activity types (data access, modification, deletion, authorization, disaster recovery). Ensure no two requirements specify identical or near-identical security controls, and that requirements address different lifecycle stages of healthcare data (creation, transmission, storage, access, modification, and deletion).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5057,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span multiple distinct security dimensions including confidentiality, integrity, authentication, authorization, accountability, session management, attack prevention, privacy management, compliance, and threat detection. Minimize semantic overlap by avoiding redundant requirements addressing identical security concerns. Ensure coverage across data states (at rest, in transit, in use), threat vectors (brute-force attacks, injection attacks, session hijacking, malware), and security controls (preventive, detective, corrective).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5306,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure semantic diversity across the following security sub-domains with balanced representation:\n- Authentication & Credential Management (2-3 items)\n- Authorization & Access Control (2-3 items)\n- Confidentiality & Encryption (2-3 items)\n- Data Integrity & Non-repudiation (2-3 items)\n- Input Validation & Attack Prevention (2-3 items)\n- API & Third-party Integration Security (2-3 items)\n- Session Management & Abuse Prevention (1-2 items)\n- Incident Response & Vulnerability Management (1-2 items)\n- Privacy & Compliance Controls (1-2 items)\n- Network & Infrastructure Security (1-2 items)\n\nMinimize redundancy in technical mechanisms across requirements while maximizing distinct security concerns, attack vectors, and protective controls.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5997,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\nEnsure comprehensive coverage across security dimensions including: authentication, authorization/access control, encryption (at-rest and in-transit), data integrity, audit and accountability, input validation, third-party/supply chain security, session management, account recovery, vulnerability management, incident response, privacy compliance (GDPR/data retention), physical security infrastructure, real-time monitoring and detection systems, and secure development lifecycle practices. Address multiple threat models (injection attacks, XSS, CSRF, MITM, privilege escalation, supply chain tampering, malware), multiple system layers (application, API, database, network, physical infrastructure), and various stakeholder protections (customers, vendors, administrators). Balance technical depth with diverse implementation contexts and attack vectors.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6484,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n- Ensure coverage across all six security principles: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, and Resistance.\n- Distribute requirements across multiple security subdomain categories including: Data Encryption & Protection, Authentication & Access Control, Audit & Non-Repudiation, Input Validation & Attack Prevention, Malware & Threat Prevention, Privacy & Consent Management, and Infrastructure Security.\n- Address diverse attack vectors (brute-force, SQL injection, XSS, MITM, DoS, malware).\n- Specify concrete technical mechanisms (encryption algorithms, cryptographic standards, protocols, timeout durations, thresholds, technical configurations).\n- Include requirements spanning different implementation layers: application, network, database, and user interface.\n- Incorporate temporal aspects (timeouts, session expiration, audit retention) and spatial aspects (geographic isolation, network segmentation, backup infrastructure).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6573,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n- Cover at least 8 distinct security domains: Access Control, Encryption & Confidentiality, Authentication, Audit & Non-Repudiation, Data Integrity, Threat Defense, Privacy & Consent, and Infrastructure Security.\n- Include healthcare-specific security concerns: patient records, clinical workflows, sensitive information categories (psychiatric records, HIV status, genetic data), and healthcare roles (Physician, Nurse, Receptionist, Patient).\n- Vary threat models addressed: external threats (malware, injection attacks), insider threats (session abuse, unauthorized access), and data inference attacks.\n- Balance between preventive controls (blocking attacks), detective controls (identifying unauthorized activity), responsive controls (automated mitigation), and recovery controls (restoration, secure deletion).\n- Employ distinct technical vocabulary across requirements to prevent classifier overfitting: cryptographic algorithms (AES-256, TLS, bcrypt, RSA), infrastructure mechanisms (VLAN, firewalls, IDS, HSM), and operational controls (MFA, session timeouts, input validation, code signing).\n- Specify concrete parameters: encryption standards, key lengths, time intervals, password requirements, retention periods, and scanning frequencies.\n- Reference regulatory and compliance frameworks where applicable (NIST standards, retention policies).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5665,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nDiversity Requirements:\n- Ensure coverage across at least 8 distinct security dimensions (e.g., data encryption, access control, authentication, audit & non-repudiation, data integrity, threat protection, key management, data classification).\n- Vary the protection targets across patient records, medication information, developer access, network communications, and system configurations.\n- Include concrete temporal parameters, cryptographic standards, authentication mechanisms, and quantifiable thresholds to achieve semantic depth.\n- Address different data lifecycle stages (at-rest, in-transit, in-use) and operational contexts (development, production, clinical environments).\n- Avoid redundancy by ensuring each requirement addresses a distinct threat model or technical implementation approach.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6178,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure the 20 requirements demonstrate:\n- Comprehensive coverage across all security domains (Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance) with balanced representation of each\n- Semantic diversity across distinct security mechanisms, attack vectors, data states (at-rest, in-transit, in-use, archived), and infrastructure layers (application, network, database, storage, cryptographic, operational)\n- Specific technical details including encryption standards, quantified parameters (timeouts, retention periods, password requirements), authentication methods, and technology specifications\n- Explicit references to IT infrastructure components (network protocols, hardware security devices, database systems, software platforms, communications protocols, peripheral devices)\n- End user perspective framing addressing user protection, account security, data privacy, transparency, and user experience impacts\n- Variation in control types (preventive, detective, responsive) and multiple distinct attack vector protections (brute-force, SQL injection, XSS, malware, fraud, man-in-the-middle, session hijacking, DDoS)",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.619,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance:**\n- Ensure each requirement includes concrete technical parameters (algorithms, bit lengths, timeframes, measurements, thresholds).\n- Distribute coverage across security dimensions: prioritize confidentiality (25-30%), integrity (20-25%), access control (15-20%), authentication (15-20%), accountability/audit (10-15%), with remaining coverage for malware resistance, input validation, and non-repudiation.\n- Address distinct fleet management data types: GPS/location data, driver credentials, vehicle records, maintenance documentation, telematics, financial data, and organizational hierarchies.\n- Specify technical enforcement mechanisms (e.g., geofencing coordinates, database activity monitoring, encryption algorithms, API endpoints, role-based permission matrices) rather than abstract security goals.\n- Where applicable, include exception handling, organizational role definitions, or granular permission specifications to maintain detailed abstraction level.\n- Minimize redundancy by addressing different attack vectors, control types, and implementation contexts across the 20 items.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4994,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure balanced coverage across the following security sub-domains—Authentication & Credentials (minimum 4 items), Access Control & Authorization (maximum 5 items), Data Encryption & Confidentiality (minimum 3 items), Audit & Accountability (minimum 3 items), Data Integrity (minimum 2 items), Session Management (minimum 2 items), Threat Detection & Resistance (minimum 2 items), and Data Retention & Lifecycle Management (minimum 1 item)—such that no single sub-domain exceeds 30% of the total sample and each sub-domain is semantically distinct within itself.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4973,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements cover distinct security domains including access control, authentication, encryption, audit and accountability, attack prevention, compliance, data protection, availability and DoS mitigation, incident response procedures, secure software development practices, third-party/vendor security management, and physical security integration. Minimize semantic redundancy by avoiding clustering of similar controls within the same domain and by distributing requirements across diverse threat vectors and security mechanisms.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5994,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nDiversity Requirements:\n- Distribute requirements across at least 11 distinct security dimensions: Access Control, Authentication, Encryption/Confidentiality, Integrity, Audit/Accountability, Data Segregation, Threat Protection, Data Anonymization, Secure Communication, Vulnerability Management, and Data Retention/Purge.\n- Vary protective mechanisms and preventive/detective/corrective control types.\n- Address multiple user roles (healthcare providers, administrators, developers) and interaction contexts (internal usage, external integration, workstation management, lifecycle operations).\n- Minimize semantic clustering: Ensure that authentication-related requirements, encryption-related requirements, and access control requirements are sufficiently differentiated by operational context or mechanism type.\n- Avoid overrepresentation of single security concern categories; maintain balanced distribution across all 11 dimensions.\"",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5239,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n8. Semantic Diversity: Requirements must span at least 9 distinct security control categories including Access Control, Authentication, Audit & Accountability, Code Security, Data Protection, Personnel Security, Infrastructure Security, Process Controls, and Non-repudiation. Each category should contain substantively different implementation approaches.\n9. Attack Vector Coverage: Requirements must address varied threat scenarios including but not limited to SQL injection, phishing, credential theft, session hijacking, privilege escalation, man-in-the-middle attacks, malicious insider threats, and lateral movement.\n10. Scope Variation: Requirements must operate across multiple abstraction levels spanning individual field-level encryption, application-layer controls, infrastructure-level segmentation, and organizational-level policies.\n11. Usage Pattern Specificity: Each requirement must explicitly reference developer interaction patterns, including code development, repository access, environment configuration, data access, and deployment workflows in healthcare contexts.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5657,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure balanced representation across all security dimensions—Confidentiality, Integrity, Authentication, Authorization, Accountability, Non-repudiation, and Resistance to threats. Minimize semantic overlap between requirements and avoid overrepresentation of any single security domain. Include preventive, detective, and reactive security controls addressing diverse attack vectors (injection, brute force, session hijacking, malware, data loss, unauthorized access, insider threats). Reference varied infrastructure components (encryption protocols, databases, network channels, firewalls, intrusion detection systems, patch management systems, audit logs, authentication mechanisms, data classification systems, incident response capabilities).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5571,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n8. SemanticDiversity: Ensure requirements span at least 8 distinct security dimensions (e.g., access control, encryption, authentication, audit, data integrity, threat prevention, data minimization, privileged operations, separation of duties, third-party security, physical security, supply chain security) with minimal thematic clustering within any single dimension. Avoid concentrating more than 20% of requirements within any single security category.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5483,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nDiversity Requirements:\n- Ensure balanced representation across all six security pillars: Confidentiality (no more than 25%), Integrity (15-20%), Non-repudiation (10-15%), Accountability (15-20%), Authenticity (10-15%), and Resistance (10-15%).\n- Include explicit coverage of: digital signature validation, secure data deletion and retention policies, physical security controls for IT infrastructure, PHI de-identification mechanisms, and secure credential storage.\n- Minimize semantic redundancy by avoiding multiple requirements addressing identical protective mechanisms; when similar controls are needed, differentiate by threat vector, infrastructure layer, or implementation approach.\n- Ensure each requirement addresses distinct end-user scenarios, healthcare-specific compliance concerns, or infrastructure protection mechanisms.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5836,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure that the generated requirements:\n- Address multiple security dimensions (Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance) with balanced coverage.\n- Incorporate diverse access control mechanisms (RBAC, ABAC, Principle of Least Privilege, geographic restrictions, emergency overrides).\n- Include varied data protection methods (encryption at rest, encryption in transit, hashing, classification-based storage).\n- Specify different audit and monitoring approaches (immutable logs, change logs, threat detection, fine-grained logging).\n- Reference different user roles and stakeholder interactions (clinical staff, administrators, auditors, external systems).\n- Cover multiple operational contexts (patient record access, system integration, approval workflows, session management, external threat scenarios).\n- Contain concrete technical details (specific encryption standards, timeframes, parameters, technologies) appropriate for business analyst communication in healthcare contexts.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.572,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n\n2. Domain: Healthcare Information System.\n\n3. StakeholderViewpoint: End User.\n\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n\n5. DescriptionType: ProseNL.\n\n6. Language: English.\n\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n\n- Distribute requirements across distinct security domains to avoid clustering: allocate coverage to Cryptography (3-4 items), Authentication & Access Control (3-4 items), Audit & Accountability (3 items), Data Protection & Deletion (2-3 items), Malware & Threat Prevention (2 items), Incident Response & Breach Notification (2 items), Key Management (1-2 items), Physical Security (1 item), Behavioral Anomaly Detection (1 item), and Healthcare-Specific Compliance (1-2 items referencing HIPAA technical safeguards or HITRUST).\n\n- Ensure 85%+ of requirements adopt an end-user perspective (users performing actions, receiving feedback, managing credentials, experiencing constraints), while limiting administrative/compliance-officer viewpoint items to ≤3 requirements.\n\n- Include threat models spanning network eavesdropping, injection attacks, man-in-the-middle attacks, data tampering, unauthorized duplication, ransomware resistance, denial-of-service resilience, supply chain security, and insider threats.\n\n- Incorporate healthcare-specific regulated assets: patient medical records, genetic information, mental health data, medication lists, diagnostic images, clinical notes, vital signs, and treatment plans.\n\n- Include at least one requirement addressing physical security controls (e.g., workstation access, badge systems, environmental conditions) and at least one addressing contemporary threats (e.g., ransomware, zero-trust principles, behavioral anomaly detection).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6697,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n\n2. Domain: Fleet Management System.\n\n3. StakeholderViewpoint: End User.\n\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n\n5. DescriptionType: ProseNL.\n\n6. Language: English.\n\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Diversity:**\nEnsure semantic diversity across the 20 requirements by balancing representation across:\n- **Security dimensions**: Distribute requirements across Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, and Resistance with no single dimension exceeding 40% of total requirements.\n- **Fleet management aspects**: Cover distinct operational areas including vehicle data management, driver authentication, route and location security, maintenance records, telematics, fuel management, audit logging, and malware protection.\n- **Control types**: Include both preventive controls (authentication, encryption, access restrictions) and detective controls (audit trails, monitoring, anomaly detection).\n- **Data security contexts**: Address security across transmission channels, storage systems, device interfaces, and sensor data independently.\n- **Stakeholder roles**: Represent requirements from perspectives of drivers, fleet administrators, maintenance vendors, and system operators where applicable.\n\nAvoid excessive overlap between requirements; each requirement should address a distinct security concern or technical context.\"",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5846,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements minimize semantic overlap and maximize coverage across distinct security dimensions (Confidentiality, Integrity, Authentication, Authorization, Non-repudiation, Accountability, Privacy, Malware Resistance, Session Management), threat models, and usage scenarios (login, purchasing, browsing, data management, account closure, device interaction, payment processing, order history access, notification patterns, and session hijacking prevention).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5221,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. Semantic Diversity Requirement: Requirements must span across multiple security dimensions (Confidentiality, Integrity, Authentication, Authorization, Accountability, Non-repudiation, Data Management, Infrastructure Security) and address distinct attack vectors (interception, injection, brute force, unauthorized modification, tampering, exfiltration, malware). Minimize semantic redundancy between items; each requirement should present a distinct security concern, control type, asset category, or threat model rather than alternative implementations of the same security objective.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4903,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements are distributed across all six security properties (Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance) with minimal overlap. Each requirement must address a distinct security concern or technical vector (e.g., encryption, biometric authentication, digital signatures, third-party access controls, real-time threat detection, physical security integration, incident response, privacy-preserving analytics, regulatory compliance, advanced authentication methods) rather than restating similar controls. Eliminate redundancy within security dimensions—consolidate requirements addressing identical or near-identical technical implementations.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5584,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional Guidance for Semantic Diversity:\n- Ensure minimal semantic overlap between requirements; each should address a distinct security concern or manifestation within fleet management usage contexts.\n- Cover all security attributes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, and Resistance.\n- Include underrepresented areas: cryptographic key lifecycle management, privacy regulations and data subject rights, incident response and breach detection, non-repudiation mechanisms, and third-party/supply chain security considerations.\n- Represent diverse data types (credentials, audit logs, vehicle location, maintenance records, sensor data, diagnostic information, driver personal information).\n- Address multiple threat vectors (unauthorized access, data tampering, malware, fraud, brute force attacks, injection attacks).\n- Span multiple security layers (access control, data protection, communication, infrastructure, operational security).\n- Distribute requirements across preventive, detective, and corrective security controls.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4597,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure the 20 requirements demonstrate semantic diversity across the following security dimensions with balanced representation: authentication and authorization mechanisms; data encryption and transmission security; access control and isolation; audit, monitoring, and non-repudiation; threat detection and vulnerability management; session and lifecycle management; integrity verification; compliance and data retention policies; physical security and device protection; incident response and breach notification; insider threat prevention and segregation of duties; third-party risk management and vendor security; privacy-by-design and data anonymization; certificate and key management; and secure disposal and destruction protocols. Minimize redundancy and semantic overlap between requirements while maintaining relevance to fleet management IT infrastructure.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4947,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n\n2. Domain: E-commerce Application.\n\n3. StakeholderViewpoint: Developer.\n\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n\n5. DescriptionType: ProseNL.\n\n6. Language: English.\n\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n\n8. Ensure coverage across all six security attributes (Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance) with balanced representation.\n\n9. Address privacy regulation requirements (GDPR, CCPA compliance) and data retention/deletion policies in at least 3 requirements.\n\n10. Include mobile application security and API client authentication mechanisms in at least 2 requirements.\n\n11. Include network and infrastructure security controls (network segmentation, DDoS protection, secure deployment pipelines) in at least 2 requirements.\n\n12. Include secure error handling and exception handling security patterns in at least 1 requirement.\n\n13. Ensure requirements address diverse attack vectors (injection, XSS, CSRF, brute force, malware, tampering, man-in-the-middle) across the 20 items.\n\n14. Represent preventive, detective, and corrective security controls across the requirement set.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.611,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure the 20 requirements achieve balanced coverage across security sub-attributes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, and Resistance. Minimize semantic overlap in access control and authentication patterns by varying requirement subjects, data operations, threat vectors, and user roles. Include explicit representation of non-repudiation, cryptographic key management, and malware/intrusion resistance. Maximize diversity across usage patterns, user interactions, and enforcement mechanisms to support downstream classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4851,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements address distinct security concepts including access control, authentication, audit and accountability, data protection in transit and at rest, session management, threat detection, malware prevention, data integrity, privacy, vulnerability management, incident response, secure configuration, secure data deletion and retention, physical security, and third-party security. Minimize semantic redundancy and ensure each requirement targets meaningfully different security objectives, data types, or user interactions.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5286,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nDiversity Requirements:\n- Ensure balanced coverage across security dimensions: Confidentiality, Integrity, Authentication, Authorization, Non-Repudiation, Accountability, and Resistance (minimum 2-3 requirements per dimension).\n- Include requirements addressing Vulnerability Management and Security Patch Lifecycle (minimum 2-3 requirements).\n- Include requirements addressing Security Monitoring, Detection, and Incident Response (minimum 2-3 requirements).\n- Include requirements addressing Compliance Frameworks (PCI-DSS, GDPR, CCPA) and their technical implications (minimum 2-3 requirements).\n- Include requirements addressing Separation of Duties, Advanced Authorization Models, and Permission Delegation (minimum 2-3 requirements).\n- Vary protected data types: payment card data, personally identifiable information (PII), configuration secrets, product data, transaction records, session tokens, and audit logs.\n- Vary threat vectors: brute-force attacks, credential stuffing, injection attacks, cross-site scripting (XSS), cross-site request forgery (CSRF), man-in-the-middle (MitM), malware injection, session hijacking, data exfiltration, and supply chain vulnerabilities.\n- Vary user roles and access contexts: customers, warehouse staff, finance staff, administrators, customer service representatives, and third-party vendors.\n- Vary temporal and operational constraints: session timeouts, password rotation cycles, patch deployment windows, audit retention periods, and lockout durations.\n- Ensure no more than 2 requirements address identical security concerns or threat vectors.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6215,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Security — A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware. (Capability of a product to protect information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization. Includes: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Constraint**: The 20 requirements must achieve balanced coverage across all six security dimensions (Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity, Resistance) with explicit inclusion of: (a) at least 3 requirements addressing Non-repudiation and digital signature mechanisms; (b) at least 3 requirements addressing Resistance to malware, viruses, and unauthorized software interference; (c) at least 2 requirements addressing encryption key lifecycle management and rotation procedures; (d) at least 2 requirements addressing secure device decommissioning, data destruction, and forensic evidence preservation; (e) at least 2 requirements addressing inter-service and API security at the infrastructure layer; (f) requirements distributed across authentication, authorization, monitoring, incident response, compliance, and vulnerability management with no single control family exceeding 30% of the total set.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5391,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    }
+  ]
+}

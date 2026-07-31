@@ -1,0 +1,1098 @@
+{
+  "run_id": "032b89f9-6d18-4ee6-adbf-8613f8cc3ae1",
+  "timestamp_utc": "2026-03-30T01:20:38.883177+00:00",
+  "llm": "openrouter/anthropic/claude-haiku-4.5",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "samples_requested": 1080,
+  "samples_produced": 1080,
+  "samples_per_prompt": 20,
+  "verify": false,
+  "verify_threshold": null,
+  "optimized": true,
+  "prompt_approach": "default",
+  "duration_seconds": 694.25,
+  "alignment_verification": false,
+  "prompts": [
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure the following quality criteria are met:\n\n- Each requirement explicitly incorporates e-commerce-specific UI components or workflows (product galleries, shopping carts, checkout flows, filtering, reviews, wishlists, dashboards, search functionality, payment processing).\n\n- All requirements are framed from a developer implementation perspective using developer-oriented language (e.g., \"developers must implement,\" \"developers shall ensure,\" \"development teams should configure\").\n\n- Every requirement includes concrete technical specifications with measurable attributes such as: geometrical dimensions (viewport widths, touch target sizes in CSS pixels, card dimensions), spatial aspects (layout grids, sidebar proportions, scroll thresholds), physical aspects (font sizes, zoom levels, luminance contrasts), and timing thresholds (millisecond-based performance metrics, debounce/throttle intervals).\n\n- Requirements span at least 7 distinct usability and accessibility categories: layout & responsiveness, input & interaction, visual & content accessibility, performance optimization, assistive technology support, user flow continuity, and device adaptation.\n\n- Each requirement addresses a unique combination of UI component, technical constraint, and usability aspect to ensure no semantic redundancy.\n\n- All requirements use natural language prose format with descriptive sentences integrating technical terminology into flowing text, rather than structured notation or bullet lists.\n\n- Avoid duplication of concepts, interaction methods, or solutions across the 20 requirements.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5821,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n8. SemanticDiversity: Requirements shall cover distinct usability dimensions including error recovery and prevention, feedback mechanisms, user preferences persistence, workflow-based interaction patterns, information architecture, and multi-language localization support. Requirements shall address varied healthcare workflows (patient documentation, medication management, appointment scheduling, clinical monitoring, diagnostic data presentation, and lab ordering) and diverse user populations (users with visual, motor, cognitive, and hearing impairments, as well as age-related accessibility needs). Requirements shall minimize clustering in similar technical specifications (pixel dimensions, timing constraints) by distributing technical aspects across conceptually different interaction contexts and system layers.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5902,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nSemantic Diversity Requirements:\n- Ensure at least 3-4 requirements addressing accessibility for users with disabilities (including keyboard navigation, visual impairments, cognitive disabilities, and elderly users).\n- Ensure at least 3-4 requirements addressing learnability (including onboarding, tutorials, guided workflows, and documentation).\n- Ensure at least 2-3 requirements addressing personalization (including user preferences, customizable layouts, and preference management).\n- Ensure at least 3-4 requirements addressing ease of use (including intuitive navigation, error recovery, and interaction patterns).\n- Ensure at least 2-3 requirements addressing understandability (including information clarity, mental models, and progressive disclosure).\n- Distribute requirements across both end-user (customer) and developer usage contexts to avoid over-concentration on administrative tools.\n- Minimize semantic redundancy by avoiding multiple requirements addressing the same specific feature (e.g., do not cluster multiple items on search/filter optimization or information presentation timing).\"",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.517,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nDiversity Requirements:\n- Ensure requirements address at least 4 distinct usability subcategories (ease of use, personalization, learnability, understandability, accessibility).\n- Cover at least 3 different user roles or user types (e.g., fleet managers, drivers, dispatchers, field operators).\n- Address at least 4 different interaction modalities or input methods (e.g., touch, keyboard, voice, visual, drag-and-drop).\n- Include requirements spanning at least 5 different fleet management operational areas (e.g., vehicle tracking, route planning, maintenance, fuel management, driver operations, alerts/notifications, reporting).\n- Ensure no semantic redundancy—each requirement shall address a distinct aspect of usability; requirements addressing similar topics must approach from materially different angles (e.g., visual accessibility via dark mode versus contrast ratio standards).\n- Distribute requirements across diverse usage contexts and environmental scenarios (e.g., mobile field operations, desktop management, outdoor/noisy environments, extended usage sessions, multilingual contexts).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4825,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n\n2. Domain: Healthcare Information System.\n\n3. StakeholderViewpoint: Business Analyst.\n\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.). **Each requirement must explicitly address how usability interacts with IT infrastructure components such as enterprise servers, network communications, legacy healthcare systems (EHR, PACS), peripheral devices, or deployment environments.**\n\n5. DescriptionType: ProseNL.\n\n6. Language: English.\n\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Constraints:**\n\n8. **Semantic Distribution**: Requirements must span at least 10 distinct usability categories with balanced representation:\n   - Accessibility for users with disabilities (minimum 3-4 requirements covering: visual impairments, motor disabilities, cognitive accessibility, keyboard-only navigation)\n   - Hardware and device compatibility (minimum 2-3 requirements)\n   - System integration and interoperability (minimum 2-3 requirements addressing integration with clinical systems, legacy software, authentication)\n   - Mobile and remote access usability (minimum 1-2 requirements)\n   - Personalization and customization (minimum 2-3 requirements)\n   - Data presentation and information architecture (minimum 1-2 requirements)\n   - User support and learning (minimum 1-2 requirements)\n   - Error handling and feedback (minimum 1-2 requirements)\n   - Workflow efficiency (minimum 1-2 requirements)\n   - Search and data discovery (minimum 1 requirement)\n\n9. **Minimal Redundancy**: Avoid semantic clustering. No more than 2 requirements should address identical or near-identical usability concerns. Ensure each requirement introduces a distinct capability or constraint.\n\n10. **IT Infrastructure Grounding**: Every requirement must establish a clear nexus between the usability feature and specific IT infrastructure aspects (e.g., 'compatible with enterprise authentication systems,' 'optimized for low-bandwidth environments,' 'accessible via mobile devices and desktop terminals,' 'integrates with hospital network firewalls').\"",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4619,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirements:**\n- Ensure semantic independence across all 20 requirements with minimal overlap.\n- Cover at least 8 distinct usability dimensions including: input methods (keyboard, voice, mouse, touch), user populations (novice, experienced, users with disabilities), information display formats (dashboards, tabs, dialogs, printable views, summaries), accessibility features (text scaling, keyboard navigation, motor accommodation, multilingual support), task types (medication management, documentation, patient search, alert management, workflow configuration, system learning), error prevention mechanisms (confirmations, undo/redo, warnings, verification displays), personalization patterns (customizable templates, preference configuration, adaptive learning), and cognitive load management strategies (progressive disclosure, consistent layout, organized navigation).\n- Distribute requirements across these dimensions to avoid clustering on any single concern.\n- Include concrete implementation details (specific measurements, timeframes, visual specifications, interaction patterns) that demonstrate detailed-level abstraction.\n- Address diverse clinical scenarios and contextual usage patterns (bedside use, night shift operations, multi-location coordination, protective equipment constraints, workflow efficiency).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.623,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n\n- **Accessibility & Disabilities Coverage (4-5 items):** Include requirements addressing keyboard navigation in developer interfaces, screen reader compatibility for admin dashboards, color contrast ratios for developer consoles, voice control support for developer tools, and compatibility with accessibility testing frameworks that developers can leverage.\n\n- **Learnability & Onboarding (3-4 items):** Include requirements covering interactive API documentation with code examples in multiple programming languages, progressive disclosure of developer features, in-context help systems within development environments, and developer onboarding workflows.\n\n- **Personalization & Customization (3-4 items):** Include requirements addressing developer preference profiles, customizable dashboard layouts, IDE plugin integration preferences, and theme/language selection for developer tools.\n\n- **Ergonomic Design of Developer Tools (2-3 items):** Include requirements for visual hierarchy optimization, cognitive load reduction in monitoring interfaces, screen real estate efficiency, and reduced redundancy across monitoring and debugging tools.\n\n- **Error Recovery & Offline Functionality (2-3 items):** Include requirements for graceful error handling, offline caching strategies, session recovery mechanisms, and progressive enhancement across degraded network conditions.\n\n- **Limit Accessibility-Related Overlap:** Ensure accessibility requirements are distributed across different aspects (input methods, output formats, documentation) rather than concentrated in similar themes.\n\n- **Balance Infrastructure Coverage:** Maintain balanced coverage across hardware compatibility, network conditions, operating system APIs, third-party system integrations, and peripheral device support without over-representing any single infrastructure dimension.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6366,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure requirements demonstrate robust semantic diversity by:\n- Covering all five core usability dimensions (ease of use, personalization, learnability, understandability, accessibility for users with disabilities)\n- Addressing distinct user personas (drivers, dispatchers, mechanics, fleet managers, new users, users with disabilities)\n- Spanning multiple IT infrastructure components (mobile/web platforms, Bluetooth, GPS/telematics, SMS/email systems, cellular/WiFi connectivity, database storage, screen resolutions, operating system accessibility features, APIs, office applications)\n- Including specific, measurable acceptance criteria (response times, pixel sizes, contrast ratios, supported languages, resolution specifications)\n- Avoiding redundancy by ensuring each requirement addresses a non-overlapping usability concern\n- Maintaining atomic feature scope such that requirements address distinct problems rather than variations of the same problem",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5395,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Diversity and Quality:**\n\nEnsure requirements explicitly address usability properties (ease of use, personalization, learnability, understandability, accessibility) as they relate to IT infrastructure constraints and developer implementation concerns. Requirements should bridge usability design with infrastructure realities, such as:\n- How accessibility features integrate with deployment platforms and hardware capabilities\n- How learnability is supported through API design and developer tooling across different IT environments\n- How understandability is achieved within infrastructure limitations and system compatibility requirements\n- How ease of use interfaces are optimized for performance across varied network and hardware infrastructures\n- How personalization options function within IT system scalability and data management constraints\n\nDistribute requirements across diverse infrastructure dimensions to avoid clustering (minimize redundancy in deployment platform compatibility). Include underrepresented infrastructure-usability intersections such as performance optimization for user experience, backward compatibility with legacy IT systems affecting UI/UX, security infrastructure transparency to users, resource constraints influencing interface design, failover mechanisms affecting user workflows, infrastructure logging that supports user error diagnostics, developer tooling integration for usability testing, and network optimization for responsive user interactions.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4896,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Guidance for Diversity:\n- Ensure requirements span at least 8 distinct usability dimensions (e.g., visual accessibility, navigation, input interaction, personalization, transaction support, transparency, performance, decision support).\n- Cover diverse user interaction phases: discovery, browsing, comparison, selection, checkout, payment, and post-purchase tracking.\n- Address multiple accessibility needs: motor disabilities, visual impairments, cognitive impairments, and keyboard-only usage.\n- Include quantified metrics and technical specifics (e.g., pixel dimensions, load times, compliance standards, interaction patterns).\n- Minimize semantic overlap by ensuring each requirement addresses a distinct usability aspect or usage context within e-commerce workflows.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6162,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional guidance for semantic diversity:**\n- Cover distinct usability dimensions including: visual/display design, performance/loading behavior, navigation/information architecture, accessibility for users with disabilities (color blindness, vision impairment, motor control limitations, dyslexia), mobile/responsive design, form design and input mechanisms, workflow optimization, content readability, language/internationalization support, error handling and validation recovery, and keyboard navigation.\n- Address underrepresented areas such as multilingual and right-to-left (RTL) language accommodation, keyboard accessibility with focus indicators, form validation error messaging and recovery, and voice/audio accessibility features.\n- Ensure technical specifications span geometrical dimensions (pixel widths, font sizes, component heights, spacing), spatial aspects (viewport percentages, screen layout zones, positioning), device types and physical interaction modes (touchscreen tap targets, pinch gestures, swipe support, keyboard input), network conditions (bandwidth, latency), and temporal characteristics (load times, rendering performance).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5835,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n- Ensure coverage across all core usability dimensions: personalization, learnability, ease of use, understandability, error prevention/recovery, accessibility for disabilities, progressive disclosure, responsive interface, data management efficiency, and work context support.\n- Include requirements addressing diverse interaction paradigms: visual design, motor interaction (keyboard, touch, gesture), cognitive load reduction, temporal workflows, and informational patterns.\n- Incorporate contemporary interaction modalities including voice/natural language capabilities, real-time collaboration features, and mobile-specific usability considerations (gestures, simplified interfaces, responsive layouts).\n- Avoid semantic redundancy; each requirement must address a distinctly different usability concern or fleet management usage scenario.\n- Ensure accessibility requirements span multiple disability types (visual impairments, motor disabilities, cognitive disabilities, color blindness) with varied implementation approaches.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5168,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n- Ensure requirements span distinct usability dimensions including: visual/content accessibility, navigation and input methods, information presentation, checkout and transaction flows, data persistence, product evaluation, support and documentation, error recovery and undo mechanisms, personalization options beyond text resizing, mobile-specific UX patterns, performance and loading states, and offline functionality considerations.\n- Minimize semantic overlap; each requirement should address a unique user need or IT system aspect rather than restating similar concepts.\n- Include explicit coverage of error recovery scenarios (e.g., cancellation, reverting changes, recovering from mistakes).\n- Include mobile-specific usability requirements addressing responsive design, touch target sizing, and mobile form optimization.\n- Include performance-related requirements such as loading indicators, skeleton screens, or perceived performance optimization.\n- Include at least one requirement addressing offline functionality or intermittent connectivity tolerance.\n- Verify that all 20 requirements collectively address distinct accessibility dimensions (visual impairments, motor impairments, cognitive load, language barriers, aging users) without redundancy.\n- Avoid placeholder or incomplete text in requirement descriptions; all details must be concrete and clearly specified.\"",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6122,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Guidance for Diversity:\n- Ensure semantic diversity across interaction modalities (keyboard navigation, mouse input, voice queries, touch gestures, shortcuts).\n- Span multiple interface element types (dashboards, wizards, error dialogs, tooltips, code editors, graphs, audit logs, breadcrumbs).\n- Cover distinct accessibility features (color contrast, keyboard-only navigation, language localization, progressive disclosure).\n- Include varied performance/responsiveness specifications with quantified metrics (e.g., response times in milliseconds or seconds).\n- Address different information architecture approaches (navigation aids, search functionality, progressive disclosure, inline help, audit trails).\n- Incorporate multiple learning support mechanisms (context-sensitive help, tooltips, wizards, documentation links).\n- Represent different error handling strategies (validation feedback, undo/redo capabilities, standardized error messages).\n- Include personalization options at different levels (layout customization, language switching, unit preferences).\n- Include monitoring and analytics features (real-time metrics, audit trails).\n- Avoid semantic redundancy by ensuring no two requirements address identical usability concerns or IT infrastructure aspects.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6341,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Maximize coverage across the following dimensions: (a) collaborative features and multi-user workflows, (b) mobile and field-operation scenarios, (c) error recovery and exceptional case handling, (d) data export and system integration patterns, (e) performance-related usability under operational load, and (f) all five core usability dimensions (ease of use, personalization, learnability, understandability, and accessibility).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4903,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n\n2. Domain: Healthcare Information System.\n\n3. StakeholderViewpoint: Developer.\n\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n\n5. DescriptionType: ProseNL.\n\n6. Language: English.\n\n7. AbstractionLevel: HighLevel.\n\n8. SemanticDiversity: Ensure requirements span at least 10 distinct semantic dimensions including: interface design and navigation, accessibility and assistive technologies, information architecture and terminology, personalization and customization, error handling and recovery, workflow automation and efficiency, cross-system integration, learning and support mechanisms, cognitive accessibility, and system responsiveness. Minimize semantic overlap and clustering by ensuring each requirement addresses a distinct aspect of usability rather than restating similar concerns across multiple items.\"",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4899,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n- Ensure coverage across all five usability dimensions: ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n- Distribute requirements across distinct fleet management feature domains: vehicle operations, route management, maintenance tracking, telemetry data, alerts and notifications, and reporting.\n- Address diverse developer concerns including development environments, configuration and administration, debugging and troubleshooting, system integration, and deployment operations.\n- Include specific IT infrastructure elements: database interactions, network communications protocols, hardware device specifications, data formats and standards, and system performance metrics.\n- Minimize semantic overlap; each requirement should address a distinct aspect of usability in the fleet management context rather than restating similar concerns.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5053,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Requirement:** Ensure semantic diversity across all 20 requirements by minimizing redundancy. Each requirement shall address distinct aspects of usability dimensions (ease of use, personalization, learnability, understandability, accessibility) or distinct IT infrastructure concerns (hardware integration, communications protocols, software system interoperability, deployment environments). Avoid generating multiple requirements that describe substantially similar developer-facing capabilities, accessibility features, or documentation mechanisms. Target a minimum of 80% semantic non-redundancy across the 20 items.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.466,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities..\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.0,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure semantic diversity by covering the following usability dimensions across the 20 requirements:\n- Navigation & Information Architecture\n- Accessibility for users with disabilities (visual, auditory, motor, cognitive)\n- Customization & Personalization\n- Input & Interaction Methods (keyboard, voice, gesture, touch, mouse)\n- Error Prevention & Recovery\n- Information Presentation & Clarity\n- Physical & Environmental Adaptation\n- Clinical Context Support & Workflow Integration\n- Documentation, Training & Learnability Support\n- Performance & System Responsiveness\n- Device Flexibility & Multi-platform Support\n\nDistribute requirements to address multiple interaction paradigms and user profiles (novice vs. expert users, users with various disabilities, left/right-handed users, different clinical roles) while maintaining technical context focus on display technology, input mechanisms, spatial aspects, physical environment, and interface dimensions.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5056,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Ensure requirements demonstrate strong semantic diversity across the following dimensions:**\n- **Accessibility & Inclusive Design:** Address diverse user profiles including users with mobility, visual, and cognitive impairments; users in different geographic regions; and users on low-bandwidth connections.\n- **Information Architecture & Navigation:** Cover product discovery, search functionality, and consistent navigation patterns.\n- **Personalization & User Control:** Include user preferences, customization, and transparent recommendations.\n- **Transaction & Process Simplification:** Address checkout, payment methods, order management, and registration workflows.\n- **Feedback & Communication:** Include status indicators, contextual help, and real-time feedback mechanisms.\n- **Error Handling & Clarity:** Provide plain language messaging and actionable resolution guidance.\n- **Device Compatibility & Responsiveness:** Reference multiple device types, browsers, screen resolutions, and hardware configurations.\n\n**Minimize semantic overlap:** Each requirement should address a distinct usability concern or user scenario. Avoid redundant coverage of the same accessibility feature or interaction pattern across multiple requirements.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6204,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional Requirements:\n- Ensure semantic diversity across all usability dimensions: ease of use, learnability, understandability, personalization, and accessibility for users with disabilities.\n- Include at least 2 requirements addressing user feedback mechanisms and engagement features (e.g., ratings, reviews, preference learning).\n- Include at least 1 requirement addressing cognitive load reduction strategies (e.g., progressive disclosure, form simplification, step-by-step guidance).\n- Include at least 1 requirement addressing offline functionality or graceful degradation under poor network conditions.\n- Minimize semantic overlap between requirements; each requirement should address distinct usability aspects or user contexts.\n- Vary user personas and contexts across requirements (e.g., visual impairments, low connectivity, international users, first-time buyers, advanced users, mobile-only users).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5903,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Quality Criteria:**\n- Each requirement must explicitly integrate technical/physical fleet context (e.g., sensor calibration, vehicle specifications, environmental parameters, diagnostic data, payload constraints, operating ranges) with usability features.\n- Ensure strong semantic diversity across: data presentation modalities, environmental/physical parameters, accessibility features, interaction methods, role-based workflows, error recovery mechanisms, vehicle-specific constraints, connectivity scenarios, and multi-user collaboration.\n- Avoid generic UI/UX patterns without domain grounding; ground all usability features in fleet management technical characteristics.\n- Balance representation across accessibility dimensions (visual, auditory, motor), environmental conditions (weather, temperature, lighting, terrain), and user proficiency levels (novice, expert, accessibility-dependent).\n- Include requirements addressing offline functionality, workload management, and fatigue mitigation in extended-use scenarios.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4892,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Diversity:**\n- Ensure semantic distinctness across all 20 requirements; minimize overlap in meaning and context.\n- Cover all major usability dimensions: learnability, ease of use, personalization, understandability, accessibility for users with disabilities (visual, motor, cognitive, and auditory impairments), ergonomics, and error recovery.\n- Span diverse technical contexts: screen dimensions, device types, network conditions, input modalities (keyboard, touch, gesture, voice), response times, display technologies, and communication channels.\n- Address distinct user scenarios and interaction patterns to maximize classifier generalization capability.\n- Avoid semantic redundancy; each requirement should address a unique combination of usability dimension and technical context.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5688,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n\n2. Domain: Fleet Management System.\n\n3. StakeholderViewpoint: Developer.\n\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n\n5. DescriptionType: ProseNL.\n\n6. Language: English.\n\n7. AbstractionLevel: DetailedLevel.\n\n8. SemanticDiversity Requirement: Ensure requirements address at least 8 distinct usability subcategories or technical domains (e.g., accessibility, learnability, interface responsiveness, error prevention, personalization, data format handling, cognitive load management, collaborative/multi-user interfaces, real-time synchronization understandability). Minimize semantic redundancy—avoid clustering multiple requirements around identical concepts (e.g., multiple map visualization zoom levels, overlapping data conversion scenarios, or screen reader implementations addressing the same accessibility gap).\n\n9. CognitiveLoadAndWorkflow: Include requirements addressing cognitive overload prevention, progressive disclosure, workflow optimization, and decision support mechanisms that enhance understandability for developers managing large-scale fleet operations.\n\n10. CollaborativeUsability: Include requirements addressing multi-user interface usability, role-based view adaptation, shared workspace interaction, and concurrent user scenario understandability relevant to distributed fleet operations centers.\n\n11. DetailLevel: All requirements shall include specific, measurable technical parameters (quantified metrics, technical standards, precise ranges, thresholds, environmental conditions) that remain distinct and non-redundant across the 20 items.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5381,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Diversity Constraints:\n- Ensure balanced representation across usability sub-dimensions: accessibility (4-5 items), learnability (3-4 items), ease of use (4-5 items), personalization (3-4 items), and understandability (3-4 items).\n- Include at least 3 requirements addressing internationalization, localization, or multi-language support scenarios.\n- Include at least 2 requirements addressing mobile, touch-based, or responsive design considerations.\n- Avoid thematic clustering; distribute requirements across distinct technical implementation patterns (UI components, data persistence, input validation, assistive technologies, performance metrics, cognitive load reduction).\n- Ensure each requirement contains quantifiable technical specifications (dimensions, ratios, thresholds, time limits, frequency ranges, or performance metrics).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5185,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure requirements demonstrate semantic diversity across at least 10 distinct usability dimensions (e.g., accessibility for disabilities, personalization, learnability, efficiency, visual design, error prevention, contextual assistance, alternative interaction modalities, information organization, and documentation quality). Minimize semantic overlap between items by addressing different user populations (e.g., junior clinicians, senior physicians, visually impaired users, multilingual users), interaction modes (keyboard, mouse, voice, touch, peripherals, screen readers), and healthcare contexts (emergency situations, routine documentation, prescriptions, diagnostics, multi-patient workflows). Include specific, measurable details such as quantifiable metrics, explicit specifications, detailed constraints, and concrete functional descriptions that demonstrate detailed-level abstraction.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5409,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Requirements:**\n- Ensure at least 6-7 requirements explicitly address accessibility for users with disabilities, including: visual impairments (color-blind design, screen reader compatibility), auditory impairments (captions, visual feedback), motor impairments (keyboard navigation, voice control), and cognitive disabilities (simplified language, progressive complexity).\n- Include requirements covering diverse user demographics: elderly users, low-literacy users, users on slow networks, users with temporary disabilities, and users in emerging interaction contexts (voice commerce, mobile-only access).\n- Distribute requirements across all usability dimensions: learnability (3-4 items), ease of use (4-5 items), accessibility (6-7 items), personalization (2-3 items), understandability (3-4 items), efficiency (2-3 items), and information architecture (2-3 items).\n- Address cognitive accessibility and mental models explicitly, including working memory considerations and progressive disclosure of complexity.\n- Include requirements for alternative and emerging usage contexts beyond traditional web-based interaction.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5296,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span multiple distinct usability dimensions including (but not limited to) navigation and wayfinding, accessibility for users with disabilities, personalization and user preferences, product information presentation, transaction workflows, error recovery and handling, mobile and multi-device interaction, information architecture, performance feedback, and localization considerations.\n9. CoverageBalance: Achieve balanced representation across different user populations (general users, users with visual/motor/cognitive disabilities, international users) and transaction stages (product discovery, selection, checkout, post-purchase).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5431,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure balanced distribution across usability dimensions including ease of use, personalization, learnability, understandability, and accessibility for users with disabilities. Minimize thematic clustering and avoid semantic redundancy. Include substantive coverage of error recovery, undo/redo mechanisms, and responsive feedback patterns. Vary interaction modes (visual, keyboard, voice, text) and technical concerns across requirements.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.486,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nDiversity Requirements:\n- Ensure semantic diversity across at least 8 distinct usability dimensions including: personalization & customization, accessibility for users with disabilities, learnability & guidance, understandability & information design, consistency & predictability, efficiency & task optimization, error prevention & recovery, and communication & notification flexibility.\n- Cover multiple interaction modalities (visual, auditory, keyboard, voice, touch) with specific technical implementation details.\n- Address diverse user types and accessibility needs (drivers, fleet managers, users with visual impairments, motor disabilities, color blindness, dyslexia).\n- Include requirements spanning different UI patterns (dashboards, maps, tables, forms, notifications, reports) and workflow contexts.\n- Incorporate both prevention mechanisms (validation, confirmation) and recovery mechanisms (undo/redo).\n- Ensure minimal overlap between requirements while maximizing coverage of usability aspects relevant to fleet management operations.\n- Represent coverage across mobile/touch interfaces, multi-language support, and multi-user collaboration scenarios where applicable to fleet management contexts.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5405,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n\n2. Domain: Fleet Management System.\n\n3. StakeholderViewpoint: End User.\n\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n\n5. DescriptionType: ProseNL.\n\n6. Language: English.\n\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n\n- Distribute requirements across distinct usability sub-dimensions: ease of use, learnability, understandability, personalization, and accessibility (both disability-related and contextual).\n\n- Address diverse end-user populations and roles (e.g., drivers, mechanics, dispatchers, supervisors, users with varying technical backgrounds, age groups, and language proficiencies).\n\n- Incorporate varied usage contexts and operational constraints (e.g., gloved hands, one-handed operation, poor connectivity, driving focus, bright sunlight, high-stress scenarios).\n\n- Represent multiple interaction modalities (e.g., voice commands, touch, drag-and-drop, selection-based interfaces, offline functionality).\n\n- Minimize semantic overlap by ensuring each requirement addresses a distinct usability concern or user scenario. Avoid redundant coverage of identical accessibility features or user roles across multiple items.\"",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5014,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n- Ensure balanced semantic coverage across: visual/display design (25-30%), input/interaction mechanisms (25-30%), accessibility for disabilities (15-20%), personalization and customization (15-20%), error prevention and recovery (10-15%), navigation and information architecture (10-15%).\n- Include requirements addressing: error handling and recovery workflows, task completion efficiency, information filtering and prioritization, multi-modal notifications, contextual help systems, undo/redo functionality, batch operations, and system status transparency.\n- Incorporate diverse user roles and environmental contexts: field-based operators in extreme conditions, supervisory/coordinators in office environments, remote fleet managers, and users working in varying light, noise, temperature, and physical constraint scenarios.\n- Provide varied accessibility modalities: visual, audio, haptic, keyboard-based, and voice interaction; support multiple data representation formats and progressive disclosure patterns.\n- Include 1-2 requirements on learning curve optimization and onboarding support, 1-2 on adaptive personalization based on expertise level or task frequency, and 1-2 on advanced cognitive load management strategies.\"",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4946,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Requirements:**\n- Ensure balanced representation across all five usability dimensions (ease of use, personalization, learnability, understandability, and accessibility for users with disabilities), with particular emphasis on increasing accessibility coverage to at least 5-6 items.\n- Minimize semantic clustering by avoiding redundancy within accessibility, API/integration, and system integration topics. Each requirement within these clusters must address distinct technical concerns or modalities.\n- Ensure developer-specific concerns are explicit in all items, emphasizing developer-facing diagnostic interfaces, configuration tooling, error handling for integration scenarios, and maintenance perspectives alongside end-user usability.\n- Distribute requirements across different usability aspects with no single dimension representing more than 35% of the total set.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5104,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure the 20 requirements demonstrate semantic diversity across distinct usability dimensions including: ease of navigation and information organization, accessibility and alternative input modalities, personalization and customization, learnability and help systems, error handling and messaging, hardware and infrastructure integration, workflow efficiency, and network performance considerations. Minimize redundancy by ensuring each requirement addresses a unique aspect of healthcare information system usability while maintaining integration of ITSystem context throughout.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.506,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Requirements:**\n- Ensure minimal topical overlap between requirements; each should address distinct usability concerns or user scenarios.\n- Represent at least 8 distinct usability dimensions: learnability/onboarding, interface clarity, personalization, efficiency/navigation, accessibility for disabilities, error prevention/recovery, feedback/communication, device compatibility, and collaborative workflows.\n- Include varied interaction modalities: keyboard-based, voice/speech-based, visual, auditory, touch, and non-visual interaction modes.\n- Address diverse clinical contexts: routine workflows, urgent/time-critical situations, decision-making scenarios, mobile/remote access, and multi-user collaborative scenarios.\n- Vary user types: clinical staff with different roles, infrequent users, users with disabilities, and healthcare professionals in different specialties.\n- Avoid redundancy: no two requirements should describe substantially identical or near-identical functionality.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5128,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Requirements shall span at least 8 distinct usability sub-domains (e.g., Information Architecture & Personalization, Accessibility & Inclusivity, Error Prevention & Recovery, Efficiency & Workflow Optimization, Learnability & Support, Interaction Modality & Device Support, Feedback & System Communication, Workflow Integration) with minimal semantic overlap.\n9. StakeholderCoverage: Requirements shall address multiple user roles (e.g., physicians, nurses, administrators, laboratory technicians, billing specialists) and diverse operational contexts (e.g., time-sensitive clinical decisions, mobile environments, administrative tasks).\n10. InteractionModalities: Requirements shall incorporate varied interaction modalities (e.g., GUI elements, keyboard navigation, voice commands, touch interactions, mobile device support) to reflect heterogeneous usage patterns.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5079,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n- Ensure requirements span all five usability dimensions: ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n- Include specific quantified metrics, numerical constraints, or measurable thresholds in each requirement.\n- Cover diverse e-commerce user workflows including product discovery, navigation, cart/checkout, information architecture, error handling, decision support, and accessibility features.\n- Ensure semantic non-redundancy: each requirement must address a distinct usability concern with no two requirements describing identical or substantially overlapping functionality.\n- Provide concrete UI components, functional behaviors, and user scenarios rather than abstract usability goals.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.7096,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n- Cover multiple semantic dimensions including: interface customization, navigation and search, accessibility for diverse disabilities (visual, physical, cognitive), data entry and input design, notifications and alerts, user onboarding and training, role-based interface adaptation, workflow optimization, external device integration, and telehealth support.\n- Include diverse user roles such as: healthcare administrators, clinicians, nurses, pharmacy technicians, laboratory technicians, billing staff, compliance officers, patients, and telehealth users.\n- Represent multiple interaction modalities: visual (color-coding, high-contrast modes), keyboard navigation, voice-based interaction, touch interfaces, drag-and-drop, and external device connectivity.\n- Incorporate varied usage context scenarios: emergency room environments, high-pressure clinical situations, ward environments, usage with protective equipment, and situations involving visual or hearing impairments.\n- Include specific, quantified implementation details such as: timeouts, action counts, button sizes, response times, and concrete interaction specifications.\n- Address learnability for users with cognitive disabilities, multi-user collaboration scenarios, and language localization considerations where applicable.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5832,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Ensure semantic diversity by covering:**\n- Multiple functional areas (search, checkout, product discovery, cart management, order tracking, recommendations, account management, notifications, customer support, personalization)\n- Diverse user demographics (power users, mobile users, first-time buyers, returning customers, users with visual/hearing impairments, international users, busy shoppers, comparison shoppers)\n- Varied interaction modes (mouse/keyboard, screen readers, touch, alternative input methods)\n- Different user journey phases (discovery, evaluation, selection, transaction, post-purchase)\n- Multiple device contexts (mobile, desktop, cross-device synchronization)\n- Distinct accessibility mechanisms (text sizing, screen reader support, keyboard navigation, undo functionality, plain language, alternative workflows, captions, alt-text)\n- Time-sensitive and time-independent operations\n- Minimize redundancy while maximizing coverage across e-commerce workflows and user needs",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6392,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance:**\n- Ensure strong semantic diversity across multiple usability dimensions: personalization, accessibility for different disabilities (mobility, visual, cognitive), learnability, understandability, device/platform compatibility, workflow optimization, data management, safety/risk management, multilingual support, and analytics/reporting.\n- Ground each requirement in healthcare-specific operational contexts (e.g., EHR workflows, medication management, patient records, clinical decision-making, appointment scheduling).\n- Explicitly reference IT infrastructure elements in each requirement (hardware types, operating systems, network characteristics, communication platforms, display specifications, peripheral devices).\n- Include specific, measurable details such as quantified thresholds, response times, font sizes, touch target dimensions, pixel measurements, timeout values, and percentage targets.\n- Address diverse user populations and capability levels (clinicians across roles, novice users, experienced users, users with disabilities, multilingual users).\n- Write each requirement as complete prose sentences in natural language using \"shall\" format, avoiding pseudo-code or formal specification templates.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5667,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Requirements:**\n- Ensure distinct coverage across all five usability dimensions: ease of use, personalization, learnability, understandability, and accessibility for users with disabilities (minimum 4 items per dimension, with minimal overlap).\n- Incorporate varied technical contexts: visual/display properties, spatial/geospatial aspects, operational environments, interaction modalities, and user roles (minimum 3 items per category).\n- Represent diverse user personas and accessibility needs: developers with visual impairments, motor disabilities, and cognitive differences; drivers, dispatchers, technicians, and managers.\n- Employ distinct interaction patterns and modalities: keyboard navigation, voice commands, drag-and-drop, search functionality, undo/redo, and role-based customization.\n- Avoid semantic clustering: do not concentrate multiple requirements on the same narrow topic (e.g., weather adaptation, environmental conditions, or generic customization); instead, distribute requirements across meaningfully different usability and technical concerns.\n- Minimize redundancy in requirement phrasing and scope while maintaining high-level abstraction.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4557,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n- Include at least 5 requirements addressing accessibility for users with disabilities (visual impairments, motor impairments, cognitive load reduction), with explicit technical specifications such as contrast ratios, font sizes, touch target dimensions, or WCAG compliance standards.\n- Include at least 3 requirements addressing localization and internationalization, covering multi-language support, regional regulatory compliance UI customization, timezone handling, or measurement unit preferences.\n- Include at least 3 requirements addressing user onboarding, guided workflows, training materials, or first-time user experiences tailored to novice operators.\n- Ensure requirements incorporate concrete technical parameters (display dimensions, environmental operating conditions, sensor specifications, physical constraints such as work gloves or vehicle vibration, ambient lighting conditions).\n- Maintain semantic diversity across functional domains: vehicle tracking, maintenance management, fuel consumption, driver management, dispatch operations, geofencing, reporting, alerts, data visualization, and navigation.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5525,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities. Requirements must focus on user interaction quality, ergonomics, and cognitive load rather than performance optimization, backend tooling, or functional data interchange.\n\n2. Domain: E-commerce Application.\n\n3. StakeholderViewpoint: Developer.\n\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n\n5. DescriptionType: ProseNL.\n\n6. Language: English.\n\n7. AbstractionLevel: HighLevel.\n\n**Diversity Requirements**: The 20 requirements must balance coverage across distinct usability dimensions:\n- Accessibility and adaptive interfaces (3-4 items)\n- Navigation and information architecture (3-4 items)\n- Learnability and user mental models (3-4 items)\n- Personalization and user preferences (2-3 items)\n- Error recovery and feedback mechanisms (2-3 items)\n- Visual design and cognitive load management (2-3 items)\n- Localization and cultural adaptation (1-2 items)\n\nAvoid clustering multiple requirements around the same usability concept (e.g., limit error message clarity to 1-2 items, not 4-5). Exclude performance monitoring, data formatting standards, and development tooling from this set unless directly tied to user interaction ergonomics.\"",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5298,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Requirements for Diversity:**\n- Each requirement must address a distinct usability dimension or accessibility need (e.g., visual accessibility, motor accessibility, cognitive accessibility, performance, navigation, information presentation, content formats, learning support).\n- Requirements must collectively span multiple e-commerce workflows (product browsing, search/filtering, cart management, checkout, account management, order tracking, payment processing, transaction confirmation).\n- Requirements must target diverse end-user populations including, but not limited to: users with visual impairments, motor impairments, cognitive disabilities, dyslexia, color blindness, presbyopia, arthritis, vestibular disorders, low literacy, and users with limited network connectivity.\n- No two requirements shall address semantically equivalent usability concerns or technical parameters.\n- Each requirement must include specific, measurable technical specifications (e.g., pixel dimensions, font sizes, color contrast ratios, load times in milliseconds, response timeframes, WCAG compliance standards, layout stability measurements, or spatial tolerances).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6225,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Requirements:**\n- Ensure requirements span at least 15 distinct semantic categories covering: search and discovery, personalization, localization and accessibility, checkout and payment flows, product information presentation, data preservation, session management, navigation consistency, notifications and communication, cost transparency, order management and history, help and support systems, user feedback and confirmation, performance responsiveness, mobile optimization, visual and content presentation, and post-purchase workflows (returns, refunds, order tracking).\n- Within checkout and order management categories, include at least 2-3 distinct requirements addressing payment method selection, form entry usability, order confirmation clarity, and returns/refund request submission.\n- Ensure no single semantic category dominates the set; distribute items across categories to maximize conceptual diversity and reduce overfitting risk.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6327,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure the 20 requirements exhibit strong semantic diversity across at least 7 distinct usability dimensions, such as: input modality, visual/display properties, information complexity management, accessibility features, personalization/configuration, responsiveness/feedback, and workflow support. Avoid semantic overlap by varying technical parameters, user scenarios, and implementation approaches. Each requirement must include concrete, measurable specifications (e.g., pixel dimensions, response times, contrast ratios, character limits, standards compliance) that reflect the detailed abstraction level.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5757,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Requirements:**\n- Ensure semantic diversity across all usability dimensions: ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n- Avoid redundancy in customization and personalization themes; represent these concepts distinctly.\n- Provide balanced coverage of underrepresented dimensions including: system responsiveness and performance perception, error prevention and recovery workflows, mobile-specific usability patterns, visual hierarchy and information design standards, role-based UI variations, and comprehensive help and learning support mechanisms.\n- Represent diverse interaction types: navigation, data entry, workflow efficiency, collaborative scenarios, visual feedback, and task recovery.\n- Span multiple accessibility concern types: visual impairments, motor disabilities, cognitive accessibility, and assistive technology integration.\n- Minimize overlap between requirements; each requirement must address a distinct usability aspect within fleet management operations.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.499,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Semantic Diversity:**\nEnsure the 20 requirements span diverse usability dimensions including but not limited to: learnability and training support, ease of use and navigation efficiency, visual accessibility and display design, motor accessibility and input methods, personalization and role-based customization, error prevention and recovery mechanisms, information architecture and mental models, system responsiveness and performance, cognitive load management, and context-aware support for clinical workflows. Minimize semantic overlap and represent each dimension distinctly across the requirement set.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5114,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Requirements shall be distributed across distinct usability subdimensions (ease of use, personalization, learnability, understandability, accessibility) and diverse usage contexts (real-time monitoring, information discovery, interaction patterns, user accommodations, error recovery, cognitive load reduction) with minimal redundancy.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4661,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Quality Criteria:**\n- Ensure comprehensive coverage across all five usability dimensions: ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n- Maintain semantic diversity by addressing distinct usability categories including customization, navigation consistency, help and learning support, data input and validation, information presentation, and integration with IT infrastructure.\n- Include specific, measurable details such as technical specifications, standards (e.g., WCAG 2.1 AA), exact measurements, file formats, and concrete mechanisms rather than abstract goals.\n- Reference specific IT infrastructure components including hardware compatibility, communications platforms, software integration, peripheral devices, and deployment environment characteristics.\n- Avoid redundancy by ensuring each requirement addresses a unique aspect of usability within the fleet management domain and business analyst workflow.\n- Cover diverse interaction modalities (keyboard, mouse, touch, voice) and user scenarios (first-time users, experienced analysts, users with disabilities, multi-device environments).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6254,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure comprehensive semantic diversity by addressing:\n- Learnability through guided workflows, tutorials, and adaptive training mechanisms\n- Hearing accessibility including visual alert systems for audio notifications\n- Operational connectivity scenarios including offline functionality and real-time synchronization across varying network conditions\n- Collaborative multi-user workflows and shared operations\n- System responsiveness and performance from the user perspective across constrained networks and large fleet deployments\n- Minimize semantic overlap by ensuring each requirement addresses distinct usability aspects or user scenarios",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4968,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Requirements for Semantic Diversity:**\n- Ensure requirements span multiple accessibility dimensions: visual (color contrast, font sizing), motor/mobility (keyboard-only navigation, left-handed support), hearing (auditory alerts with visual alternatives), cognitive (simplified language, contextual help), and multilingual support.\n- Cover diverse interaction modalities: mouse-based, keyboard-based, voice-based, touch-based, and drag-and-drop interactions.\n- Include requirements addressing distinct usability concerns: learnability, understandability, personalization, error prevention and recovery, user feedback mechanisms, safety confirmations, ergonomic design, and efficiency.\n- Reference concrete IT infrastructure elements: specific hardware (monitors, tablets, workstations, touchpads, mice, voice recognition devices), display resolutions, network configurations, peripheral devices, and communications platforms.\n- Avoid semantic redundancy: each requirement must address a unique combination of usability aspect, accessibility dimension, and technical context.\n- Include quantified implementation details: font sizes, response times, undo windows, frequency ranges, speech rates, supported languages, and specific technical specifications.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5926,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Usability — A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirements:**\nEnsure semantic coverage across the following usability dimensions with balanced distribution (no single dimension exceeding 6 items):\n- Accessibility for users with disabilities (visual, motor, cognitive, hearing impairments)\n- Ease of use and navigation\n- Personalization and user preferences\n- Learnability and understandability\n- Device and infrastructure compatibility\n- Product discovery and comparison\n- Information architecture and wayfinding\n- Help systems and error guidance\n- Performance and network optimization\n- Transaction transparency and feedback",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    }
+  ]
+}

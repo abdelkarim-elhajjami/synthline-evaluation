@@ -1,0 +1,1166 @@
+{
+  "run_id": "e1216584-5881-4a61-944a-7fa5578c3b86",
+  "timestamp_utc": "2026-03-30T18:00:13.620487+00:00",
+  "llm": "openrouter/anthropic/claude-haiku-4.5",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "samples_requested": 1080,
+  "samples_produced": 1080,
+  "samples_per_prompt": 20,
+  "verify": true,
+  "verify_threshold": 0.6,
+  "optimized": true,
+  "prompt_approach": "default",
+  "duration_seconds": 1430.87,
+  "alignment_verification": {
+    "alignment_threshold": 0.6,
+    "max_retries": 3,
+    "attempts_used": 4,
+    "requested_samples": 1080,
+    "accepted_samples": 1080,
+    "alignment_deficit": 0,
+    "termination_reason": "count_reached",
+    "scores": {
+      "accepted": {
+        "count": 1080,
+        "min": 0.6006,
+        "mean": 0.8242,
+        "max": 0.9766
+      },
+      "rejected": {
+        "count": 288,
+        "min": 0.0879,
+        "mean": 0.4381,
+        "max": 0.5981
+      }
+    },
+    "total_generated_across_retries": 1368,
+    "accepted_per_attempt": [
+      857,
+      170,
+      41,
+      12
+    ],
+    "attempt_trace": [
+      {
+        "attempt": 1,
+        "pending_in": 1080,
+        "accepted": 857,
+        "rejected": 223,
+        "accepted_added": 857,
+        "rejected_configs": 47,
+        "duration_ms": 291714
+      },
+      {
+        "attempt": 2,
+        "pending_in": 223,
+        "accepted": 170,
+        "rejected": 53,
+        "accepted_added": 170,
+        "rejected_configs": 24,
+        "duration_ms": 67143
+      },
+      {
+        "attempt": 3,
+        "pending_in": 53,
+        "accepted": 41,
+        "rejected": 12,
+        "accepted_added": 41,
+        "rejected_configs": 11,
+        "duration_ms": 15046
+      },
+      {
+        "attempt": 4,
+        "pending_in": 12,
+        "accepted": 12,
+        "rejected": 0,
+        "accepted_added": 12,
+        "rejected_configs": 0,
+        "duration_ms": 4218
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure semantic diversity across the 20 requirements by varying:\n- Availability metrics (uptime percentages, MTBF, MTTR, failure counts, downtime windows, degradation states, recovery times);\n- System components and services (checkout, inventory, payment gateways, authentication, product search, caching, databases, APIs, notifications, recommendations, order management, monitoring systems);\n- Failure scenarios and modes (single-component failures, cascading failures, partial degradation, complete outages, data corruption recovery, third-party integration failures, geographic/regional outages);\n- Usage contexts (peak shopping seasons, high-traffic periods, concurrent user loads, diverse client platforms, multi-region access patterns);\n- Recovery and resilience strategies (automatic failover, graceful degradation, redundancy mechanisms, geographic redundancy, adversarial conditions);\n- Availability definitions (customer-facing vs. backend operations, SLA adherence vs. raw availability, complete service vs. degraded service states).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6162,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Requirements:**\n- Vary syntactic structures and phrasing patterns to avoid repetitive language (minimize use of identical sentence constructions like \"must be accessible\").\n- Employ diverse availability metrics beyond uptime percentages (e.g., Mean Time Between Failures, mean recovery time, maximum consecutive downtime, failure rate thresholds).\n- Include failure recovery and degradation scenarios (e.g., graceful degradation, recovery time objectives, outage notification requirements) alongside positive availability statements.\n- Incorporate varied usage contexts including geographic/timezone considerations, device/network conditions, and partial functionality scenarios.\n- Ensure consistent coverage across at least 10 distinct e-commerce system components and user activities.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5739,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nRequirements must demonstrate strong semantic diversity across at least six dimensions:\n- System component coverage (minimum 15 distinct e-commerce subsystems)\n- Availability metric types (minimum 5 distinct measurement approaches: uptime percentages, MTBF/failure frequencies, response time constraints tied to availability, recovery-based metrics (MTTR/RTO/RPO), and success/delivery rates)\n- Temporal scales (minimum 5 distinct time contexts: per-second/millisecond, per-minute, per-hour, per-month, per-year/quarter, and concurrent throughput)\n- Infrastructure aspects (minimum 4 distinct technical approaches: redundancy/failover, distributed/multi-location systems, third-party integrations, synchronization mechanisms, capacity/throughput constraints)\n- Business operational contexts (minimum 3 distinct scenarios: normal operations, peak/critical periods, disaster/failure scenarios, scheduled maintenance)\n- Failure models (minimum 3 distinct failure types: single component failures, cascading failures, network interruptions, catastrophic system failures)",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6131,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Diversity Requirements:\n- Vary availability metrics across at least 8 different expression types including uptime percentages, MTBF, RTO/RPO, mean response times, failure rates, error budgets, SLO-driven thresholds, and graceful degradation modes.\n- Distribute requirements across at least 12 distinct e-commerce features including but not limited to: payment processing, product search, shopping cart, checkout, inventory management, user authentication, order tracking, product recommendations, customer reviews, wish lists, promotional codes, and customer support chat.\n- Include at least 6 different failure scenarios covering single points of failure, peak traffic handling, data loss prevention, connectivity loss, cascading failures, and race condition/overselling conflicts.\n- Incorporate at least 5 distinct recovery and resilience strategies including redundancy/failover, load balancing, circuit breaker patterns, automatic retry mechanisms with timeout handling, and asynchronous processing with message queuing.\n- Address at least 3 environmental or contextual variations such as geographic region-specific availability, time-zone dependent availability windows, and cross-platform mobile considerations.\n- Include requirements addressing alternative availability measurement approaches such as error budget exhaustion thresholds, SLO vs. SLA distinctions, and availability verification mechanisms.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6385,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Requirements for Semantic Diversity:**\n- Vary availability measurement approaches across items (uptime percentages, MTBF, RTO/MTD, failure rates, recovery times, downtime budgets).\n- Distribute failure scenarios across multiple categories: single points of failure, multiple simultaneous failures, transient failures, database failures, hardware failures, storage subsystem failures, external system unavailability, and cascade failures.\n- Incorporate diverse recovery and resilience mechanisms: failover strategies, graceful degradation, deployment strategies, backup/recovery procedures, health monitoring, and session persistence.\n- Address different IT infrastructure layers: database layer, server infrastructure, network/communications, hardware/peripherals, and external integrations.\n- Cover varied operational scopes: vehicle tracking, dispatch operations, administrative functions, data synchronization, and command delivery.\n- Employ different time scales: seconds, minutes, hours, and annual/monthly budgets.\n- Ensure no semantic redundancy; each requirement shall address distinct availability characteristics or mechanisms.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6113,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span multiple dimensions including: (a) varied availability metrics (uptime percentages, MTBF/MTTR, downtime limits, failure rates), (b) diverse functional scopes (real-time operations, data persistence, user-facing features, administrative functions, predictive systems, integrations), (c) multiple user stakeholder roles (dispatchers, drivers, supervisors, administrators, warehouse staff, management), (d) different operational contexts (peak vs. standard hours, business vs. continuous operations, safety-critical vs. routine operations, scheduled vs. unscheduled downtime), (e) explicit coverage of recovery objectives (RTO/RPO trade-offs), scheduled maintenance windows, and manual intervention scenarios, and (f) varied technical approaches (failover mechanisms, load balancing, graceful degradation, canary deployments, component independence).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5844,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirements:**\n- Span at least 12 distinct healthcare system modules or functional areas (e.g., Electronic Health Records, Pharmacy Management, Laboratory Systems, Diagnostic Imaging, Medication Administration, Patient Scheduling, Clinical Documentation, Vital Signs Monitoring, Decision Support, Billing Systems, Telemedicine, Allergy Management, Patient Admissions, Medical Device Integration, Prescription Entry, Nursing Systems).\n- Cover at least 6 distinct end-user roles or user types (e.g., clinical staff, nursing staff, administrative staff, pharmacy staff, laboratory staff, patients, emergency personnel).\n- Include at least 8 different uptime percentage tiers ranging from 98% to 99.99%.\n- Represent multiple operational time windows (e.g., standard business hours, 24/7 clinical operations, emergency department hours, laboratory operation windows, maintenance windows).\n- Incorporate at least 3 distinct downtime measurement units or failure metrics (e.g., percentage-based uptime, minutes per month, hours per year, allowable failure rates, MTBF/MTTR specifications).\n- Distribute requirements across at least 5 distinct functional categories (e.g., data retrieval/access, data entry/submission, processing/transactions, monitoring/alerts, communication, remote access).\n- Vary IT infrastructure combinations to avoid semantic clustering (e.g., server+network, data center+WAN, workstation+LAN, database+failover, mobile connectivity+edge devices, redundant pathways, load balancing).\n- Minimize semantic overlap between requirements; ensure no more than 2 requirements address identical failure scenarios, recovery mechanisms, or system components.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6189,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure that:\n- Requirements are framed from end-user perspectives emphasizing user-experienced availability and operational needs.\n- Technical contexts include specific environmental variations (weather conditions, temperature ranges, geographic regions, network types), concurrent usage scenarios, and recovery mechanisms without revealing implementation details.\n- Availability metrics employ diverse measurement formats (uptime percentages, mean time between failures, maximum failure rates, downtime windows, recovery time objectives) across varying time periods (per month, per quarter, per rolling 30-day periods).\n- Functional domains span core system operations (vehicle tracking, real-time communication, maintenance tracking, driver monitoring, fuel management, geofencing, route optimization, data accessibility, billing/reporting, authentication, mobile connectivity).\n- Language remains strictly abstracted from implementation specifics, focusing on observable outcomes and measurable targets rather than design solutions, architectural patterns, or technical mechanisms.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6137,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure the 20 requirements demonstrate strong semantic diversity across multiple dimensions including: distinct healthcare system modules or functions (e.g., EHR, prescriptions, labs, appointments, telehealth, billing, vital signs monitoring, authentication, immunization tracking, adverse event reporting), varied availability metric types (e.g., uptime percentage, MTBF, MTTR, RPO, RTO, failure rates, transaction rates), different failure scenarios (e.g., database failures, power loss, network disconnection, component failures, thermal stress, intermittent latency), multiple redundancy strategies (e.g., geographic distribution, hot-standby configurations, multi-tier redundancy, load balancing, automatic failover, backup replication), distinct temporal contexts (e.g., rolling time windows, business hours, peak load periods, seasonal variations), and varied technical implementation mechanisms (e.g., UPS backup systems, database clustering, automatic failover protocols, load balancing architectures, transaction queueing, hot-standby replication). Each requirement shall incorporate specific technical and physical context details including infrastructure specifications, environmental parameters (temperature ranges, latency tolerances, concurrent user loads, power scenarios, network conditions), spatial aspects (geographically distributed data centers, physical separation), and measurable technical parameters to prevent classifier overfitting to single patterns.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.673,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Guidance for Diversity:\n- Vary availability expression mechanisms across uptime percentages, MTBF, MTTR, RTO, RPO, failure rates, and absolute downtime windows.\n- Distribute requirements across at least 13 distinct e-commerce components (e.g., database connections, payment gateway, shopping cart, product catalog, authentication, load balancers, order processing, inventory management, backend APIs, email notifications, search/filtering, checkout process, web firewall, customer reviews, batch processing, session management, promotional code validation).\n- Include multiple infrastructure deployment models: single zone, multiple zones/regions, geographic distribution, and third-party integrations.\n- Address diverse failure scenarios: hardware failures, network failures, service dependencies, performance degradation, primary device failures, peak load conditions, and maintenance windows.\n- Employ varied technical implementation approaches: failover mechanisms, health checks, redundancy, replication, load balancing, caching, monitoring/alerting, and capacity provisioning.\n- For all items, provide specific infrastructure details including: quantified metrics, specific technical mechanisms (e.g., failover timing, cache invalidation strategy, replication frequency, edge node distribution, geographic scope), contextual parameters (e.g., peak hours, high-traffic events, regions), and hardware/platform specifics (e.g., availability zones, server nodes, backup systems, CDN architecture).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6559,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nDiversity Requirements:\n- Distribute availability metrics across at least 5 types: uptime percentages, MTBF, MTTR, failure rates, and RTO/RPO.\n- Cover at least 8 distinct healthcare system functions: patient data access, medication/pharmacy operations, clinical operations, financial/billing, scheduling, authentication, diagnostic imaging/PACS, laboratory systems, clinical decision support, and real-time patient monitoring.\n- Reference at least 5 different IT infrastructure types: database servers, application servers, network connectivity (including WAN and bandwidth-constrained scenarios), load balancing/redundancy systems, and legacy system integration.\n- Include varied operational contexts: 24/7 continuous operations, business hours only, and degraded operation modes.\n- Vary time windows for calculations: rolling periods, calendar months, calendar years, weekly windows, per-transaction basis, and peak hours.\n- Address multiple failure tolerance strategies: redundant hardware, automatic failover, graceful degradation, and planned maintenance windows.\n- Distribute uptime percentages across the full spectrum from 98.9% to 99.99%.\n- Employ diverse constraint structures: upper-bound availability, lower-bound MTBF/MTTR, maximum failure rates, maximum downtime windows, and frequency-based constraints.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5183,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Diversity Requirements:\n8. Vary availability metrics across uptime percentages, MTBF, failure rates, cumulative downtime bounds, and graceful degradation patterns.\n9. Span multiple time scopes including per-minute, per-hour, per-day, per-month, per-quarter, and per-year intervals.\n10. Cover diverse failure scenarios including single component failures, network outages, database failures, ISP disruptions, cascading failures, and disaster recovery situations.\n11. Incorporate at least 10 distinct healthcare user roles (e.g., clinicians, nurses, pharmacists, radiologists, lab technicians, emergency staff, receptionists, remote clinicians, administrative staff, external healthcare systems).\n12. Address at least 8 distinct functional areas (e.g., patient records, EHR queries, authentication, database operations, API integrations, monitoring infrastructure, appointment scheduling, vital sign tracking, medication management, messaging, imaging systems).\n13. Include varied recovery time objectives (RTO) ranging from seconds to hours to days.\n14. Incorporate geographic redundancy, multi-region failover, and distributed system considerations in at least 3 requirements.\n15. Address dependency chain failures and cascading failure scenarios in at least 2 requirements.\n16. Include background job availability and asynchronous processing scenarios in at least 2 requirements.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5838,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure the 20 requirements demonstrate semantic diversity across the following dimensions:\n- Availability metric types (uptime percentages, MTBF/MTTR values, RTO/RPO objectives, absolute downtime windows, failure rates)\n- System scope (platform-wide requirements, component-specific requirements such as payment gateways, search, authentication, checkout, inventory, database systems)\n- Failure scenarios (transient failures, critical infrastructure failures, single points of failure, partial system maintenance, catastrophic outages, data loss scenarios)\n- Geographic and temporal contexts (multiple data centers, geographic regions, time zones, peak shopping periods, off-peak hours, planned maintenance windows)\n- Recovery mechanisms (automatic failover, automated recovery, manual intervention, redundancy-based recovery, fallback channels)\n- Infrastructure components (server clusters, load balancers, database replicas, CDNs, payment gateway infrastructure, distributed data centers, failover mechanisms)",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6274,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirements:**\n- Ensure requirements employ varied quantification approaches: uptime percentages, mean time between failures (MTBF), mean time to recovery (MTTR), maximum allowable downtime hours, and failure rate metrics.\n- Include requirements spanning at least 10 distinct fleet management subsystems or features (e.g., GPS tracking, maintenance scheduling, fuel monitoring, dispatch, driver behavior monitoring, route optimization, mobile access, authentication, compliance reporting, analytics dashboards, alert systems, third-party integrations).\n- Incorporate diverse temporal contexts: business hours, peak demand hours, off-peak hours, specific operational windows (e.g., morning dispatch, month-end close periods, quarterly reviews), and 24/7 operations.\n- Represent multiple usage scenarios: planned planning sessions, concurrent user interactions, field supervisor engagements, integration with external systems, and read-only historical data access.\n- Avoid structural repetition: each requirement should articulate a distinct availability concern rather than following an identical template across different modules.\n- Include scenarios addressing graceful degradation, planned maintenance windows, and cascading failure implications where applicable.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6226,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure semantic diversity across the following dimensions:\n- Availability metrics: Use varied expressions including uptime percentages, mean time between failures (MTBF), mean time to recovery (MTTR), data accuracy rates, query success rates, and delivery reliability percentages.\n- Time-based specifications: Cover diverse time scales including failover times (seconds to hours), latency specifications (milliseconds to minutes), recovery windows, notification delays, and calculation periods (rolling days, monthly, annual).\n- Functional scope: Address distinct fleet management components such as GPS/location tracking, mobile applications, server infrastructure, communication channels, data synchronization, dispatch interfaces, reporting functions, system monitoring, and vehicle diagnostics.\n- Technical aspects: Incorporate network resilience, database reliability, concurrent access capacity, offline operation capabilities, redundancy architectures, and geospatial considerations.\n- Operational contexts: Include business hours constraints, multi-shift operations, peak usage periods, daylight operational windows, scheduled maintenance exclusions, environmental conditions (temperature ranges, weather), hardware specifications, and signal strength variations.\n- Failure modes: Include distinct failure scenarios such as network loss, signal degradation, component failure, service endpoint unavailability, and data corruption.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6188,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Directive for Semantic Diversity:**\nEnsure the 20 requirements employ varied availability metric types (uptime percentages, mean time between failures, mean time to recovery, recovery point objectives, recovery time objectives, failure rates, redundancy specifications, graceful degradation thresholds) distributed across distinct healthcare system components (EHR, prescription management, vital sign monitoring, lab systems, appointment scheduling, authentication, inventory management, clinical notes, communication systems). Requirements must address multiple failure scenarios (hardware failures, software failures, power outages, catastrophic failures), temporal contexts (peak hours, standard hours, 24/7 operations, maintenance windows), and technical mechanisms (geographic redundancy, automatic failover, load balancing, backup systems). Avoid semantic clustering where more than two requirements share identical availability metric types and system components; maximize coverage across the eight diversity dimensions identified.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6215,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span at least 6 distinct availability sub-domains (e.g., uptime metrics, fault tolerance mechanisms, data protection strategies, infrastructure redundancy, performance under load, operational maintenance, data integrity, system integration, failure detection, and recovery objectives). Minimize semantic overlap—each requirement should address a meaningfully different aspect of availability or employ distinct technical approaches to availability challenges.\n9. CoverageBalance: Distribute requirements across multiple failure scenarios (hardware failures, network failures, power interruptions, thermal conditions, resource exhaustion) and multiple recovery strategies (automatic failover, load balancing, geographic replication, redundancy, monitoring, graceful degradation).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6488,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n- Ensure quantitative metrics are distributed across multiple formulations: uptime percentages should comprise no more than 60% of samples, with remaining samples using alternative metrics such as Mean Time Between Failures (MTBF), failure rates (per transaction, per session, per million attempts), cumulative allowed downtime (hours/year), incident frequency thresholds, and recovery time objectives (RTO/RPO).\n- Vary system components and functional areas across samples to minimize repetition (e.g., limit overlap on authentication, product information access, and transaction services to no more than 2 items per component).\n- Incorporate distinct user segments and usage contexts: include variations such as new versus returning customers, casual versus power users, different geographic regions, and different device types (web, mobile, tablet).\n- Include diverse availability requirement types: address not only uptime during operational hours but also scheduled maintenance windows, graceful degradation scenarios, and data recovery specifications.\n- Ensure temporal context variation: distribute samples across peak hours, off-peak periods, holiday seasons, end-of-season sales, normal business hours, and multi-day/multi-week usage windows.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5899,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Semantic Diversity:**\n- Vary availability metrics across uptime percentages, downtime budgets, mean time between failures, mean time to recovery, failure rates, and transaction completion rates.\n- Distribute requirements across different time periods (hourly, daily, monthly, annual, per-transaction, rolling windows).\n- Differentiate requirements by scope: system components, specific user roles (emergency physicians, nurses, administrative staff), critical vs. non-critical subsystems, and access points.\n- Include distinct failure modes and recovery scenarios: network failures, database failures, authentication service failures, partial availability, and graceful degradation.\n- Incorporate environmental and load-dependent variations: peak vs. normal load conditions, geographic redundancy needs, seasonal impacts, and climate-related considerations.\n- Ensure requirements reflect end-user experience across emergency departments, routine clinical operations, multi-facility deployments, and degraded operation modes.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6111,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance:**\n- Maximize semantic diversity across availability metrics (uptime percentages, MTBF, failure rates, downtime windows, recovery times) to avoid clustering around single metric types.\n- Distribute requirements across distinct fleet management subsystems: vehicle tracking, dispatch operations, driver monitoring, maintenance scheduling, telematics integration, fuel management, route optimization, billing/invoicing, compliance reporting, and mobile field interfaces.\n- Vary environmental and physical contexts: temperature ranges, extreme weather conditions, geographic distribution, remote deployment areas, network infrastructure limitations, signal propagation challenges, seasonal variations, and altitude constraints.\n- Ensure each requirement addresses a unique technical challenge or operational scenario to support robust classifier training and minimize redundancy.\n- Include availability targets spanning the full spectrum from 95% to 99.9% to provide balanced classifier coverage across low, medium, and high-availability scenarios.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5674,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirements:**\n- Include requirements covering graceful degradation and partial availability scenarios (e.g., system operating at reduced capacity, failover modes, feature degradation).\n- Include requirements addressing distributed multi-site availability coordination and geographic deployment considerations.\n- Include requirements specifying maintenance window availability constraints and scheduled downtime handling.\n- Vary failure recovery specifications across items to include RTO (Recovery Time Objective), MTBF (Mean Time Between Failures), MTTR (Mean Time To Repair), and failure rate metrics.\n- Ensure usage patterns span light usage periods, normal operations, peak surge conditions, and maintenance windows across different clinical departments and user roles.\n- Distribute requirements across at least 12 distinct healthcare functions (e.g., EHR access, medication reconciliation, laboratory systems, appointment scheduling, vital signs monitoring, patient portals, prescription transmission, clinical decision support, radiology imaging, discharge planning, telehealth consultations, DEA compliance reporting).\n- Represent at least 10 different end-user roles and perspectives (e.g., nurses, pharmacists, clinicians, radiologists, administrative staff, patients, emergency department personnel, laboratory professionals, remote users, billing staff).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6171,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirements:**\n- Vary across at least 7 distinct healthcare subsystems (e.g., EHR, pharmacy, laboratory, imaging, telemedicine, billing, appointment scheduling).\n- Include at least 5 different availability metrics types (uptime percentages, MTBF, failure rates, downtime allowances, recovery timeframes).\n- Incorporate at least 4 distinct failure modes (unplanned outages, infrastructure failures, transient faults, environmental factors, data loss scenarios).\n- Specify at least 6 different temporal contexts (peak operating hours, 24-hour operations, maintenance windows, rolling measurement periods, response time requirements, scheduled downtime).\n- Include at least 4 technical infrastructure aspects (redundant systems, geographically distributed locations, load balancing mechanisms, backup/recovery architectures).\n- Incorporate business analyst communication elements (SLA tracking, stakeholder reporting, proactive monitoring, operational impact assessment) in at least 4 requirements.\n- Ensure no two requirements share identical subsystems, metrics, time windows, or failure scenarios.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6162,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Guidance:**\n- Employ varied availability metrics: Distribute across uptime percentages (no more than 50% of items), MTBF/MTTR specifications, failure rate budgets, downtime budgets in time units, and recovery time windows. Target 4+ distinct metric types.\n- Cover diverse functional areas: Include requirements for product browsing, shopping cart operations, checkout processes, payment processing, search and filtering, account management, order tracking, inventory visibility, recommendations, user authentication, customer support, and notifications.\n- Address multiple operational contexts: Include peak seasons, normal business hours, high-traffic periods, regional distribution, scheduled maintenance windows, and edge-case scenarios.\n- Incorporate user experience continuity: Include requirements addressing graceful degradation, feature prioritization during outages, session persistence, offline capabilities, and user notification mechanisms during service disruptions.\n- Include failure scenario diversity: Specify different failure types (hardware failures, software failures, network connectivity issues, database failures, critical system failures) and their corresponding recovery expectations.\n- Consider data consistency and availability trade-offs: Include at least one requirement addressing transaction consistency or data integrity during failover events.\n- Represent seasonal and temporal variations: Include requirements for holiday periods, off-peak flexibility, end-of-day patterns, and time-sensitive availability expectations.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6824,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional Guidance for Diversity:\n- Vary availability metrics (uptime percentages, MTBF, maximum downtime, recovery time objectives) across requirements.\n- Include multiple time scopes (business hours, calendar year, peak usage periods, shift changes, quarterly, monthly).\n- Address diverse failure modes (hardware failures, network degradation, database connectivity, external system integration failures).\n- Represent different recovery mechanisms (automatic failover, redundant pathways, graceful degradation, manual intervention).\n- Cover both critical clinical features and general system access scenarios.\n- Include geographic distribution and multi-facility deployment contexts where relevant.\n- Incorporate regulatory and compliance-driven availability considerations (e.g., HIPAA audit trail continuity, EHR certification requirements).\n- Include requirements for partial availability and graceful degradation modes, not only complete outage scenarios.\n- Address end-user communication and status notification during service disruptions.\n- Consider third-party system dependencies and external integration availability.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5919,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Requirements:**\n- Employ varied availability metrics beyond uptime percentages (e.g., mean time between failures, failure rates, downtime allowances in absolute time units, success rate thresholds).\n- Distribute requirements across distinct usage scenarios: peak-load periods, standard operations, emergency/disaster contexts, specific failure modes, partial degradation scenarios, and multi-tenancy isolation.\n- Represent diverse user roles and departments: clinical staff, nursing, laboratory, pharmacy, emergency, administration, auditing, compliance, financial, registration, and external third parties.\n- Address varied system functions: clinical documentation, medication administration, diagnostic operations, patient admission/discharge, scheduling, billing, claims processing, clinical decision support, inter-facility data sharing, and legacy system interoperability.\n- Include different care settings and access patterns: inpatient, outpatient, emergency department, bedside terminals, remote access, and geographically distributed facilities.\n- Incorporate varied temporal contexts: business hours, 24-hour operations, clinical shifts, seasonal variations, maintenance windows, and compliance audit periods.\n- Minimize semantic clustering: avoid near-duplicate requirements with overlapping contexts, metrics, or user scenarios. Each requirement should represent a distinct availability concern or usage pattern.\"",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5413,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nDiversity Requirements:\n- Vary availability metrics across at least 4 distinct measurement types (e.g., uptime percentages, mean time between failures, maximum downtime duration, failure frequency, time-to-recovery).\n- Cover at least 8 different fleet management subsystems or features (e.g., vehicle tracking, maintenance systems, fuel management, reporting, mobile/dashboard access, alert systems, reservations, data export).\n- Include at least 7 distinct usage contexts or scenarios (e.g., peak hour operations, remote/offline conditions, concurrent multi-user access, emergency operations, compliance activities, routine scheduling, multi-vehicle coordination).\n- Employ varied temporal scopes and measurement periods (e.g., monthly, weekly, quarterly, daily patterns, business hours constraints, specific time windows, always-on critical functions).\n- Represent at least 4 different failure modes or resilience patterns (e.g., unplanned downtime, consecutive failures, query/request failures, concurrent access failures, data loss, connection instability).\n- Distribute measurement scope diversity (e.g., single feature focus, cumulative component measurement, function-specific SLAs, system-wide averages).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.635,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n8. SemanticDiversity: Requirements must demonstrate substantial structural and conceptual variation across the following dimensions:\n   - Requirement Types: Include uptime percentages, MTBF/MTTR metrics, RTO/RPO objectives, failure rate specifications, graceful degradation scenarios, data consistency guarantees, monitoring/observability requirements, cascading failure prevention, recovery procedures, and performance under failure modes.\n   - Technical Strategies: Incorporate diverse implementation approaches including replication patterns, caching strategies for resilience, circuit breaker implementations, cascading failure prevention, geographic distribution, failover mechanisms, database availability patterns, monitoring strategies, and recovery time objectives.\n   - Failure Scenarios: Cover varied failure modes such as node failures, provider failures, peak load scenarios, network partitions, partial outages, data center failures, and index rebuilding operations.\n   - System Components: Distribute requirements across distinct e-commerce subsystems (payment processing, shopping cart, product catalog, authentication, order fulfillment, inventory management, checkout, recommendations, notifications, API gateway, search functionality, session management, CDN services, and customer support).\n   - Quantitative Variation: Specify diverse numerical targets and thresholds rather than clustering around similar values.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6377,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Guidance:**\n- Vary availability metrics beyond uptime percentages (include MTBF, MTTR, recovery time objectives, failure rates, downtime windows).\n- Use distinct time measurement periods (rolling 30-day, quarterly, monthly, weekly, yearly, peak periods, maintenance windows).\n- Differ in availability scope (system-wide, critical features only, specific subsystems, partial degradation scenarios).\n- Employ varied grammatical structures and expression patterns to avoid repetitive templates.\n- Address diverse operational contexts (multi-location redundancy, legacy system integration, cascading failure recovery, tiered service levels, geographic variations, load-based scenarios).\n- Include requirements addressing graceful degradation, resilience patterns, and availability under different hardware/network failure modes.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.576,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Diversity:**\n- Vary uptime targets across multiple ranges (99.0%-99.99%) and express in different metrics (percentage, minutes/year, hours/month).\n- Include diverse failure scenarios: single component failures, cascading failures, environmental conditions (temperature, humidity, power fluctuations), network disruptions, and hardware degradation.\n- Address multiple system layers: database redundancy, messaging systems, network infrastructure, storage systems, authentication mechanisms, mobile access, and external integrations.\n- Distribute geographic resilience patterns: multi-site failover, campus-wide distribution, regional network redundancy, and cross-data-center replication.\n- Include varied operational contexts: 24/7 operations, business-hours criticality, peak load handling, scheduled maintenance windows, and graceful degradation scenarios.\n- Span different clinical functions: electronic health records, medication administration, vital sign monitoring, laboratory results, imaging systems, clinical decision support, allergy alerts, and interoperability with external health exchanges.\n- Cover architectural resilience mechanisms: automatic failover, hot-swappable components, zero-downtime deployment, independent communication pathways, and load balancing without duplicating specific implementation details.\n- Minimize semantic overlap: ensure each requirement addresses a distinct combination of availability dimension, failure type, technical component, geographic scope, or clinical function rather than restating similar metrics or scenarios.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6443,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure semantic diversity across the 20 requirements by:\n- Varying quantification approaches (uptime percentages, MTBF, RTO/RPO, time intervals)\n- Addressing distinct infrastructure concerns (redundancy, failover, backup power, network communication, storage, authentication, data synchronization)\n- Covering different operational scopes (clinical modules, patient records, medical devices, third-party integrations, geographic failover)\n- Incorporating multiple temporal dimensions (response times, maintenance windows, synchronization intervals, recovery timeframes)\n- Minimizing overlap in technical mechanisms by ensuring each requirement addresses a distinct availability aspect or infrastructure component\n- Including emerging concerns such as API/third-party system availability, mobile/wireless network resilience, and disaster recovery scenarios.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5522,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nRequirements must demonstrate strong semantic diversity across: (a) system layers (web tier, database tier, network infrastructure, API gateways, service components, external systems); (b) failure modes (node failures, network outages, cascading failures, data loss, connection failures, service degradation); (c) availability metrics (uptime percentages, MTBF, RTO/RPO, successful delivery rates, component-level availability); (d) time horizons (per-month, per-week, business hours, annual MTBF, maintenance windows); (e) scope (single component, multi-component, geographic regions, subsystems, end-to-end pipelines); (f) technical recovery mechanisms (failover strategies, redundancy configurations, replication approaches, load balancing, queuing systems, circuit breakers); (g) business operational contexts (peak traffic periods, scheduled maintenance windows, support availability hours, multi-region operations); and (h) measurement approaches (percentage uptime, mean time between failures, recovery time/point objectives, transaction success rates, concurrent capacity thresholds).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5994,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n\nEnsure the 20 requirements demonstrate strong semantic diversity across the following dimensions:\n\n- **System Components**: Cover at least 8 distinct functional areas of fleet management (e.g., vehicle tracking, GPS services, fuel monitoring, driver behavior analytics, maintenance scheduling, route optimization, geofencing, telematics data ingestion, authentication systems, compliance documentation, emergency communications).\n- **Availability Metrics**: Use at least 4 different measurement methodologies (e.g., percentage-based uptime, MTBF/Mean Time Between Failures, failure rates per operational hours, downtime duration constraints).\n- **Temporal Scopes**: Vary temporal measurement periods across at least 5 different scales (e.g., monthly, weekly, annual, 24-hour cycles, real-time/continuous, quarterly windows, business hours).\n- **Failure Scenarios**: Describe at least 6 distinct failure types or conditions (e.g., connection loss, server failure, software crashes, network latency, weather-induced signal degradation, electromagnetic interference).\n- **Recovery Mechanisms**: Include at least 4 different recovery or failover approaches (e.g., automatic failover, reconnection procedures, local caching, redundant pathways, signal fallback mechanisms).\n- **Environmental Contexts**: Address at least 5 deployment or environmental conditions (e.g., geographic regions, remote areas, extreme weather, temperature ranges, urban canyon effects, multi-vendor heterogeneity).\n- **Criticality Levels**: Reflect varying levels of operational criticality (e.g., safety-critical communications, revenue-impacting functions, core operational functions, supporting analytics).\n\nNo two requirements shall express identical or substantially overlapping concepts; each requirement shall emphasize distinct availability aspects or combinations thereof.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6568,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\nEnsure requirements span multiple dimensions of availability including: (a) uptime percentages and MTBF/MTTR metrics, (b) failover and redundancy mechanisms across different infrastructure layers, (c) data protection, backup, and recovery objectives (RTO/RPO), (d) monitoring, alerting, and health detection systems, (e) load distribution and graceful degradation strategies, (f) network and storage resilience, (g) power and energy continuity, (h) software deployment and lifecycle management, and (i) database-specific availability controls. Cover varied failure scenarios (hardware failures, network partitions, power outages, software crashes, data corruption) and different technology stacks (virtualization, databases, load balancers, messaging systems, caching layers). Distribute requirements across infrastructure, application, and service-level perspectives to maximize semantic diversity and support robust classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5868,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional Guidance:\n- Maximize semantic diversity by varying: (a) e-commerce subsystems covered (checkout, payment, inventory, catalog, authentication, search, recommendations, fulfillment, notifications, analytics, logistics, mobile app, support chat); (b) availability metrics used (uptime percentages, MTBF, failure rates, MTTR/RTO, downtime windows, availability indices); (c) failure scenarios addressed (database failures, hardware failures, single points of failure, network failures, storage failures, messaging failures, concurrent component failures); (d) architectural resilience mechanisms (automatic failover, redundancy, graceful degradation, redundant pathways, cluster tolerance, reduced functionality modes); (e) temporal scales and business contexts (peak seasons, maintenance windows, quarterly targets, per-transaction rates, concurrent user scenarios).\n- Ensure all requirements remain infrastructure-focused, developer-oriented, and avoid prescriptive implementation details.\n- Distribute requirements evenly across multiple dimensions to prevent clustering around similar availability targets or service components.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5819,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span multiple distinct availability dimensions including (but not limited to): uptime percentages, mean time between failures (MTBF), recovery time objectives (RTO), mean time to recovery (MTTR), failure rates, graceful degradation, redundancy mechanisms, cross-platform accessibility, data persistence guarantees, session resilience, geographic distribution, third-party service dependencies, traffic surge handling, component-level vs. system-wide failures, and maintenance window management. Minimize semantic clustering and redundancy by ensuring each requirement introduces a genuinely orthogonal availability concern rather than restating similar metrics with different numerical values.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6056,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure the following diversity criteria are satisfied across the 20 requirements:\n- **System Component Diversity**: Cover at least 10 distinct e-commerce functional areas (e.g., payment processing, shopping cart, product catalog, inventory management, order management, customer authentication, notifications, recommendations, returns/refunds, analytics/reporting).\n- **Availability Metric Diversity**: Use varied expressions of availability including uptime percentages (ranging from 98% to 99.99%), MTBF specifications, maximum allowable downtime per time period (daily/monthly/quarterly), and recovery time objectives.\n- **Usage Context Diversity**: Include multiple temporal patterns (peak hours, off-peak hours, seasonal events, maintenance windows), geographic/platform scopes (web, mobile, multi-region), and interaction types (real-time transactions, asynchronous operations, third-party integrations).\n- **Business Impact Diversity**: Address distinct business concerns including revenue protection, customer experience, operational efficiency, data integrity, and customer satisfaction metrics.\n- **Failure Mode Diversity**: Reference varied failure scenarios (connection timeouts, data loss, service degradation, partial failures, cascading failures) and their respective recovery mechanisms.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6498,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure all 20 requirements:\n- Explicitly reference fleet management operational concepts (vehicle tracking, dispatch, GPS, routes, driver operations, telematics, fuel management, maintenance records, emergency response).\n- Use end-user-centric language (\"end users shall,\" \"drivers can access,\" \"field personnel,\" \"users experience\") focusing on user-facing availability rather than backend system architecture.\n- Concretely specify IT infrastructure components including hardware (servers, mobile devices, data centers), communications platforms (LTE, cellular networks, cloud infrastructure, CAN bus), software systems (third-party APIs, backup services, failover mechanisms), and peripheral devices (dispatch terminals, telematics units).\n- Use flowing prose narrative sentences with complete contextual information rather than minimal standalone statements.\n- Employ quantifiable, measurable metrics (uptime percentages, MTBF values, recovery times, failure rates, downtime windows, concurrent capacity thresholds, latency targets, packet loss rates, data recovery objectives).\n- Maximize semantic diversity by varying: availability metrics types (uptime %, MTBF, failure frequency, failure rate), failure scenarios (hardware failures, power loss, network loss, connectivity degradation, database maintenance), recovery mechanisms (failover procedures, redundant instances, cached access, automatic recovery), temporal scopes (seconds, minutes, hours, days, monthly/quarterly/annually), system components affected (GPS tracking, dispatch dashboard, alerts, authentication, synchronization, messaging), integration points (third-party APIs, legacy hardware, cloud services, mobile platforms), infrastructure types (on-premise servers, cloud services, corporate networks, mobile networks), and operational contexts (emergency response, shift rotations, peak usage, scheduled maintenance).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6466,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional Guidance for Diversity:\n- Vary sentence structures and phrasing patterns to minimize repetition, particularly when expressing similar availability percentages or timeframes.\n- Incorporate explicit coverage of extreme environmental conditions (temperature ranges, humidity, severe weather, geographic extremes) relevant to fleet operations across diverse climates and terrain.\n- Expand spatial context specificity by addressing network topology implications, vehicle distribution patterns across regions, and geographically dispersed deployment architecture.\n- Include edge cases and boundary conditions such as partial system failures, cascading failure scenarios, and graceful degradation under stress.\n- Ensure comprehensive coverage of third-party service dependencies, external API integrations, and heterogeneous access methods (mobile platforms, web interfaces, embedded vehicle systems).\n- Maintain high-level abstraction by specifying availability targets and reliability goals without prescribing implementation technologies, algorithms, or architectural patterns.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6322,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span multiple distinct semantic dimensions including: (a) diverse availability metrics (uptime percentages, MTBF, message loss rates, RTO values); (b) varied failure scenarios (hardware failures, network outages, database failures, service degradation); (c) different recovery and resilience mechanisms (redundancy, failover, load balancing, graceful degradation, local fallback); (d) multiple operational contexts (normal operations, planned maintenance, disaster scenarios, signal degradation, volume spikes); and (e) different system layers and components (servers, networks, databases, third-party services, peripheral devices).\n9. MinimalOverlap: Avoid redundant or substantially similar requirements; each requirement should introduce a distinct availability concern or technical infrastructure aspect relevant to fleet management operations.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.594,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nDiversity Requirements:\n- Span at least 10 distinct healthcare information systems (e.g., EHR, medication administration, laboratory information, radiology, pharmacy, patient portal, billing, nursing documentation, scheduling, discharge planning, inventory management, physician order entry, incident reporting, remote access, analytics, consent management).\n- Include at least 12 different user roles or stakeholder types with varying availability needs (e.g., clinical staff, physicians, nurses, administrative staff, laboratory technicians, radiologists, pharmacy staff, patients, case managers, allied health professionals, procurement staff, safety officers).\n- Represent varied time-based usage patterns: business hours, peak periods, 24/7 operations, extended hours, off-peak windows, shift-based access, and round-the-clock operations.\n- Cover a range of availability targets from 99.5% to 99.99%, expressed through multiple formats: uptime percentages, MTBF (hours/years), MTTR (minutes), and absolute downtime (hours/minutes per month).\n- Provide diverse business justifications: patient safety criticality, regulatory compliance, operational continuity, workflow efficiency, user experience, and service delivery impact.\n- Include specific quantitative details: concurrent user volumes, transaction rates, response times, and user interaction frequencies per shift or time period.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.655,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Diversity:**\n- Vary availability metrics across at least 6 distinct types (uptime percentages, MTBF, failure rates, downtime limits, recovery time objectives, consistency metrics).\n- Distribute requirements across 8+ distinct healthcare system components or subsystems (e.g., EHR, medication systems, laboratory systems, pharmacy systems, appointments, clinical decision support, telehealth, authentication).\n- Incorporate 7+ distinct usage contexts (standard business hours, emergency situations, peak times, off-hours/nights/weekends, concurrent departmental access, mobile/distributed access, maintenance windows).\n- Reference 6+ distinct user or stakeholder groups (physicians, nursing staff, laboratory personnel, administrative staff, emergency clinicians, distributed clinical teams).\n- Address 5+ distinct failure modes or recovery types (hardware failures, network failures, transient failures, maintenance-related downtime, catastrophic failures).\n- Minimize semantic redundancy by ensuring each requirement addresses a unique combination of component, context, metric type, and user group.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5998,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Requirements:**\n- Ensure requirements span at least 8 distinct usage contexts (e.g., payment processing, product discovery, inventory management, order fulfillment, notifications, authentication, multi-region operations, disaster recovery).\n- Vary availability metrics across items: use uptime percentages, downtime windows, MTBF values, outage frequency, and failure rates—avoiding clustering around 99.4%-99.9%.\n- Include requirements addressing non-metric availability aspects: graceful degradation, maintenance windows, multi-region/geographic redundancy, recovery time objectives (RTO), recovery point objectives (RPO), and seasonal variations.\n- Differentiate business impact justifications beyond \"customer experience\" and \"revenue\"—incorporate regulatory compliance, competitive advantage, operational resilience, data integrity, and stakeholder trust.\n- Address both customer-facing services and system-level infrastructure concerns.\n- Avoid semantic overlap: each requirement should address a distinct scenario, component interaction, or business concern.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6019,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Semantic Diversity:**\nEnsure the 20 requirements demonstrate substantial variation across the following dimensions to support robust classifier generalization:\n- **Availability Metrics**: Include uptime percentages (98%-99.99%), mean time between failures (MTBF), failure rates, recovery time objectives (RTO), mean time to recovery (MTTR), data loss tolerance thresholds, and success rates.\n- **Failure Scope**: Vary failure scenarios across single-point failures (individual servers, network nodes, communication pathways), dual/multi-infrastructure failures (concurrent hardware failures, cascading failures), and geographic distribution challenges (multi-datacenter, multi-region resilience).\n- **Infrastructure Layers**: Distribute requirements across application tier, database tier, network infrastructure, communication platforms (SMS gateways, email systems, push notification services), mobile devices, GPS/telematics hardware, and middleware systems.\n- **Operational Contexts**: Include normal operations, peak usage periods, scheduled maintenance windows, business-critical vs. non-critical function tiering, offline operation scenarios, and degraded-mode operation.\n- **Recovery Mechanisms**: Specify diverse strategies including automatic failover, data replication and synchronization, health monitoring and alerting, caching layers, clustering, and isolation/quarantine procedures.\n- **Fleet Management Specifics**: Vary subsystem applications across vehicle tracking, GPS data ingestion and processing, route optimization, dispatch operations, driver-side mobile applications, telematics collection, geofencing, fuel tracking, maintenance scheduling, and incident reporting.\n- **Scale and Concurrency**: Address diverse operational scales ranging from hundreds to tens of thousands of concurrent vehicles, users, and requests.\n- **Integration Points**: Include dependencies on external systems such as third-party telematics providers, enterprise directory services, cloud infrastructure providers, and cellular networks.\n\nAvoid redundant duplication while maintaining sufficient semantic overlap to represent realistic variations of availability requirements across the multi-layered fleet management IT ecosystem.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5947,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Diversity:**\n- Vary availability metrics across uptime percentages, mean time between failures (MTBF), mean time to recovery (MTTR), allowable downtime windows, and failure rate percentages.\n- Cover at least 10 distinct e-commerce subsystems or components (e.g., checkout, payment gateway, product catalog, shopping cart, order processing, inventory management, authentication, search, recommendations, email notifications, APIs, mobile app, order history, transaction logging, reviews, wishlist, shipping integration).\n- Include requirements across different operational contexts: normal business operations, peak traffic periods, high-traffic events, and partial system failures.\n- Ensure requirements address different technical aspects: infrastructure resilience, automatic failover, redundancy, data synchronization, recovery procedures, and graceful degradation.\n- Avoid semantic duplication; each requirement should introduce distinct availability concerns or measurement approaches.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6761,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Guidance for Diversity:\n- Vary availability mechanisms across samples: uptime percentages, MTBF, MTTR, failover times, data loss thresholds, recovery objectives (RTO/RPO).\n- Cover multiple fleet management subsystems: GPS tracking, dispatch, vehicle maintenance, fuel monitoring, OBD-II sensors, route optimization, driver safety, compliance reporting, billing systems, telematics data pipelines.\n- Incorporate diverse technical contexts: environmental conditions (temperature ranges, weather patterns), network conditions (latency, cellular coverage, signal degradation), geospatial aspects (urban environments, rural regions, mountainous terrain, tunnels), infrastructure constraints (hardware failures, power outages, sensor failures).\n- Represent varying operational scales: different numbers of concurrent vehicles, users, and data streams.\n- Include multiple failure scenarios and recovery patterns: hardware failures, network connectivity loss, data inconsistency, graceful degradation, redundancy strategies.\n- Reference different data types and sensor sources: GPS coordinates, OBD-II data, accelerometers, fuel transactions, compliance documents.\n- Specify distinct time windows and operational contexts: business hours vs. 24/7 operations, peak periods, maintenance windows, geographic/jurisdictional considerations.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5937,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Diversity:**\n- Vary availability metrics across at least 5 distinct formulations (e.g., uptime percentages, MTBF, MTTR, failure rates, annual downtime windows, RTO, RPO).\n- Cover at least 10 different e-commerce system components (e.g., payment gateways, product catalog, shopping cart, order management, inventory systems, authentication services, notification systems, customer support, analytics dashboards, recommendation engines, billing services, mobile APIs).\n- Distribute quantitative thresholds broadly (e.g., 99.5% through 99.99% ranges, recovery times from minutes to hours, failure rates from 0.01% to 0.5%).\n- Incorporate varied business contexts and time periods (normal operations, peak seasons, promotional campaigns, business hours, fiscal periods, maintenance windows).\n- Ensure minimal conceptual overlap between requirements; avoid repeating identical metric-component combinations or near-identical availability thresholds for the same service.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6166,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Diversity:**\nEnsure requirements demonstrate semantic variation across these dimensions:\n- Availability metrics types (uptime percentages, MTBF, MTTR, recovery times, failure rates, concurrent user capacity, transaction delivery rates, downtime windows)\n- Time measurement periods (monthly, quarterly, annually, per-cycle, business hours, peak hours)\n- Failure modes (hardware failures, regional outages, network failures, system crashes, component degradation)\n- Infrastructure deployment models (redundant servers, multi-data center, virtualized environments, standard IT configurations)\n- Fleet management functions (vehicle tracking, dispatch operations, routing, driver communications, billing, compliance reporting, data analytics)\n- Operational scenarios (normal operations, peak hours, recovery procedures, maintenance windows)\n- Data resilience aspects (replication, backup accessibility, synchronization, recovery capabilities)\n\nAvoid semantic clustering where multiple requirements express the same availability concern through identical patterns.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5991,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nDiversity Requirements:\n- Ensure uptime percentage targets span the full spectrum from 95% to 99.99%, with explicit representation at extreme levels (95%, 96%, 97%, 99.90%, 99.95%, 99.99%).\n- Include at least 4 requirements specifying explicit Mean Time To Recovery (MTTR) or Mean Time Between Failures (MTBF) values independent of percentage-based uptime targets.\n- Incorporate at least 3 requirements addressing partial degradation, graceful degradation, or cascade failure recovery scenarios, distinct from complete system unavailability.\n- Represent diverse failure modes including data corruption availability, service unavailability, partial failures, and asynchronous processing reliability.\n- Vary measurement contexts across single-user reliability, batch processing availability windows, real-time availability SLAs, and asynchronous transaction reliability.\n- Include requirements across all 20+ distinct fleet management subsystems (GPS tracking, mobile apps, diagnostics, dispatch/routing, fuel tracking, database clusters, telematics, scheduling, maintenance, billing, utilization metrics, compliance, trip history, incident reporting, vehicle reservations, analytics, APIs, geofencing, webhooks, configuration services, and external integrations).\n- Specify recovery mechanisms (failover, fallback, automatic retry, data reconciliation, replication, manual intervention) for each requirement to enhance implementation clarity.\n- Address usage patterns spanning single-vehicle to 50,000-vehicle fleet scales, peak usage hours, concurrent user sessions, batch operations, and third-party integration interactions.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6513,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Ensure high semantic diversity across the 20 requirements by varying:**\n- **Availability metrics**: Use a mix of uptime percentages (98%-99.9% range), downtime limits (minutes to hours), recovery time objectives, and failure frequencies across different timeframes (daily, monthly, quarterly, annual).\n- **Functional domains**: Distribute requirements across distinct fleet management features including real-time vehicle tracking, dispatch and routing, driver interfaces, analytics and reporting, maintenance scheduling, fuel consumption monitoring, notifications and alerts, compliance tracking, and customer communication.\n- **User roles and interactions**: Address diverse end-user perspectives including drivers, dispatchers, fleet managers, supervisors, and system administrators; include both direct interactions (data access, updates, check-ins) and indirect interactions (concurrent sessions, notification systems, external integrations).\n- **Operational scenarios and contexts**: Incorporate varied usage patterns such as standard business hours, peak usage periods, emergency operations, offline functionality, shift changes, maintenance windows, and continuous monitoring during active fleet operations.\n- **Failure characterization**: Employ multiple approaches including Mean Time Between Failures (MTBF), allowable downtime windows, service degradation modes, network interruption tolerance, data persistence requirements, and failover mechanisms.\n\nMinimize semantic overlap by ensuring each requirement addresses a distinct combination of feature area, availability metric type, user role, operational context, and failure mode.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6171,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nDiversity Requirements:\n- Ensure semantic diversity across availability metrics (uptime percentages, MTBF, MTTR, RTO, RPO, error rates, failure frequencies, and recovery times).\n- Cover a range of e-commerce system components (payment processing, inventory management, product search, authentication, shopping cart, checkout, database, APIs, microservices, CDN, load balancers, and third-party integrations).\n- Include diverse failure scenarios (unplanned outages, planned maintenance, server failures, database failures, catastrophic failures, data loss, session loss, and integration failures).\n- Incorporate varied scale contexts (from small concurrent user loads to peak traffic events like Black Friday, ranging from thousands to hundreds of thousands of users).\n- Include different temporal dimensions (peak hours, business hours, weekdays, maintenance windows, monthly cycles, and quarterly cycles).\n- Cover diverse recovery mechanisms and strategies (graceful degradation, failover, disaster recovery, replication, and incremental backups).\n- Vary the criticality levels of components (include both critical high-availability requirements at 99.95%+ and less critical components at lower availability thresholds like 95-98%).\n- Represent multiple usage patterns (concurrent requests, transaction processing, real-world operational scenarios, high-traffic events, and normal conditions).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6316,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nDiversity Requirements:\n- Vary availability metric expressions across uptime percentages (98%-99.9%), mean time between failures, mean time to recovery, recovery time objectives, recovery point objectives, and maximum tolerable downtime in minutes/hours.\n- Cover at least 8 distinct healthcare functional areas (e.g., patient records, clinical modules, emergency departments, laboratory systems, medication management, billing, diagnostic imaging, scheduling, alerts, prescribing, portal access).\n- Reference at least 6 different IT infrastructure perspectives (e.g., server infrastructure, distributed nodes, virtualized platforms, storage systems, network communications, database systems, web infrastructure, backup mechanisms).\n- Employ at least 5 different temporal contexts (e.g., business hours, calendar months, rolling periods, peak hours, 24/7 continuous operation, quarterly, annual, real-time).\n- Distribute availability targets across the full range (low: 98%, medium: 99.4%-99.6%, high: 99.8%-99.9%) rather than clustering at a single level.\n- Use varied downtime calculation methods (e.g., minutes per month, hours per year, cumulative allowable, per-node, per-service).\n- Employ diverse expression styles and grammatical structures while maintaining natural language prose.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5464,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements express availability through varied metrics (uptime percentages, MTBF/MTTR, RTO/RPO, recovery windows, failure rates) and address distinct dimensions including: availability by operational mode (normal/peak/degraded), geographic/regional availability, feature-specific availability thresholds, time-window specific availability, availability dependencies on external systems and third-party integrations, scheduled maintenance windows, and user role-based availability expectations. Distribute semantic categories to minimize redundancy: allocate uptime percentage expressions to approximately 6-7 items, MTBF/failure rates to 2-3 items, recovery time objectives to 2-3 items, concurrent load/peak scenarios to 2-3 items, feature-specific availability to 2-3 items, external dependency availability to 1-2 items, degraded mode operation to 1-2 items, and SLA/compliance-specific availability to 1-2 items.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5936,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Constraints for Diversity:**\n8. Vary linguistic structure and sentence formulation across requirements to avoid template repetition. Use diverse prose construction patterns beyond uniform \"system must maintain X% uptime\" templates.\n9. Employ a broad spectrum of availability metrics including uptime percentages (ranging from 95% to 99.99%), mean time between failures, recovery time objectives, acceptable downtime windows, and failure rate thresholds—avoiding concentration of repeated metric values.\n10. Distribute requirements across distinct e-commerce technical subsystems and failure scenarios: payment infrastructure, database layers, API gateways, authentication systems, inventory synchronization, search functionality, content delivery, third-party integrations, session management, and catastrophic infrastructure events.\n11. Incorporate varied temporal scopes and operational contexts: peak trading periods, seasonal events, business hours versus continuous operations, maintenance windows, transaction-level reliability, and regional considerations.\n12. Ensure requirements represent a spectrum of criticality levels and business impact types, from revenue-critical functions to customer experience enhancements, capturing different stakeholder concerns and operational priorities.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6296,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Availability — An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Requirements:**\n- Ensure requirements address distinct failure scenarios (component-specific failures, network partitions, partial outages, graceful degradation) rather than only total unavailability.\n- Vary usage contexts across: emergency operations, routine clinical workflows, mobile/remote access, offline capabilities, asynchronous batch processing, system upgrades, and backup/recovery operations.\n- Include role-specific availability expectations for different clinician types (surgeons, nurses, administrators, specialists) with differentiated usage patterns.\n- Incorporate requirements addressing reduced-functionality states, service degradation modes, and availability during adverse conditions (network congestion, security incidents, scaling events).\n- Represent diverse availability metrics (uptime percentages, MTBF values, recovery times, allowed downtime windows) applied to different usage scenarios rather than repeating similar quantifications.\n- Include requirements for availability of specific system functions (documentation, ordering, records retrieval, decision support, analytics) and module-level availability needs.\n- Address user experience during service restoration, data synchronization, and availability impact on downstream systems and indirect users.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6053,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    }
+  ],
+  "source_run_id": "ac8c933a-09f7-42db-874d-07987b1589de"
+}

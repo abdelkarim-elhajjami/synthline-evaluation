@@ -1,0 +1,13 @@
+{
+  "security": "Security",
+  "usability": "Usability",
+  "operational": "Operational",
+  "performance": "Performance",
+  "look_and_feel": "Look and Feel",
+  "availability": "Availability",
+  "maintainability": "Maintainability",
+  "scalability": "Scalability",
+  "fault_tolerance": "Fault Tolerance",
+  "legal": "Legal",
+  "portability": "Portability"
+}

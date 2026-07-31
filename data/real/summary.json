@@ -1,0 +1,96 @@
+{
+  "T1": {
+    "name": "NFR Multi-class Classification",
+    "dataset": "PROMISE_exp",
+    "type": "multi-class",
+    "total": 525,
+    "train": 420,
+    "test": 105,
+    "num_classes": 11,
+    "distribution": {
+      "train": {
+        "Availability": 25,
+        "Fault Tolerance": 14,
+        "Legal": 12,
+        "Look and Feel": 39,
+        "Maintainability": 19,
+        "Operational": 62,
+        "Performance": 54,
+        "Portability": 10,
+        "Scalability": 17,
+        "Security": 100,
+        "Usability": 68
+      },
+      "test": {
+        "Availability": 6,
+        "Fault Tolerance": 4,
+        "Legal": 3,
+        "Look and Feel": 10,
+        "Maintainability": 5,
+        "Operational": 15,
+        "Performance": 13,
+        "Portability": 2,
+        "Scalability": 5,
+        "Security": 25,
+        "Usability": 17
+      }
+    }
+  },
+  "T2": {
+    "name": "FR/NFR Binary Classification",
+    "dataset": "PROMISE_exp",
+    "type": "binary",
+    "total": 969,
+    "train": 775,
+    "test": 194,
+    "num_classes": 2,
+    "distribution": {
+      "train": {
+        "Functional": 355,
+        "Non-Functional": 420
+      },
+      "test": {
+        "Functional": 89,
+        "Non-Functional": 105
+      }
+    }
+  },
+  "T3": {
+    "name": "Security Classification",
+    "dataset": "SecReq",
+    "type": "binary",
+    "total": 510,
+    "train": 408,
+    "test": 102,
+    "num_classes": 2,
+    "distribution": {
+      "train": {
+        "Non-Security": 258,
+        "Security": 150
+      },
+      "test": {
+        "Non-Security": 65,
+        "Security": 37
+      }
+    }
+  },
+  "T4": {
+    "name": "Causality Detection",
+    "dataset": "CiRA",
+    "type": "binary",
+    "total": 14983,
+    "train": 11986,
+    "test": 2997,
+    "num_classes": 2,
+    "distribution": {
+      "train": {
+        "Causal": 3372,
+        "Non-Causal": 8614
+      },
+      "test": {
+        "Causal": 843,
+        "Non-Causal": 2154
+      }
+    }
+  }
+}

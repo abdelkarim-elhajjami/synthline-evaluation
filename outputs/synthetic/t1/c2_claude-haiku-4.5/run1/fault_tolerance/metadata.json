@@ -1,0 +1,1098 @@
+{
+  "run_id": "901353d4-4a85-4ae5-bcbb-6dd87c30a582",
+  "timestamp_utc": "2026-03-30T02:43:15.349432+00:00",
+  "llm": "openrouter/anthropic/claude-haiku-4.5",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "samples_requested": 1080,
+  "samples_produced": 1080,
+  "samples_per_prompt": 20,
+  "verify": false,
+  "verify_threshold": null,
+  "optimized": true,
+  "prompt_approach": "default",
+  "duration_seconds": 674.76,
+  "alignment_verification": false,
+  "prompts": [
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Supplementary Guidance:**\n- Ensure requirements span diverse fault tolerance mechanisms including automatic failover, graceful degradation, disaster recovery, emergency operation, redundancy, and resilience patterns.\n- Distribute requirements across multiple system components (database layer, payment processing, content delivery, caching infrastructure, microservices architecture, external integrations, notification systems, inventory/fulfillment).\n- Include varied failure scenarios (server/service unavailability, network degradation, data loss prevention, cascading failures, synchronization failures, diagnostic requirements, resource exhaustion).\n- Specify concrete recovery time objectives ranging from sub-second to extended timeframes.\n- Incorporate multiple architectural patterns (active-passive failover, multi-provider redundancy, distributed replication, service mesh patterns, circuit breaker patterns, message queuing).\n- Address both single-region and multi-region geographic distributions where applicable.\n- Ground all requirements in e-commerce-specific operations (customer transactions, order processing, payment processing, shopping cart/checkout, inventory management, product recommendations, fulfillment operations, customer accounts).\n- Frame requirements with explicit business continuity, customer experience preservation, data loss prevention, revenue protection, operational resilience, and service level maintenance considerations.\n- Include specific technical characteristics such as time constraints, spatial/geographical distribution, infrastructure components, physical network characteristics, and system architecture patterns.\n- Incorporate measurable parameters and implementation-relevant details (specific mechanisms, thresholds, retry logic, idempotency strategies, monitoring intervals, geographic scope).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6024,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Requirements:**\n\nEnsure semantic diversity across the 20 requirements by covering:\n- **Failure Modes**: Include at least 8 distinct types (e.g., database failures, network failures, service unavailability, server degradation, authentication failures, synchronization failures, hardware shutdowns, resource exhaustion).\n- **Recovery Mechanisms**: Include at least 7 distinct strategies (e.g., automatic failover, redundancy/replication, local caching, circuit breakers, fallback protocols, queuing/retry logic, archival/read-only modes).\n- **System Components**: Reference at least 12 distinct IT infrastructure components (e.g., database servers, storage systems, data centers, network infrastructure, application servers, authentication services, external systems, clinical workstations, monitoring systems, audit trails, transaction logs, reporting systems).\n- **Functional Areas**: Cover at least 6 distinct operational areas (e.g., data persistence and recovery, real-time operations, transaction processing, access control, inter-system communication, reporting and analytics).\n- **Operational Contexts**: Include normal operation with redundancy, degraded/constrained operation, and emergency/override scenarios.\n\nEnsure no two requirements are substantially synonymous and that each requirement emphasizes different technical mechanisms and failure scenarios.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5595,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Maximize coverage across distinct dimensions including: (a) failure types (e.g., database outages, API failures, network loss, service unavailability, authentication failures, data corruption, resource contention, cascading failures); (b) recovery strategies (e.g., failover, replication, fallback pathways, graceful degradation, queueing/retry, caching, circuit breakers, isolation); (c) system components (e.g., payment gateway, inventory, search, email, shipping provider, authentication, recommendation engine, session management, merchant services, order processing); (d) user impact scenarios (e.g., read-only mode, restricted operations, session continuation, full functionality maintenance); (e) data handling approaches (e.g., caching, queueing, replication, reconciliation, backup/restore); and (f) architectural scopes (e.g., single service, regional failover, geographic distribution). Minimize redundancy while ensuring each requirement addresses semantically distinct fault scenarios or recovery mechanisms.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5712,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n- Vary failure modes across: hardware failures, network outages, data corruption, service unresponsiveness, capacity saturation, component malfunctions, and external system failures.\n- Employ diverse recovery mechanisms: automatic failover, geo-replication, caching, circuit breakers, graceful degradation, message queuing, backup restoration, and consensus-based validation.\n- Span multiple healthcare subsystems: patient records, authentication, messaging, vital signs monitoring, laboratory systems, radiology storage, clinical decision support, external health information exchange, and appointment scheduling.\n- Include varied recovery time objectives: from sub-second detection to multi-hour recovery procedures.\n- Incorporate specific technical characteristics: replication counts, geographic distances, latency thresholds, capacity limits, temporal intervals, and redundancy patterns.\n- Ensure each requirement specifies concrete implementation details (technologies, mechanisms, quantified parameters) rather than generic capabilities.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6359,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nDiversity Constraints:\n- Vary failure types across network outages, database unavailability, hardware failures, external service failures, regional disasters, and software update failures.\n- Vary recovery strategies across automatic failover, local queuing, graceful degradation, circuit breakers, hot standby, transaction rollback, and manual override mechanisms.\n- Vary system components across database servers, GPS/tracking infrastructure, third-party APIs, storage systems, authentication services, message queuing systems, monitoring infrastructure, and mobile client devices.\n- Vary data preservation approaches across local caching, persistent storage, multi-region replication, transaction preservation, and alert queuing.\n- Vary operational modes across offline operation, manual dispatch, cached operations, reduced-accuracy tracking, and override capabilities.\n- Vary affected business processes across route optimization, driver assignment, maintenance tracking, fuel management, compliance notifications, emergency dispatch, and cost tracking.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5376,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Requirements:**\n- Ensure coverage of hardware failure scenarios (e.g., device malfunctions, battery degradation, sensor failures).\n- Include at least 2-3 items addressing cascading failure prevention and inter-component resilience.\n- Incorporate at least 2-3 items explicitly addressing user communication, transparency, and guidance during fault conditions and degraded operational modes.\n- Minimize semantic overlap; each item should address distinct fault scenarios, recovery mechanisms, or operational contexts.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.544,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n8. SemanticDiversity: Ensure requirements span multiple failure modes (infrastructure, communication, processing, data layers), recovery strategies (automatic failover, queuing, caching, manual intervention, data replication), affected system components (tracking, dispatch, maintenance, driver communication, analytics), and time horizons (immediate, short-term, medium-term, long-term recovery).\n9. StakeholderCoverage: Include requirements addressing distinct usage patterns and interactions for drivers, dispatchers, business analysts, and external systems (GPS providers, fuel vendors, maintenance partners, logistics platforms).\n10. FailureCategoryBalance: Distribute requirements across graceful degradation (reduced functionality modes, read-only states), disaster recovery (data persistence, replication, synchronization), and emergency operation (offline modes, manual interfaces) subcategories.\n11. MinimumSemanticDistance: Avoid significant semantic overlap; requirements addressing similar mechanisms (e.g., caching, retry logic) must involve different system components, failure scenarios, or stakeholder interactions.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5615,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n- Vary failure types across at least 6 distinct categories (e.g., database failures, service outages, component degradation, network failures, partial regional failures, data synchronization failures).\n- Employ at least 7 distinct recovery mechanisms (e.g., automatic failover, graceful degradation, queuing & retry, caching fallback, redundancy, alternative services, local-first/offline approaches).\n- Address at least 12 distinct system components or functional areas (e.g., payment systems, product catalogs, shopping carts, inventory systems, authentication, email services, recommendation engines, image delivery, discount services, order tracking, wishlists, pricing engines).\n- Cover at least 5 different user interaction scenarios (e.g., browse/search, checkout, account management, post-purchase activities, personalization).\n- Include varied time-to-recovery parameters spanning multiple ranges (immediate, rapid, short-term, medium-term, long-term).\n- Distribute failure severity across graceful degradation (minor impact), temporary workarounds (moderate impact), and failover/rerouting (minimal impact).\n- Ensure no semantic redundancy; each requirement addresses a distinct failure scenario or applies recovery mechanisms to different functional contexts.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5799,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure requirements demonstrate strong semantic diversity across fault tolerance mechanisms (redundancy, failover, caching, graceful degradation, transaction recovery, offline operation, alternative channels, and communication strategies), failure modes (server unavailability, network failures, service degradation, data loss, authentication failures, third-party service failures, and regional outages), and technical layers (infrastructure, data, application, network, integration, and communication). Minimize semantic overlap between requirements to support effective classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5988,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirements:**\nEnsure the 20 requirements collectively cover:\n- At least 5 distinct failure detection mechanisms (heartbeat monitoring, health endpoints, checksums, timeout detection, manual alerts)\n- At least 4 different recovery strategies (automatic failover, graceful degradation, local fallback, asynchronous queuing)\n- At least 5 different system layers (data persistence, network communication, application services, authentication, edge devices)\n- At least 4 different failure types (database outages, network interruptions, service unavailability, data corruption)\n- At least 3 different geographic or architectural redundancy patterns (multi-datacenter replication, sharding, clustering, geographic distribution)\n- Varying temporal thresholds and detection timeouts to avoid monotonous repetition\n- Distinct operational modes (read-only fallback, degraded functionality, offline operation, SMS alternatives)\n\nMinimize semantic overlap; each requirement should address a distinct combination of failure scenario, system component, and recovery mechanism.\"",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5588,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Semantic Diversity:**\nEnsure requirements are distributed across the following underrepresented categories to enhance diversity:\n- Environmental Adaptation: Include scenarios beyond GPS signal loss (e.g., high-altitude effects, electromagnetic interference, humidity-related degradation, extreme temperature ranges).\n- User Communication Channels: Cover multiple alternative notification mechanisms (e.g., SMS, push notifications, in-app alerts, multi-language support).\n- Manual Override and Fallback: Include requirements for manual intervention capabilities, emergency shutdown procedures, and physical override controls.\n- Load Management and Congestion Handling: Address queue prioritization, rate-limiting strategies, and high-demand operation scenarios.\n- Sensor Fault Isolation and Validation: Include cross-validation between redundant sensors, calibration drift detection, and sensor health diagnostics.\n\nEnsure that the 20 requirements collectively span distinct failure modes, functional areas, degradation strategies, affected subsystems, and recovery mechanisms without semantic clustering.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5872,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n- Ensure semantic diversity across at least 8 distinct failure mode categories (e.g., communication failures, service degradation, data consistency issues, sensor failures, partial failures, performance degradation, external service unavailability, capacity constraints).\n- Cover at least 7 diverse recovery strategies (e.g., caching/local storage, queuing/buffering, automatic failover, configuration frameworks, offline/degraded mode operation, eventual consistency, adaptive algorithms, manual intervention support, cross-system consistency mechanisms).\n- Distribute requirements across at least 5 different system architectural layers (infrastructure/orchestration, data layer, integration/APIs, application features, client application).\n- Vary quantitative parameters (timeouts, intervals, retention periods, thresholds) to prevent pattern overfitting.\n- Minimize semantic clustering by ensuring no more than 2 requirements share the same primary recovery mechanism and failure mode combination.\n- Represent at least 10 distinct fleet management system components and subsystems across the 20 requirements.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5494,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span at least 8 distinct fault tolerance mechanisms (e.g., redundancy, replication, graceful degradation, circuit breakers, local processing, manual overrides, health monitoring, rollback strategies) with minimal conceptual overlap between items addressing the same mechanism.\n9. FailureScenarioCoverage: Include requirements addressing at least 7 different failure modes (e.g., database unavailability, network outages, external service failures, authentication service degradation, infrastructure hardware failure, software deployment issues, data synchronization conflicts).\n10. RecoveryStrategyVariety: Distribute recovery approaches across automatic failover, fallback protocols, local processing with deferred synchronization, circuit breaking patterns, data replication, and manual intervention pathways.\n11. TemporalDiversity: Include requirements with varying time horizons (real-time failover, periodic backup windows, continuous monitoring, scheduled maintenance, post-failure synchronization).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6114,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirements:**\n- Ensure coverage across at least 8 distinct fault tolerance patterns (e.g., failover, graceful degradation, retry logic, caching, state persistence, distributed coordination, compensating transactions, asynchronous processing).\n- Represent at least 10 different e-commerce service domains or technical components (e.g., payment processing, inventory management, database systems, authentication, CDN, messaging queues, shipping, recommendations, tax calculations, session management).\n- Include varied failure modes (e.g., service timeouts, database unavailability, network partitions, disk constraints, concurrent conflicts, third-party API failures, cascading failures).\n- Avoid semantic overlap—each requirement should address a distinct combination of failure scenario, service domain, and recovery mechanism.\n- Employ diverse technical parameters and metrics (timeframes, thresholds, retry intervals, cache sizes, recovery windows) to demonstrate detailed technical specificity.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6433,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional Guidance for Semantic Diversity:\n- Ensure balanced representation across fault tolerance patterns: failover/redundancy, graceful degradation, data persistence/buffering, geographic resilience, compensatory mechanisms, communication redundancy, manual override/offline operation, and health monitoring/detection.\n- Incorporate diverse failure modes: GPS signal loss, database failures, network outages, sensor faults, weather impacts, resource constraints, external service failures, connectivity loss, hardware failures, maintenance windows, extreme weather conditions, and infrastructure disasters.\n- Apply varied recovery strategies: failover, replication, caching, buffering, degradation, override, detection/isolation, prioritization, synthetic data generation, and local processing.\n- Balance technical domains: networking, sensors, data management, infrastructure, vehicle communication, and environmental adaptation.\n- Minimize semantic overlap by ensuring each requirement addresses a distinct combination of failure mode and recovery strategy.\n- Limit network/connectivity-specific scenarios to approximately 4-5 items to avoid over-representation; allocate remaining items across sensor redundancy, data integrity, human intervention, cascading failure scenarios, and operator interface resilience.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5933,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure diverse coverage across the following dimensions:\n- Failure types: payment processing, data/database, service unavailability, network/connectivity, authentication, infrastructure, and external service dependencies\n- Recovery mechanisms: automatic failover, graceful degradation, queuing/buffering, read-only operation, and simplified workflows\n- Functional scope: transaction processing, browsing/search, cart management, content delivery, order history, authentication, notifications, and multi-service interactions\n- Granularity levels: system-wide behavior, component-level failures, and user action-level recovery\n- User experience contexts: transparent recovery, user-assisted recovery, and reduced functionality scenarios\n- Operational contexts: regional outages, high-traffic periods, unreliable connectivity, mobile/web channels, and data persistence strategies\n\nEnsure no two requirements are near-duplicates and that similar concepts are applied to diverse failure scenarios.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5647,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Requirements:**\n- Ensure each requirement addresses a distinct fault tolerance pattern, failure mode, or recovery mechanism.\n- Cover diverse failure types including: server/component failures, database failures, external service failures, network disruptions, load spikes, and maintenance windows.\n- Represent varied response strategies including: failover, caching, graceful degradation, queuing, retries, redundancy, alternative features, and recovery transparency.\n- Reference different e-commerce service layers and infrastructure components: payment processing, search, recommendations, inventory management, authentication, notifications, storage, caching, and databases.\n- Minimize semantic overlap by ensuring each requirement introduces a unique scenario or user-visible outcome rather than restating similar concepts across different components.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.559,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirements:**\n- Each requirement must address a distinct failure mode, recovery mechanism, or affected system component.\n- Requirements must collectively cover at least five distinct failure type categories (e.g., external system failures, network/connectivity failures, service/component failures, application-level failures, hardware/sensor failures).\n- Requirements must collectively employ at least four distinct recovery strategies (e.g., caching/local storage, fallback/alternate systems, manual/offline processes, queue and replay, alternative data sources, simplified interface modes).\n- Requirements must collectively span at least three distinct operational scenarios (e.g., pre-deployment, real-time operation, service restoration, manual fallback).\n- End-user stakeholders must include varied roles (e.g., drivers, fleet administrators, mechanics, facility managers).\n- No two requirements shall be semantically redundant or address identical failure-recovery combinations.\n- Each requirement shall include concrete details such as specific thresholds, mechanisms, timeframes, technologies, or measurable conditions.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5459,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Guidance for Semantic Diversity:\n- Ensure balanced coverage across failure types: include hardware/device failures, physical connectivity disruptions, power outages, and network degradation—not limited to database, service, and authentication failures.\n- Represent security-focused fault tolerance scenarios, such as recovery from compromised credentials, suspicious activity detection, and secure fallback mechanisms.\n- Vary recovery mechanisms beyond caching: include redundancy, failover, queue/retry logic, fallback interfaces, and alternative routing strategies in balanced proportion.\n- Include diverse user roles: clinical staff, nurses, emergency department personnel, administrative staff, and patient portal users.\n- Incorporate multiple temporal recovery patterns: real-time recovery, time-bound recovery (with specific thresholds), asynchronous recovery, and indefinite graceful degradation modes.\n- Address varied system components: ensure requirements span EHR/data layers, communication services, device management, scheduling/operations, authentication, workflow processing, and alerts/monitoring.\n- Cover multiple business impact levels: from critical patient data scenarios to routine operations to billing and consent management.\n- Ensure each requirement addresses distinct failure scenarios and recovery strategies to maximize semantic diversity.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5634,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirements:**\n- Cover at least 8 distinct fault tolerance mechanisms (e.g., database failover, network redundancy, graceful degradation, offline modes, queue/buffer mechanisms, service substitution, health monitoring/auto-recovery, session/state recovery, replication, caching).\n- Address at least 8 different failure scenarios (e.g., hardware failures, network failures, service unavailability, data center failures, performance degradation, data corruption, storage overflow, application crashes).\n- Span at least 9 system components (e.g., primary/secondary databases, healthcare subsystems, network infrastructure, storage systems, authentication systems, application servers, reporting systems, user sessions, peripheral devices).\n- Include 7+ distinct recovery techniques (e.g., automatic failover, replication, caching/buffering, checksums/validation, manual fallback modes, queue persistence, checkpoint recovery, conflict resolution).\n- Distribute requirements across multiple infrastructure layers (data, network, application, authentication, business logic).\n- Incorporate varied recovery timelines (sub-minute, minutes, hours, days).\n- Include quantified parameters, specific component references, and measurable outcomes for each requirement.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6094,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nDiversity Requirements:\n- Vary failure types across at least 5 distinct categories (e.g., server failure, network failure, database failure, service failure, infrastructure failure).\n- Cover at least 6 different system components (e.g., database, application servers, authentication, communication, storage, workflow modules).\n- Include at least 5 distinct recovery mechanisms (e.g., automatic failover, data replication, caching, offline operation, alternative channels).\n- Represent at least 4 operational modes (e.g., continued operation, degraded/read-only, offline local, alternative routing).\n- Address at least 3 different scopes (e.g., system-wide, module-specific, cross-system).\n- Incorporate at least 4 different data types (e.g., patient data, transaction data, audit data, notification data).\n- Include varied recovery time objectives (immediate, specified timebound, automatic upon event).\n- Represent at least 9 distinct fault tolerance patterns (e.g., failover mechanisms, graceful degradation, data protection, monitoring & prevention, redundancy, emergency operation, infrastructure diversity, communication resilience, data consistency).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.557,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n- Ensure representation across multiple user roles (clinicians, administrators, patients, billing staff, technicians).\n- Cover cross-system integration failures affecting multiple interconnected systems simultaneously.\n- Include scenarios addressing session and state preservation during system failures.\n- Represent emergency operation scenarios involving manual fallback procedures and paper-based workarounds.\n- Address geographic distribution and multi-region failover requirements across geographically dispersed data centers.\n- Include bandwidth-constrained and network latency failure scenarios.\n- Incorporate security-fault tolerance integration requirements (encrypted failover channels, secure backup validation).\n- Address transaction consistency and atomicity guarantees during failover events.\n- Vary failure trigger conditions across network, power, resource exhaustion, data corruption, and quality degradation dimensions.\n- Represent diverse recovery mechanisms including redundancy, degradation, buffering, caching, rerouting, and mode switching.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.605,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure semantic diversity across the following dimensions:\n- Failure types (e.g., database failures, network degradation, GPS loss, authentication failures, hardware failures, service unavailability, cascade failures)\n- System components (e.g., database servers, GPS receivers, authentication servers, mapping APIs, network infrastructure, storage systems, external services)\n- Fault tolerance mechanisms (e.g., failover, fallback, local caching, queuing/retry, graceful degradation, auto-scaling, redundancy, manual override)\n- Data persistence approaches (e.g., database replication, client-side caching, persistent message queues, audit logs, local event recording)\n- Recovery time objectives (e.g., 10 seconds, 30 seconds, 2 minutes, 4 hours, 8 hours, 72 hours)\n- Monitoring and detection methods (e.g., health monitoring, performance thresholds, connection timeouts, service availability checks)\n- User experience impacts (e.g., transparent failover, degraded mode, offline mode, manual intervention, session transfer)\n- Operational scope (e.g., client-side, server-side, network-layer, cross-system interactions)\n\nAvoid redundancy: each requirement must address a unique failure scenario or employ a distinct recovery mechanism. Do not repeat the same mitigation strategy or component failure across multiple requirements.\"",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5333,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nDiversity Requirements:\n- Ensure minimal semantic overlap between requirements. Avoid duplicate coverage of the same failure mode or recovery mechanism across multiple requirements.\n- Represent distinct fault tolerance dimensions including: failover and redundancy, graceful degradation, disaster recovery, dependency management, data consistency, monitoring and operations, emergency modes, timeout and deadline management, resilience testing validation, and human-in-the-loop recovery procedures.\n- Cover varied failure scenarios across different system components (database, network, cache, authentication, payment processing, inventory, external APIs).\n- Include diverse recovery strategies (failover, degradation, isolation, service switching, queue-based resilience, timeout policies).\n- Balance representation across infrastructure concerns to avoid over-weighting any single dimension or component type.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5854,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nGuidance for Diversity:\n- Distribute requirements across fault tolerance subcategories: graceful degradation, disaster recovery, and emergency operation.\n- Cover multiple failure modes: infrastructure failures (database crashes, server failures, network partitions), communication failures (external system unavailability, timeouts), data failures (corruption, inconsistency), deployment failures (failed patches, rollbacks), and operational failures (software crashes, dependency failures).\n- Include varied recovery mechanisms: failover/redundancy, queueing/buffering, local caching/fallback, graceful degradation, data repair/restoration, retry mechanisms, and health monitoring.\n- Address diverse system components and integration points: databases, authentication services, external laboratory systems, pharmacy systems, imaging systems, HL7 interfaces, notification services, caching layers, and APIs.\n- Span different usage patterns: single-user operations, multi-concurrent user scenarios, background/batch processing, real-time interactions, asynchronous workflows, and third-party API consumption.\n- Include quantified metrics, specific technologies, detailed failure recovery procedures, and specific user interface behaviors to maintain detailed abstraction level.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5752,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n- Vary failure types across at least 9 categories (e.g., database failures, API timeouts, network disconnections, service outages, capacity exhaustion, latency spikes, cascade failures, replication errors, third-party integration failures).\n- Employ at least 7 distinct fault tolerance strategies (e.g., automatic failover, caching/local storage, graceful degradation, checkpoint-based recovery, asynchronous queuing, multi-channel fallback, circuit breaker patterns).\n- Reference at least 11 different system components or external services (e.g., payment gateway, inventory database, shopping cart, authentication service, recommendation engine, email service, shipping API, product images, user profiles, fraud detection, discount engine).\n- Span multiple impact scopes: single transactions, user sessions, individual features, and system-wide operations.\n- Include varied recovery mechanisms: automatic failover, cached data restoration, manual intervention, asynchronous retry queues, and multi-channel redundancy.\n- Specify concrete numerical thresholds, time windows, and quantified conditions to maintain detailed abstraction level.\n- Ensure all requirements remain grounded in business analyst perspective, focusing on customer experience continuity, revenue protection, operational resilience, and business-critical outcomes rather than implementation technicalities.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5419,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Constraint for Semantic Diversity:**\nEnsure coverage across the following orthogonal fault tolerance categories with minimal overlap:\n- Failover and redundancy mechanisms (2-3 items)\n- Graceful degradation strategies (2-3 items)\n- Data persistence and recovery procedures (2-3 items)\n- Offline and resilient operations (2-3 items)\n- Circuit breaker and cascade prevention patterns (2-3 items)\n- Data reconciliation and consistency after failures (1-2 items)\n- Graceful shutdown and safe state transitions (1-2 items)\n- Monitoring, observability, and alerting during faults (1-2 items)\n- Active failure modes and security-related fault scenarios (1-2 items)\n- Alternative access paths and fail-safe defaults (1-2 items)\n\nAvoid semantic clustering within categories; each requirement shall address distinct failure contexts, recovery mechanisms, stakeholder interactions, or operational scenarios.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5722,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure the 20 requirements demonstrate:\n- Semantic diversity across distinct fault tolerance mechanisms (failover, redundancy, graceful degradation, data preservation, operational continuity, recovery strategies).\n- Coverage of multiple failure modes (server failures, network disruptions, database failures, module failures, integration failures, authentication service failures).\n- Varied time horizons and recovery objectives (immediate responses, short-term recovery, extended recovery periods).\n- Different system layers and architectural concerns (data tier, application tier, integration tier, presentation tier, authentication tier).\n- Distinct user impacts and operational contexts (transparent continuity, degraded operation modes, emergency procedures, data loss prevention).\n- Direct and indirect system interactions (clinical staff actions, system-to-system integrations, usage patterns across healthcare workflows).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5757,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span multiple fault tolerance patterns (redundancy, graceful degradation, data persistence, distributed systems resilience), cover distinct system layers (database, application, service, infrastructure), address varied failure modes (connectivity, hardware, service unavailability, resource exhaustion), and incorporate different recovery mechanisms (failover, caching, buffering, checkpointing, circuit breaking) to enable robust classifier generalization across e-commerce fault tolerance scenarios.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6089,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.0,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional Guidance for Diversity:\n- Vary failure types across at least 5 distinct scenarios (e.g., database unavailability, network loss, service outage, authentication failure, performance degradation, catastrophic failure, integration failure, maintenance windows).\n- Incorporate at least 6 different recovery strategies (e.g., automatic failover, queue and synchronization, replication, redundancy, backup restoration, caching, offline mode, degraded operation, manual sync, session recovery).\n- Span at least 5 different data handling approaches (e.g., transaction queuing, audit trails, backup synchronization, offline caching, local queue storage, configuration recovery).\n- Cover multiple clinical operational contexts (e.g., emergency department, ICU, pharmacy, laboratory, clinical decision support, medication management, appointment scheduling).\n- Address varied user interactions and access patterns (e.g., read-only access, cached access, offline workflows, restricted permissions, alternative authentication, manual workflows).\n- Include diverse notification and feedback mechanisms (e.g., status indicators, audit compliance reporting, discrepancy alerts, escalation notifications).\n- Ensure no significant semantic redundancy; each requirement should address distinct failure scenarios, recovery mechanisms, or user interactions rather than restating similar concepts.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5801,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional Guidance:\n- Ensure requirements maintain semantic diversity across distinct fault tolerance mechanisms (e.g., replication, caching, load balancing, archiving, failover, federation, manual bypass) covering 7+ different technical approaches.\n- Cover 8+ distinct failure scenarios (e.g., database failures, network outages, power loss, resource exhaustion, service unavailability, natural disasters, data corruption, device integration failures).\n- Include 5+ distinct recovery strategies (e.g., automatic failover, queuing, local storage, fallback access, manual intervention).\n- Distribute requirements across multiple fault tolerance dimensions: database/data resilience, service degradation, network failover, local caching/offline operation, performance under load, emergency procedures, and cross-system integration.\n- Avoid significant semantic redundancy; where similar mechanisms appear, ensure they target distinct system components or contexts.\n- Balance coverage between proactive mechanisms (monitoring, health checks), reactive mechanisms (failover, recovery), and manual fallback procedures.\n- Frame all requirements from business continuity and operational resilience perspectives rather than implementation details.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5836,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional Guidance for Diversity:\n- Ensure coverage across multiple failure modes (database, service, network, infrastructure, data integrity, third-party dependencies).\n- Include varied recovery mechanisms (automatic failover, caching, replication, circuit breakers, rollback, graceful degradation, eventual consistency).\n- Address failures at multiple system layers (component, system, infrastructure, data, configuration).\n- Incorporate security-aware fault tolerance (encryption, access control during degradation).\n- Include monitoring, observability, and diagnostics capabilities for fault detection and prevention.\n- Address user-facing recovery patterns and acceptable performance degradation during failover.\n- Minimize semantic overlap between requirements while maximizing architectural pattern diversity.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6538,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation..\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.0,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nRequirements MUST demonstrate high semantic diversity across the following dimensions:\n- **Failure modes**: Include network failures, hardware failures, software crashes, service unavailability, data corruption, authentication failures, protocol failures, resource exhaustion, and external system integration failures.\n- **Recovery mechanisms**: Include automatic failover, manual fallback procedures, local caching, transaction queuing, data replication, graceful degradation, rollback capabilities, and synchronization recovery.\n- **System components**: Address multiple infrastructure layers including database servers, application servers, network infrastructure, storage systems, authentication services, medical devices, workstations, and external system interfaces.\n- **Time criticality**: Vary recovery time objectives from immediate (seconds) to extended (hours), reflecting different criticality levels of healthcare operations.\n- **Degradation modes**: Include reduced functionality, read-only access, offline operation, thumbnail/summary-only display, priority-based queuing, and partial feature availability.\n- **User interactions**: Specify both automatic system responses and user-initiated recovery actions, with clear notifications and state preservation mechanisms.\n- **Healthcare workflows**: Cover diverse clinical scenarios (medication management, patient records, lab results, radiology imaging, appointment scheduling, vital signs monitoring, allergy management, clinical documentation).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5615,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.0,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirements:**\n- Represent at least 6 distinct fault tolerance mechanisms (e.g., failover, graceful degradation, caching, retry logic, queuing, conflict resolution, tiered service degradation, manual override).\n- Cover at least 7 different healthcare system components (e.g., patient data, authentication, clinical operations, prescriptions, scheduling, laboratory results, imaging, billing, communications, compliance).\n- Address at least 6 distinct failure scenarios (e.g., service unavailability, capacity overload, network partition, data loss/inconsistency, resource exhaustion, integration failures).\n- Include at least 6 different recovery strategies (e.g., automatic failover, queuing/buffering, cached fallback, manual intervention, retry/exponential backoff, mode degradation, partial service restoration).\n- Incorporate at least 8 distinct user roles or stakeholder perspectives (e.g., clinical staff, pharmacy technicians, radiologists, nurses, prescribers, registration staff, compliance officers, billing staff, business analysts, administrators, patients).\n- Vary recovery timeframes (from seconds to hours) to reflect different operational priorities.\n- Use varied vocabulary and specific technical terminology appropriate for detailed fault tolerance specification.\n- Ensure each requirement includes measurable success criteria and quantified parameters.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5798,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditionally, ensure semantic diversity by covering distinct fault tolerance dimensions including but not limited to: (a) failover and redundancy mechanisms across multiple infrastructure layers; (b) graceful degradation with reduced functionality; (c) data protection and backup strategies; (d) offline and emergency operation modes; (e) error recovery and system restoration; (f) external sensor and peripheral device failures; (g) third-party service integration failures; (h) security infrastructure failures; (i) communication protocol and network redundancy; (j) load balancing during abnormal conditions. Minimize semantic overlap between requirements and avoid redundant coverage of identical failure scenarios.\"",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5352,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5896,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEach requirement must:\n- Incorporate measurable, concrete technical specifications (timeouts, thresholds, compression ratios, accuracy tolerances, temperature ranges, latency bounds, bandwidth limits, or failure percentages).\n- Reference specific fleet management components (GPS sensors, OBD-II diagnostics, vehicle telematics, route optimization, maintenance systems, fuel monitoring, driver assignments, dispatch operations, onboard computers, or telemetry databases).\n- Describe a distinct fault tolerance mechanism or failure scenario (e.g., database failover, network degradation, sensor redundancy, caching, offline modes, service circuit breakers, distributed consensus, power depletion, signal loss recovery, or manual fallback).\n- Address different system layers, failure modes, and recovery strategies to ensure semantic diversity across data persistence, communication, sensing, power management, API resilience, environmental extremes, and operational continuity.\n- Be expressed as complete, grammatically correct English prose sentences without formal logic notation, pseudo-code, or structured templates.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5894,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Requirements:**\n- Ensure balanced coverage across fault tolerance dimensions: graceful degradation, service failover, data preservation, process continuity, detection and recovery, offline/degraded mode operation, and queue-based resilience.\n- Include requirements addressing multiple failure scenarios across at least 8 different technical domains (e.g., database, external payment services, inventory systems, authentication, notifications, search, infrastructure, load management).\n- Incorporate diverse recovery strategies including failover, caching, fallback mechanisms, queueing, manual intervention, and alternative workflows.\n- Include scenarios spanning peak load handling, traffic spikes, service outages, data corruption, network failures, and timeout scenarios.\n- Represent varied stakeholder interactions beyond end-customers, including business analysts, customer service representatives, and system operators.\n- Include at least 3 requirements emphasizing load shedding, priority-based operations, or manual intervention capabilities.\n- Include at least 2 additional requirements addressing offline or disconnected mode scenarios beyond basic degradation.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5807,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Semantic Diversity:**\n- Vary fault tolerance strategies across requirements (e.g., automatic failover, data replication, graceful degradation, caching/local resilience, health monitoring, load management, circuit breaker patterns, conflict resolution).\n- Cover diverse healthcare system components (e.g., databases, authentication systems, medical devices, clinical transactions, medical imaging, laboratory systems, external integrations, application servers, scheduling systems, electronic prescribing, patient portals, physical infrastructure).\n- Incorporate varied temporal specifications (sub-second recovery, minutes, hours, long-term recovery objectives).\n- Include varied data volume specifications and failure mode scenarios (network interruption, database unavailability, resource exhaustion, environmental conditions, third-party service failures).\n- Reference specific physical and environmental aspects such as geographical distribution, temperature conditions, power management, and network isolation to satisfy the Technical Context constraint.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5861,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.0,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.0,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n\nEnsure the 20 requirements demonstrate semantic diversity across the following dimensions:\n\n- **Failure Types**: Include database failures, network losses, sensor corruption, storage exhaustion, external service degradation, and processing failures.\n- **Recovery Mechanisms**: Vary across failover, local caching, geographic redundancy, graceful degradation, data replication, offline capability, and buffering strategies.\n- **Time Criticality**: Span multiple recovery time ranges (sub-second, 30-60 seconds, 2-5 minutes, 15+ minutes, hours).\n- **System Components**: Cover different infrastructure layers including databases, communication networks, cache systems, authentication services, hardware sensors, storage, processing engines, and dispatch logic.\n- **Operational Contexts**: Address distinct scenarios such as real-time vehicle tracking, dispatch automation, offline operations, emergency response, and degraded-mode functionality.\n- **Recovery Strategies**: Include automatic failover mechanisms, manual recovery with automation support, data buffering approaches, and progressive degradation patterns.\n\nAvoid semantic redundancy by ensuring each requirement targets meaningfully different failure modes, affected components, or recovery approaches within the fleet management system.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5618,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Requirements:**\nEnsure semantic diversity across the following dimensions:\n- **Failure Types**: Cover at least 7 distinct categories (e.g., database failures, server failures, external service outages, network failures, resource exhaustion, authentication service failures, storage failures).\n- **Recovery Strategies**: Include at least 5 different recovery approaches (e.g., automatic failover, graceful degradation, data replication, retry mechanisms, caching/offline modes).\n- **System Components**: Address at least 8 different e-commerce infrastructure areas (e.g., payment processing, inventory management, search functionality, user sessions, order management, shipping integration, authentication, product catalog).\n- **Operational Modes**: Represent at least 3 distinct operational contexts (e.g., normal failover, graceful degradation, continued limited operation).\n- **Infrastructure Layers**: Span at least 5 different levels (e.g., regional/geographic, service-level, application-level, communication-level, data-level).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5905,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Guidance:\n- Ensure semantic diversity across multiple fault tolerance patterns including: data persistence and replication, infrastructure redundancy, service resilience, graceful degradation, external dependency management, monitoring and orchestration, caching strategies, circuit breaker patterns, and asynchronous processing.\n- Vary failure scenarios (database failures, service crashes, hardware failures, network partitions, data corruption, ransomware attacks, denial-of-service attacks) and recovery mechanisms (automatic failover, circuit breakers, graceful degradation, message queuing, replication).\n- Distribute requirements across different infrastructure layers: database tier, application tier, network tier, storage tier, DNS tier, and CDN tier.\n- Specify concrete technical mechanisms and timeframes (e.g., failover times, detection intervals, retry limits, backup intervals, recovery objectives) to maintain detailed abstraction level.\n- Reference diverse e-commerce-specific operations (payment processing, checkout, transactions, product recommendations, shopping cart, order processing, inventory management, customer authentication) with infrastructure implementation details.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6288,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure the 20 requirements demonstrate strong semantic diversity across multiple fault tolerance dimensions, including but not limited to: distinct failure types (e.g., database failures, hardware failures, network degradation, authentication service failures, sensor malfunctions), varied response strategies (e.g., failover, graceful degradation, caching, queuing, replication, redundancy, local fallback), different data focuses (e.g., location data, telemetry, maintenance records, audit trails, fuel efficiency, configuration data, session validity), multiple recovery scopes (e.g., single component recovery, system-wide recovery, geographically distributed recovery, emergency operation modes), different operational modes (e.g., real-time processing, offline operation, simplified interface, reduced feature scope, background queuing), and coverage across infrastructure layers (e.g., communication channels, storage replication, computing nodes, hardware resources, distributed systems). Avoid repetition and ensure requirements cover distinct fault scenarios, recovery mechanisms, and system behaviors to support downstream classifier generalization.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5063,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Semantic Diversity:**\n- Include balanced coverage across fault tolerance mechanisms: infrastructure redundancy, data persistence and recovery, graceful degradation, proactive monitoring and isolation, and session/state management.\n- Represent diverse failure modes: server failures, network outages, authentication service failures, performance degradation, and catastrophic failures.\n- Incorporate varied recovery strategies: failover, redundancy, replication, load balancing, offline operation, and caching.\n- Address different infrastructure layers: database, application servers, networks, hardware, peripheral devices, and communications platforms.\n- Include requirements on infrastructure health assessment, anomaly detection, backup testing and recovery validation, and disaster recovery procedures with recovery time objectives.\n- Avoid substantial semantic overlap; minimize redundancy in addressing similar failure scenarios or recovery approaches.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5843,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure each requirement:\n- Addresses a distinct fault tolerance scenario (failure type, operational function, or recovery strategy differs from others)\n- Explicitly references people (drivers, dispatchers, supervisors, fleet managers, coordinators, operators) or external systems (GPS services, databases, payment gateways, mapping services, accounting systems, IoT devices, notification systems, analytics engines)\n- Describes business-level impact and operational continuity rather than technical implementation details\n- Avoids semantic overlap—no two requirements should describe equivalent fault scenarios or recovery mechanisms\n- Uses complete prose sentences with clear business-oriented language (\"shall maintain,\" \"shall ensure,\" \"shall provide\")",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5575,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation..\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.0,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure the 20 requirements demonstrate high semantic diversity across at least 8 independent dimensions including: (a) distinct failure detection methods, (b) varied recovery mechanisms, (c) different system components affected, (d) multiple redundancy strategies, (e) diverse data preservation approaches, (f) different user impact handling strategies, (g) distinct healthcare workflows, and (h) multiple infrastructure layers. Minimize semantic overlap by ensuring each requirement addresses a unique combination of failure scenario, recovery pattern, and IT infrastructure aspect.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5799,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Requirements:**\n- Ensure requirements span multiple failure mode categories: hardware failures, software failures, network failures, service failures, and data failures.\n- Cover diverse operational scopes: fleet-wide operations, individual vehicle operations, user operations, and backend operations.\n- Include varied recovery strategies: automatic failover, graceful degradation, data recovery, queueing/buffering, inference/compensation, and manual intervention.\n- Address interactions across all stakeholder groups: drivers, dispatchers, fleet managers, maintenance teams, and system operators.\n- Represent different interaction types: vehicle-to-system, system-to-system, system-to-user, and user-to-system interactions.\n- Include technical components spanning: database systems, communication/messaging, APIs, services, analytics, mobile applications, authentication, and audit systems.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5362,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Fault Tolerance — A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Requirements:**\n- Ensure requirements address at least 8 distinct fault tolerance mechanisms (e.g., redundancy, replication, graceful degradation, alternative access paths, offline capability, data preservation, critical function prioritization, manual workarounds, emergency operations).\n- Cover at least 10 different failure modes (e.g., primary system failures, resource constraints, network failures, data integrity issues, service-specific failures, infrastructure failures, geographic failures, external service dependencies, device integration failures, audit/logging failures).\n- Distribute requirements across at least 10 distinct functional healthcare areas (e.g., patient records, medication management, vital sign monitoring, clinical workflows, authentication, scheduling, reporting, laboratory services, decision support, compliance/audit).\n- Minimize semantic overlap between requirements; each requirement should address meaningfully different aspects of fault tolerance in healthcare systems.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6016,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    }
+  ]
+}

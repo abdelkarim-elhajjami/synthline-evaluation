@@ -1,0 +1,36 @@
+task: T1
+dataset: promise_exp
+type: multi-class
+target_samples_per_label: 1080
+
+labels:
+  - name: Security
+    definition: "A security requirement specifies constraints on access to the product and its data, integrity of databases and files, privacy of individuals, audit record retention, and immunity from unauthorized software interference such as viruses and malware."
+  - name: Usability
+    definition: "A usability requirement specifies properties that make the product usable and ergonomically acceptable to its hands-on users, covering ease of use, personalization, learnability, understandability, and accessibility for users with disabilities."
+  - name: Operational
+    definition: "An operational requirement specifies the conditions under which the product must operate, including the expected physical environment, interfaces with adjacent systems, productization requirements, and release cycle constraints."
+  - name: Performance
+    definition: "A performance requirement specifies the time and throughput parameters within which the product must perform, including response time, speed, latency, precision of results, and capacity for concurrent users or data volumes."
+  - name: Look and Feel
+    definition: "A look and feel requirement specifies the desired appearance, style, and mood of the product, including corporate branding, visual design, and the way the product presents itself to its intended users."
+  - name: Availability
+    definition: "An availability requirement quantifies the necessary reliability and expected availability of the product, usually expressed as allowable time between failures, total allowable failure rate, or required uptime percentage."
+  - name: Maintainability
+    definition: "A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability."
+  - name: Scalability
+    definition: "A scalability requirement specifies the expected increases in size that the product must be able to handle as the business grows, including increased volumes of users, data, or transactions."
+  - name: Fault Tolerance
+    definition: "A fault tolerance requirement specifies the ability of the product to continue to function under abnormal circumstances, including graceful degradation, disaster recovery, and emergency operation."
+  - name: Legal
+    definition: "A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards."
+  - name: Portability
+    definition: "A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts."
+
+features:
+  Language: [English]
+  AbstractionLevel: [HighLevel, DetailedLevel]
+  DescriptionType: [ProseNL]
+  Context: [Usage, ITSystem, Technical]
+  StakeholderViewpoint: [End User, Developer, Business Analyst]
+  Domain: [Healthcare Information System, E-commerce Application, Fleet Management System]

@@ -1,0 +1,39 @@
+{
+  "task": "t4",
+  "config": "b1",
+  "classifier": "bert",
+  "model": "bert-base-uncased",
+  "run": 1,
+  "seed": 42,
+  "f1_weighted": 0.8619350558717591,
+  "precision_weighted": 0.8634425677455551,
+  "recall_weighted": 0.8608608608608609,
+  "classification_report": {
+    "Causal": {
+      "precision": 0.7398648648648649,
+      "recall": 0.7793594306049823,
+      "f1-score": 0.7590987868284229,
+      "support": 843.0
+    },
+    "Non-Causal": {
+      "precision": 0.9118065433854907,
+      "recall": 0.8927576601671309,
+      "f1-score": 0.9021815622800844,
+      "support": 2154.0
+    },
+    "accuracy": 0.8608608608608609,
+    "macro avg": {
+      "precision": 0.8258357041251778,
+      "recall": 0.8360585453860565,
+      "f1-score": 0.8306401745542537,
+      "support": 2997.0
+    },
+    "weighted avg": {
+      "precision": 0.8634425677455551,
+      "recall": 0.8608608608608609,
+      "f1-score": 0.8619350558717591,
+      "support": 2997.0
+    }
+  },
+  "n_test": 2997
+}

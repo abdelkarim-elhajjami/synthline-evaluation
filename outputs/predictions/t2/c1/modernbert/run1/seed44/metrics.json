@@ -1,0 +1,39 @@
+{
+  "task": "t2",
+  "config": "c1",
+  "classifier": "modernbert",
+  "model": "answerdotai/ModernBERT-base",
+  "run": 1,
+  "seed": 44,
+  "f1_weighted": 0.7729789080580686,
+  "precision_weighted": 0.7862128767969807,
+  "recall_weighted": 0.7731958762886598,
+  "classification_report": {
+    "Functional": {
+      "precision": 0.7102803738317757,
+      "recall": 0.8539325842696629,
+      "f1-score": 0.7755102040816326,
+      "support": 89.0
+    },
+    "Non-Functional": {
+      "precision": 0.8505747126436781,
+      "recall": 0.7047619047619048,
+      "f1-score": 0.7708333333333334,
+      "support": 105.0
+    },
+    "accuracy": 0.7731958762886598,
+    "macro avg": {
+      "precision": 0.7804275432377269,
+      "recall": 0.7793472445157839,
+      "f1-score": 0.773171768707483,
+      "support": 194.0
+    },
+    "weighted avg": {
+      "precision": 0.7862128767969807,
+      "recall": 0.7731958762886598,
+      "f1-score": 0.7729789080580686,
+      "support": 194.0
+    }
+  },
+  "n_test": 194
+}

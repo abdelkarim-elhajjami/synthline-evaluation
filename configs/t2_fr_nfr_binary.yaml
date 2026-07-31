@@ -1,0 +1,16 @@
+task: T2
+dataset: promise_exp
+type: binary
+target_samples_per_label: 11880
+
+labels:
+  - name: Functional
+    definition: "A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions."
+
+features:
+  Language: [English]
+  AbstractionLevel: [HighLevel, DetailedLevel]
+  DescriptionType: [ProseNL]
+  Context: [Usage, ITSystem, Technical]
+  StakeholderViewpoint: [End User, Developer, Business Analyst]
+  Domain: [Healthcare Information System, E-commerce Application, Fleet Management System]

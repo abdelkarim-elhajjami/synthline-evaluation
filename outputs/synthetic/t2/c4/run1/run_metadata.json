@@ -1,0 +1,14 @@
+{
+  "task": "t2",
+  "config": "c4",
+  "run": 1,
+  "generator": "openrouter/meta-llama/llama-3.3-70b-instruct",
+  "ablation": {
+    "pace": true,
+    "av": true
+  },
+  "verify_source": "c2",
+  "av_params": {
+    "threshold": 0.6
+  }
+}

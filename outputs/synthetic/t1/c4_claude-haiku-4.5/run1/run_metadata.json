@@ -1,0 +1,14 @@
+{
+  "task": "t1",
+  "config": "c4",
+  "run": 1,
+  "generator": "openrouter/anthropic/claude-haiku-4.5",
+  "ablation": {
+    "pace": true,
+    "av": true
+  },
+  "verify_source": "c2",
+  "av_params": {
+    "threshold": 0.6
+  }
+}

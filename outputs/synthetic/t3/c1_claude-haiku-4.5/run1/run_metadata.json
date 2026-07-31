@@ -1,0 +1,13 @@
+{
+  "task": "t3",
+  "config": "c1",
+  "run": 1,
+  "generator": "openrouter/anthropic/claude-haiku-4.5",
+  "ablation": {
+    "pace": false,
+    "av": false
+  },
+  "prompts_from": null,
+  "pace_params": null,
+  "av_params": null
+}

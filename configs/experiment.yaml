@@ -1,0 +1,34 @@
+# Shared config
+
+# Generation
+generation:
+  llm: "openrouter/meta-llama/llama-3.3-70b-instruct"
+  temperature: 1.0
+  top_p: 1.0
+  samples_per_prompt: 20
+
+# Fine-tuning parameters
+learning_rate: 2.0e-5
+epochs: 3
+per_device_batch_size: 4
+gradient_accumulation_steps: 4
+max_seq_length: 512
+weight_decay: 0.01
+warmup_ratio: 0.06
+
+# Reproducibility
+seed: 42
+
+# Ablation configurations
+# C1: PACE=Off, AV=Off
+# C2: PACE=On,  AV=Off
+# C3: PACE=Off, AV=On
+# C4: PACE=On,  AV=On
+ablation:
+  pace:
+    alpha: 0.5
+    iterations: 1
+    actors: 2
+    candidates: 1
+  av:
+    threshold: 0.6

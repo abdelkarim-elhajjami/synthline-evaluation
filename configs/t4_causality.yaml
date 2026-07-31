@@ -1,0 +1,19 @@
+task: T4
+dataset: cira
+type: binary
+target_samples_per_label: 6480
+
+labels:
+  - name: Causal
+    definition: "A causal requirement sentence contains a cause-effect relationship, where a cause (condition, event, or state) leads to an effect (system response or outcome). Indicated by explicit or implicit causal cues such as 'if', 'when', 'whenever', 'in case', 'so that', or other causal connectives."
+  - name: Non-Causal
+    definition: "A non-causal requirement sentence does not contain a cause-effect relationship. It states what the system shall do or be without linking the statement to a triggering condition, antecedent event, or causal connective."
+
+features:
+  Language: [English]
+  RequirementType: [Functional, Quality, Constraint]
+  AbstractionLevel: [HighLevel, DetailedLevel]
+  DescriptionType: [ProseNL]
+  Context: [Usage, ITSystem, Technical]
+  StakeholderViewpoint: [End User, Developer, Business Analyst]
+  Domain: [Automotive Systems, Aerospace Systems, Telecommunications Systems, Medical Device Software, Enterprise Software, Smart Home Systems]

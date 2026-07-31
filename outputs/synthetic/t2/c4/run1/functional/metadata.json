@@ -1,0 +1,1170 @@
+{
+  "run_id": "5b35d944-0084-4c5a-8165-47471221d222",
+  "timestamp_utc": "2026-03-15T23:48:06.987820+00:00",
+  "llm": "openrouter/meta-llama/llama-3.3-70b-instruct",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "samples_requested": 11880,
+  "samples_produced": 11274,
+  "verify": true,
+  "verify_threshold": 0.6,
+  "optimized": true,
+  "prompt_approach": "default",
+  "duration_seconds": 18404.18,
+  "alignment_verification": {
+    "alignment_threshold": 0.6,
+    "max_retries": 3,
+    "attempts_used": 4,
+    "requested_samples": 11880,
+    "accepted_samples": 11274,
+    "alignment_deficit": 606,
+    "termination_reason": "max_retries_reached",
+    "scores": {
+      "accepted": {
+        "count": 11274,
+        "min": 0.6001,
+        "mean": 0.7245,
+        "max": 0.98
+      },
+      "rejected": {
+        "count": 8513,
+        "min": 0.0225,
+        "mean": 0.4649,
+        "max": 0.5996
+      }
+    },
+    "total_generated_across_retries": 19787,
+    "accepted_per_attempt": [
+      7245,
+      2481,
+      1036,
+      512
+    ],
+    "attempt_trace": [
+      {
+        "attempt": 1,
+        "pending_in": 11880,
+        "accepted": 7245,
+        "rejected": 4635,
+        "accepted_added": 7245,
+        "rejected_configs": 54,
+        "duration_ms": 1292837
+      },
+      {
+        "attempt": 2,
+        "pending_in": 4635,
+        "accepted": 2481,
+        "rejected": 2154,
+        "accepted_added": 2481,
+        "rejected_configs": 52,
+        "duration_ms": 462548
+      },
+      {
+        "attempt": 3,
+        "pending_in": 2154,
+        "accepted": 1036,
+        "rejected": 1118,
+        "accepted_added": 1036,
+        "rejected_configs": 45,
+        "duration_ms": 195037
+      },
+      {
+        "attempt": 4,
+        "pending_in": 1118,
+        "accepted": 512,
+        "rejected": 606,
+        "accepted_added": 512,
+        "rejected_configs": 36,
+        "duration_ms": 91392
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nThese requirements should cover a wide range of functionalities and features within a Healthcare Information System, including but not limited to patient record management, medication management, appointment scheduling, integration with medical devices, secure messaging, patient care planning, and more. They should address different aspects of healthcare services, from administrative tasks to clinical activities, and consider the importance of security, compliance, and usability from the end-user's perspective. Additionally, the requirements should aim to include diverse and innovative functionalities such as integration with emerging technologies (e.g., artificial intelligence, blockchain, telemedicine), advanced data analytics for population health management, personalized medicine support, and internationalization and accessibility features to ensure the system's capabilities keep pace with technological advancements and meet the needs of a diverse user base.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.4835,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel. \n\nTo enhance semantic diversity, consider including a wide range of functionalities, such as patient data management, clinical decision support, communication, security, analytics, and system integration, while also exploring specific nuances like security and privacy requirements, compliance with healthcare regulations, research and analytics functionalities, patient experience and engagement, and detailed system integration requirements. Additionally, delve into patient-specific use cases, integration with external systems or devices, security and compliance aspects, and usability and accessibility features to further improve diversity and support downstream classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5333,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance semantic diversity, the requirements should cover a broad spectrum of the Healthcare Information System domain, including but not limited to patient data management, clinical decision support, system integration, security and compliance, reporting and analytics, user interface and experience, and should also consider diverse aspects such as telehealth, artificial intelligence, personalized medicine, healthcare finance, and supply chain management. The requirements should be written to avoid redundancy and ensure that each addresses a unique functionality or aspect of the system, providing a comprehensive overview of the system's capabilities and functionalities from the end-user's perspective.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.4922,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, ensure the requirements cover a broad spectrum of functionalities, including but not limited to:\n- Patient data management\n- Authentication and security\n- Printing and documentation\n- Data exchange and interoperability\n- Clinical decision support\n- Scheduling and resource management\n- Data analysis and reporting\n- Integration with medical devices\n- Patient education\n- Electronic prescribing and pharmacy integration\n- Care planning\n- Real-time updates and notifications\n- Billing, insurance, and financial aspects\n- Telehealth services\n- Remote monitoring\n- Emerging trends in healthcare\n\nAdditionally, consider incorporating requirements related to:\n- Different types of healthcare providers and their specific needs\n- Various medical devices and equipment\n- Data privacy, consent management, and compliance with healthcare regulations\n- Advanced analytics and AI-driven insights\n- Cybersecurity measures\n- Patient-centric features\n- Interoperability with a wide range of healthcare systems and devices\n- Compliance with specific regulations beyond HIPAA\n\nEnsure that the requirements are written to support downstream classifier generalization, considering a wide array of stakeholders, technological integrations, and scenarios to fully capture the complexity of healthcare information systems.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5682,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance semantic diversity, consider including requirements that cover a broad spectrum of technical aspects, user interactions, and system functionalities, such as detailed privacy and security measures, integration with various medical devices and wearable technology, support for different medical specialties, and compliance with regulatory standards. Additionally, incorporating diverse end-user perspectives, including those of patients and healthcare professionals with varying roles and needs, can enrich the requirements. Ensure the requirements are specified at a high level, focusing on system behaviors and functionalities without delving into detailed implementation specifics, to maintain flexibility in design and development.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5351,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo ensure the generated requirements meet the highest standards, particularly in terms of diversity and detail, consider including a wide range of functionalities within the healthcare information system. This includes, but is not limited to, patient data management, clinical decision support, integration with external systems, security, system administration, technical maintenance, user authentication, and authorization. Additionally, delve into specific technical details such as detailed security and access control measures, data exchange formats and protocols for integration, user interface requirements for improving usability, backup and recovery procedures, and compliance with specific healthcare regulations and standards. Ensure that each requirement is written from the end-user's perspective, emphasizing their experience and needs when interacting with the system, and provide sufficient detail to fully satisfy the requirement for a detailed abstraction level.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5584,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance semantic diversity and support for downstream classifier generalization, ensure the requirements cover a broad spectrum of functionalities within a healthcare information system, including but not limited to patient care, administration, research, compliance, system performance, user interface, integration with wearable devices, advanced data analytics, cybersecurity, and compliance with emerging regulations. Consider incorporating requirements that explicitly address system maintenance, user management, analytics, billing, patient engagement, security, privacy, and the integration of IoT devices, while maintaining a balance across different aspects of the system's usage.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5388,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nIn generating these requirements, ensure that they cover a wide range of topics within the healthcare information system domain, including but not limited to insurance eligibility, prescription management, patient engagement, clinical decision support, and medical research. Aim for a diverse set that varies in scope, technical focus, and specifics, avoiding overlaps and ensuring each requirement is unique and detailed. Consider including requirements that address nuanced or specialized aspects of healthcare information systems, such as public health surveillance, healthcare policy management, edge cases, error handling, and interoperability with other systems or devices, including specifications on data exchange standards and compatibility with various electronic health record (EHR) systems. Provide detailed descriptions of the system's functionality, including specific features, technical capabilities, and behavioral aspects, to support comprehensive coverage of the domain.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5793,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance semantic diversity and maintain a high level of abstraction, the requirements should cover a wide range of topics within the healthcare information system, including but not limited to:\n- Patient care and management\n- Data management, exchange, and analytics\n- Security, access control, and compliance with healthcare regulations\n- System infrastructure, performance, and scalability\n- User experience, interfaces, and engagement\n- Integration with other healthcare systems, devices, and services\n- Reporting and advanced data analytics for predictive healthcare\n\nThe requirements should be written in a way that focuses on functional aspects rather than specific technologies or implementation details, ensuring a high level of abstraction. Additionally, the requirements should be diverse enough to support downstream classifier generalization, with no exact duplicates or very similar requirements, and should cover various aspects of the healthcare information system to enhance semantic diversity.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5001,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.), including scenarios related to compliance with healthcare regulations, detailed security measures, integration with wearable devices or home monitoring systems, support for clinical decision-making tools or artificial intelligence integration, and patient engagement features.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer, considering the impact on and interactions with various stakeholders such as patients, healthcare professionals, and administrators.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, database management, network security, and system maintenance.), encompassing different healthcare settings like clinics, pharmacies, and insurance providers.\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, incorporating edge cases such as handling rare diseases, international patient data, and integrating with innovative medical technologies to enhance semantic diversity.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5474,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure the requirements are semantically diverse and support downstream classifier generalization, consider including aspects such as:\n- Compliance with healthcare regulations (e.g., HIPAA)\n- Support for specific medical specialties (e.g., oncology, cardiology)\n- Integration with other healthcare systems or services (e.g., telemedicine, medical billing)\n- User roles and access control\n- System performance and optimization\n- Technical implementation details (e.g., data structures, algorithms, frameworks)\n- Cybersecurity measures\n- Technical infrastructure\n\nEnsure all requirements are written from a developer's perspective, focusing on technical implementation details, and maintain a consistent high level of abstraction, avoiding overly specific technical solutions.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5696,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo ensure semantic diversity and support downstream classifier generalization, the requirements should cover a broad range of topics within the healthcare information system domain, including but not limited to:\n- Various modules and systems such as billing, insurance claims, supply chain management, patient management, clinical decision support, and system infrastructure.\n- Different healthcare settings like pediatric care, geriatric care, mental health services, and general healthcare.\n- Technical specifics including data security measures, system performance under heavy load, integration with wearable devices, IoT technologies, and telehealth services.\n- User experience and interface requirements to ensure the system is intuitive and user-friendly for healthcare professionals.\n- Aspects related to compliance with regulatory standards, health information exchange protocols, scalability, and performance of the system.\n- Integration with emerging technologies like artificial intelligence for diagnostic support and personalized medicine platforms.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.6056,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nNote: To enhance the semantic diversity of the generated requirements, consider covering a wide range of topics related to Healthcare Information Systems, including but not limited to: patient management, clinical decision support, interoperability, security and access control, analytics and reporting, billing and payment, supply chain management, inventory control, equipment maintenance, healthcare regulations and compliance, system maintenance and updates, and user experience and usability. Ensure that the requirements are written from the perspective of a Business Analyst, focusing on the functional aspects of the system, and describe the overall functionality of the system without diving into technical details.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.4862,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity, ensure that the generated requirements cover a broad spectrum of healthcare information system functionalities, including but not limited to patient management, clinical decision support, medication management, system integration, data analytics, patient engagement, and system security. Incorporate various verbs and entities to create a diverse set of requirements, and consider including aspects that might have been underrepresented in previous sets, such as data analytics, patient engagement, system security, and user experience. The goal is to create a set of requirements that not only meet the specified constraints but also support downstream classifier generalization by exposing it to a wide range of functionalities, stakeholders' needs, and linguistic variations within the domain of healthcare information systems.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.4596,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System, with a particular focus on covering a broad range of functionalities including, but not limited to, patient management, data security, billing, care coordination, analytics, and exploration of emerging health technologies such as telemedicine, AI for diagnostic support, and integration with personal health apps.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, and explicitly considers data exchange standards like FHIR, specific encryption protocols, and access controls for different types of users).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, ensuring that requirements describe what the system should do without specifying how it should do it, avoiding particular technologies or implementation details, and maintaining a focus on system functionalities such as personalized medicine, genomics data integration, support for clinical trials, and detailed analytics for population health management.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5142,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel. Additionally, ensure that the generated requirements exhibit a wide range of topics within the healthcare information system domain, including but not limited to data management, security, integration with other systems, user access, reporting, patient care features, advanced analytics, AI applications, UI/UX, compliance with healthcare regulations, telehealth services, and inventory management. Each requirement should be concise, specific, and detailed, avoiding ambiguity and including precise technical details where applicable, such as specific data formats, protocols, or performance metrics, to enhance clarity and precision in system development.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5298,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws. Ensure that all requirements maintain a technical focus, avoiding functional or user-centric descriptions.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel (Ensure that the requirements describe what the system should do without delving into detailed technical specifications of how it should be done, focusing on the system's functionality and capabilities from a higher-level perspective, and covering a wide range of technical aspects such as system performance, scalability, data analytics, clinical decision support systems, medical device integration, security, interoperability, and compliance with technical standards like HL7 for healthcare data exchange).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.4279,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity, ensure that the requirements cover a broad range of topics, including but not limited to patient data management, system integration, security, analytics, user interaction, system maintenance, user training, and compliance with specific regulations. Intentionally introduce variability in the requirements' focus, vocabulary, and sentence structure, and consider including requirements that explore the system's limitations, potential errors, or edge cases to provide a more comprehensive understanding of the system's behavior.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.6345,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure the generated requirements are semantically diverse and support downstream classifier generalization, consider including a wide range of e-commerce functionalities, such as product management, order management, payment processing, user account management, customer support, and features like handling product variations, managing inventory, supporting multiple languages and currencies, mobile application functionalities, accessibility features, integration with other services or platforms, advanced search functionalities, personalized shopping experiences, and detailed return and refund policies. Aim for varied language and phrasing to reduce repetition and increase semantic diversity, while maintaining a high level of abstraction and avoiding overly specific or redundant requirements.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5999,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity, ensure that the requirements cover a wide range of topics, including but not limited to order management, product recommendations, payment processing, user account management, search and filtering functionality, shipping and delivery estimates, promotions, and user experience features. Additionally, consider including requirements related to accessibility, security, personalization, integration with other services or platforms, and analytics to provide insights to users. The requirements should use varied vocabulary and sentence structures, and be concise and direct, avoiding similar tones and styles.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.6787,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices. Ensure that the requirements explicitly mention the involvement of IT systems, such as optimization for various devices, integration with third-party software, or utilization of cloud storage.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure comprehensive coverage, include a diverse range of functionalities expected from an e-commerce application, such as product filtering and search, order management, payment and checkout processes, user account management, product review and recommendation systems, integration with other services, support features, and multilingual support. Additionally, consider including requirements related to mobile app functionalities, security features, accessibility for users with disabilities, integrations with other services like customer service chatbots or loyalty programs, and personalization features beyond product recommendations based on purchase history. Ensure that the requirements are written from the end-user's perspective, focusing on the benefits and functionalities that directly affect them, and provide a high-level description of the required functionality without delving into low-level technical details.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.6188,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance the semantic diversity of the generated requirements, consider including a wide range of functionalities within an e-commerce application, such as product filtering, secure payment processing, search functionality, account management, order tracking, product reviews, wishlists, social media integration, product comparison, loyalty programs, language and currency support, personalized recommendations, gift card management, CRM integration, order history, feedback and ratings, mobile app support, and account security settings. Additionally, aim to cover more nuanced or edge-case scenarios, including handling of returns and refunds, support for different types of products (e.g., digital goods, subscriptions), integration with third-party services for shipping, tax calculation, etc., accessibility features for users with disabilities, and compliance with specific legal or regulatory requirements (e.g., GDPR, CCPA). Ensure that the requirements are written from the end-user's perspective, focusing on what the system shall do in response to user inputs or conditions, and provide detailed information about the functionality, including specific constraints, options, and behaviors.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.6344,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nIn generating these requirements, consider including a wide range of topics such as product search and filtering, shopping cart management, user account management, payment processing, product reviews and ratings, order tracking and history, password recovery, language support, social media integration, security and encryption, returns and refunds, accessibility features (e.g., screen reader support, high contrast mode), and error handling for edge cases (e.g., out-of-stock products). Aim for semantic diversity to support downstream classifier generalization, ensuring the requirements are distinct and cover various aspects of an e-commerce application from the end user's perspective, including technical aspects and user experience.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.6337,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity and support downstream classifier generalization, consider including a wide range of functionalities, error handling scenarios, accessibility features, security and privacy measures, and integration with other services, ensuring the requirements are comprehensive and cover various aspects of the e-commerce application.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.6489,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer, ensuring that the requirements also consider the unique perspectives and needs of other stakeholders such as customers, administrators, and business owners, to enhance diversity.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel. \n\nAdditionally, aim to achieve a higher level of semantic diversity by including requirements related to accessibility, sustainability, personalization, advanced analytics, integration with emerging technologies, and other innovative features that can enhance the functionality and usability of the e-commerce application.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5825,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity, the generated requirements should cover a wide range of e-commerce application aspects, including but not limited to:\n- Search and product management\n- Payment and order management\n- Customer service and account management\n- Reporting and analytics\n- Security and performance\n- Shipping and handling\n- Tax calculation and compliance\n- Affiliate marketing and promotions\n- Returns and exchanges\n- Accessibility and user experience\n- Mobile app development and optimization\n- Social media integration and marketing\n- Customer loyalty and rewards programs\n- Product customization and personalization\n- Supply chain management and logistics\n\nEach requirement should provide specific, detailed descriptions of the desired functionality, avoiding vague terms and ensuring uniqueness to prevent overlap with other requirements.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.6355,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance the semantic diversity of the generated requirements, consider incorporating a broad range of e-commerce functionalities, including but not limited to: \n- Emerging trends such as artificial intelligence, virtual or augmented reality, blockchain, and Internet of Things (IoT) integration,\n- Advanced security features and data encryption methods,\n- Personalization and recommendation systems,\n- Accessibility features for users with disabilities,\n- Environmental sustainability options,\n- Detailed analytics and reporting needs,\n- Internationalization and localization support,\n- Integration with various payment gateways and financial systems,\n- Customer service and support functionalities.\n\nEnsure that the requirements maintain a high level of abstraction, focusing on what the system should do without specifying how it should be implemented, and cover a wide spectrum of e-commerce application aspects to support downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5609,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application, with a focus on covering a broad spectrum of e-commerce functionalities, including but not limited to order processing, payment mechanisms, product recommendations, customer experience, inventory management, supply chain integration, compliance with e-commerce regulations, and emerging trends such as the integration of artificial intelligence, blockchain, augmented reality, and social commerce.\n3. StakeholderViewpoint: Developer, with requirements expressed from the viewpoint of a developer, focusing on implementation details, technical infrastructure, system integration, and development considerations, including but not limited to specific programming libraries, algorithms, and technical specifications.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, and specific IT infrastructure components such as database systems, network architectures, and cybersecurity measures.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, with requirements that are highly specific, outlining particular actions, computations, or data manipulations the system must perform, including details on technical implementation, such as the use of specific NLP libraries or algorithms, and how they interact with or depend on specific IT infrastructure components.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5968,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure the generated requirements support downstream classifier generalization, emphasize semantic diversity by covering a wide range of e-commerce application aspects, including but not limited to payment and transaction management, inventory and order management, reporting and analytics, customer account and experience management, security and data protection, integration with external services, personalization and recommendation systems, multi-language and currency support, and loyalty programs. Additionally, consider including requirements that address edge cases, error handling, and high-level system behaviors such as scalability, reliability, and usability, while maintaining a focus on what the system should do rather than how it should do it, and avoiding specific technical implementations.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.6348,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application, with a focus on specific functionalities such as detailed inventory management, supply chain integration, advanced payment processing, scalability, performance optimization, accessibility features, and integration with emerging technologies.\n3. StakeholderViewpoint: Developer, emphasizing technical implementation and management, including aspects like data structures, algorithmic approaches, software engineering principles, and technical solutions for common e-commerce challenges.\n4. Context: Technical, focusing on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system, including geometrical dimensions, spatial aspects, weather conditions, physical laws, and specifics on data analytics, security measures, cloud infrastructure, and database management.\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, with detailed descriptions of technical implementation, specific algorithms, and technical aspects of ensuring accessibility and usability for diverse user groups, as well as the integration of e-commerce platforms with social media and emerging technologies like AR/VR.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.6547,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure diversity, consider covering a wide range of topics, including but not limited to sales and revenue tracking, user management, product recommendations, payment processing, inventory management, customer support, promotions, accessibility, and user experience. Additionally, incorporate various aspects such as integration with social media, support for multiple languages and currencies, accessibility features, compliance with regulations, and advanced analytics. Avoid similar requirements and focus on providing a broad spectrum of functional requirements that can support downstream classifier generalization, while maintaining a high level of abstraction and avoiding specific implementation details. Ensure all requirements are written from the business analyst's perspective, focusing on the functional aspects of the e-commerce application relevant to business operations and user experience.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5872,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nNote: The requirements should cover a wide range of e-commerce features, including but not limited to product bundling, gift wrapping, loyalty programs, product recommendations, abandoned cart recovery, and social media integration. Ensure that each requirement is unique and does not duplicate existing requirements, and that the language used is diverse and clear, avoiding ambiguity and redundancy.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.6084,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices. Ensure all items explicitly refer to the IT system's aspects to reinforce the context.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel (Maintain a high level of abstraction, focusing on what the system should do rather than how it should do it, and avoid delving into implementation specifics.).\n\nIn generating these requirements, consider a wide range of e-commerce functionalities, including but not limited to order tracking, payment processing, product comparison, social media integration, accessibility, security, user experience, system scalability, data analytics for business insights, integration with other business systems (e.g., CRM, ERP), and ensuring compliance with regulatory requirements (e.g., GDPR, PCI-DSS), to enhance semantic diversity and support downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5642,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity, consider incorporating requirements that reflect emerging trends, regulatory compliance, and complex business scenarios in e-commerce, such as sustainability, accessibility, advanced technologies, and globalization. Additionally, ensure that the requirements cover a wide range of topics, including both customer-facing features and backend processes, to support downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.623,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.6719,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity and support downstream classifier generalization, the generated requirements should cover a broad range of e-commerce functionalities, including but not limited to:\n- User account management and personalization\n- Payment processing, security, and compliance with international regulations\n- Product search, recommendation algorithms, and inventory management\n- Shipping, order tracking, and logistics integration\n- Social media integration and content management\n- Customer service, review, and rating systems\n- Analytics, A/B testing, and performance metrics\n- Subscription and subscription management services\n- Integration with external services, marketplaces, and third-party APIs\n- Accessibility features for users with disabilities\n- Detailed security protocols for different types of user data\n- Edge cases and error handling (e.g., payment gateway failures, denial-of-service attacks)\n\nEach requirement should be written from the perspective of a business analyst, focusing on the functional aspects of the system that are critical for business operations. The requirements should be detailed, covering specific functionalities, performance metrics, and technical specifications, and should be described in natural language (English) using prose. Consistency in detail level and specificity in technical requirements are essential, and the inclusion of edge cases and error handling will enhance the comprehensiveness of the requirements.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.664,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure comprehensive coverage, the generated requirements should exhibit a wide range of operational scenarios, including but not limited to standard operations, edge cases, and exceptions. They should also capture the diverse needs and interactions of various user roles within the fleet management domain, such as drivers, dispatchers, and fleet managers, and consider the integration with other systems and compliance with regulatory requirements. Additionally, requirements should address the management of vehicles under different conditions, such as those in areas with limited connectivity, and scenarios involving vehicle theft or system downtime.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.507,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity, the generated requirements should cover a wide range of fleet management aspects, including but not limited to vehicle tracking, maintenance, routing, reporting, security, and optimization. The requirements should use varied verbs and nouns to ensure semantic diversity. Additionally, consider including requirements related to specific use cases, such as managing electric or hybrid vehicles, handling special requests, dealing with emergency situations, and end-user-centric technical implementation details. Avoid generating similar or overlapping requirements; instead, aim for a comprehensive set that supports downstream classifier generalization.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5543,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User, with consideration for specific roles such as administrators, dispatchers, and drivers to enhance relevance and usability.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices), with explicit statements about assumptions regarding the IT system context for each requirement where applicable.\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, with requirements being specific and detailed while maintaining a high level of abstraction, covering a wide range of fleet management aspects including vehicle allocation, routing optimization, compliance management, user management, and access control, to support downstream classifier generalization and ensure semantic diversity.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5497,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo ensure diversity, include a range of fleet management tasks, such as vehicle allocation, route optimization, cargo management, and data analysis. Incorporate various stakeholder perspectives, including drivers and customers, and consider different types of vehicles. Include requirements related to data insights, like predictive maintenance, driver behavior analysis, and fuel consumption patterns. Also, cover aspects of user interface, user experience, and system integration to enhance end-user adoption and satisfaction. Ensure that the requirements are concise and directly related to the end-user's needs, framing benefits in terms of cost savings, regulatory compliance, or other relevant factors.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5464,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance diversity, ensure the requirements cover a broad spectrum of fleet management aspects, including but not limited to vehicle tracking, maintenance scheduling, route management, driver management, reporting, integration with other systems (e.g., accounting, HR), security and access control, data analytics, compliance with regulatory requirements, and support for different types of vehicles (e.g., electric, hybrid). Consider emerging technologies and unique needs such as autonomous vehicles, predictive maintenance, and detailed security measures to protect against cyber threats. Strive for concise and directly focused requirements that minimize similarity and maximize the coverage of different stakeholders and technical aspects.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5691,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo ensure the requirements are semantically diverse and support downstream classifier generalization, consider including a wide range of fleet management aspects, such as vehicle tracking, maintenance, safety, security, integration with other systems, and also edge cases like managing electric or hybrid vehicles, handling vehicle recalls, integrating with traffic management or logistics systems, supporting multiple user roles, and handling data analytics or reporting. Additionally, vary the keywords, phrases, sentence structures, and lengths to create a diverse set of examples that cover different scenarios and use cases within the fleet management domain.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5868,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance semantic diversity, consider including requirements that address various user roles (e.g., dispatcher, mechanic, driver), different fleet types (e.g., passenger vehicles, cargo trucks, emergency response vehicles), special operational conditions (e.g., vehicle sharing services, car rentals), and a broad range of functionalities within the fleet management system, such as vehicle procurement, driver training, compliance with regulatory requirements, integration with other business systems (e.g., accounting, customer relationship management), data analytics, and business intelligence. Additionally, aim to use varied language and sentence structures to increase diversity among the requirements.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5019,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel. \n\nAdditionally, ensure the requirements cover a wide range of fleet management functionalities, including but not limited to vehicle tracking, fuel management, maintenance scheduling, driver behavior monitoring, and integration with other systems. Incorporate diverse perspectives by including requirements that address emerging trends such as electric vehicle integration, autonomous vehicles, and advanced predictive maintenance using AI. Also, consider user experience and usability features for different types of users, as well as integrations with smart city or smart infrastructure initiatives for urban planning, traffic management, or environmental sustainability goals. Ensure the requirements also encompass emergency and exception handling scenarios, such as accidents or natural disasters, and focus on sustainability and efficiency, including reducing environmental impact and optimizing routes for minimal carbon footprint.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5172,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nIn creating these requirements, ensure they are semantically diverse, covering a broad spectrum of fleet management functionalities, including but not limited to vehicle tracking, maintenance scheduling, driver management, integration with external services, reporting, analytics, security, and compliance. Each requirement should be unique and non-redundant, providing specific and detailed actions or computations the system must perform. The requirements should be written from a technical perspective, intended for developers, and consider the IT system aspects of fleet management. While focusing on functional requirements, strive to include a variety of requirement types to enhance diversity, ensuring that the set can effectively support downstream classifier generalization by providing a wide range of examples for training.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5031,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System, including but not limited to aspects such as vehicle tracking, maintenance, fuel management, driver management, compliance, electric or hybrid vehicle management, autonomous vehicle integration, advanced analytics for predictive maintenance, integration with emerging technologies like IoT devices in vehicles, and enhanced security measures for protecting against cyber threats.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, ensuring each requirement provides a clear and detailed description of the desired functionality, including specific actions, conditions, and where applicable, the frequency of updates or the specific data to be included in notifications, to support a wide range of functionalities within fleet management, including vehicle tracking and monitoring, maintenance scheduling and management, fuel management and expense tracking, driver management and behavior monitoring, system integrations for seamless operation, security and compliance, and customizable reporting and analytics.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5639,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nIn addition to satisfying these constraints, ensure the requirements exhibit a broad range of functionalities within fleet management, including but not limited to vehicle tracking, maintenance scheduling, driver management, route optimization, system upkeep, security measures (such as data encryption and access controls), user interface standards (including usability and accessibility features), data analytics and reporting capabilities (like predictive maintenance and driver performance analysis), and considerations for scalability and performance under increased load or growth. The requirements should also cover integration with other business systems, environmental impact, customer service aspects, and fuel consumption management, aiming to create a comprehensive and diverse set of requirements for the development of a fleet management system.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5297,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nNote: To enhance semantic diversity and support downstream classifier generalization, the generated requirements should cover a wide range of functionalities within the Fleet Management System, including but not limited to vehicle tracking, fuel management, maintenance scheduling, driver management, regulatory compliance, route optimization, and environmental impact analysis. Additionally, consider including requirements that focus on niche aspects of fleet management, such as specific regulations in certain regions, unique vehicle types, or highly customized fleet operations, and provide detailed technical implementation specifications where applicable.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5782,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.4702,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance the diversity and clarity of the requirements, ensure that the set includes a broad range of functionalities within the fleet management system, such as energy efficiency, regulatory compliance, user experience, and integration with other systems. Each requirement should be unique, serving a distinct purpose, and should be described in a clear and specific manner, avoiding overlap and ambiguity. The requirements should also cover various aspects of fleet management, including but not limited to vehicle tracking, maintenance, driver management, logistics, reporting, analytics, security, and access control, with a focus on supporting downstream classifier generalization.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5436,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\nTo ensure the generated requirements support downstream classifier generalization, the set should cover a broad range of fleet management aspects, including but not limited to vehicle tracking and monitoring, integration with other systems, user management, reporting and analytics, vehicle maintenance and inspection, compliance and regulatory requirements, fleet optimization, safety and risk management, customer management, and financial management, with a focus on avoiding redundancy and similarity among the requirements.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5106,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse and unique requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel. Ensure that the requirements are specific, precise, and distinct from one another, avoiding redundancy and ambiguity, and provide a wide range of topics and functionalities within the fleet management system.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5715,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst, with a focus on operational, financial, and strategic aspects, including cost reduction, efficiency improvement, compliance with regulations, and considerations of diverse stakeholder perspectives such as those of drivers, customers, or maintenance personnel.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, ensuring that the requirements capture a broad spectrum of fleet management aspects, including but not limited to tracking and monitoring, maintenance, route optimization, driver behavior, integration with other systems, security, environmental impact, vehicle procurement, inventory management, and regulatory compliance, with an emphasis on semantic diversity to support comprehensive business and user needs.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5376,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Functional — A functional requirement specifies a detailed action, computation, or data manipulation that the product must perform, typically derived from business events and use cases, describing what the product shall do in response to inputs or conditions. (A functional requirement is a requirement that specifies a function that a system or system component shall perform.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, consider including requirements that involve various stakeholders (e.g., drivers, maintenance personnel, regulatory bodies), address nuanced aspects of fleet management (e.g., energy efficiency, carbon footprint reduction), and consider the integration with emerging technologies (e.g., autonomous vehicles, IoT devices). Additionally, incorporating different types of requirements (e.g., security, usability, performance), diverse operational scenarios (e.g., handling emergencies, managing vehicle upgrades), and contextual variety (e.g., social, legal, environmental contexts) can enrich the set of requirements.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 220,
+      "optimized": true,
+      "pace_score": 0.5886,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    }
+  ],
+  "samples_per_prompt": 20,
+  "source_run_id": "782f0941-9309-48b6-ae7e-f75b1b754c6f",
+  "warnings": [
+    "parsing_degraded",
+    "verification_deficit"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "task": "t1",
+  "config": "c2_claude-haiku-4.5",
+  "classifier": "bert",
+  "model": "bert-base-uncased",
+  "run": 1,
+  "seed": 44,
+  "f1_weighted": 0.5885924846128928,
+  "precision_weighted": 0.6269920833830609,
+  "recall_weighted": 0.6,
+  "classification_report": {
+    "Availability": {
+      "precision": 0.2857142857142857,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.4,
+      "support": 6.0
+    },
+    "Fault Tolerance": {
+      "precision": 0.5,
+      "recall": 0.25,
+      "f1-score": 0.3333333333333333,
+      "support": 4.0
+    },
+    "Legal": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1-score": 0.8571428571428571,
+      "support": 3.0
+    },
+    "Look and Feel": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 10.0
+    },
+    "Maintainability": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 5.0
+    },
+    "Operational": {
+      "precision": 0.5555555555555556,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.4166666666666667,
+      "support": 15.0
+    },
+    "Performance": {
+      "precision": 0.5263157894736842,
+      "recall": 0.7692307692307693,
+      "f1-score": 0.625,
+      "support": 13.0
+    },
+    "Portability": {
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1-score": 0.5,
+      "support": 2.0
+    },
+    "Scalability": {
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1-score": 0.6666666666666666,
+      "support": 5.0
+    },
+    "Security": {
+      "precision": 0.8333333333333334,
+      "recall": 0.8,
+      "f1-score": 0.8163265306122449,
+      "support": 25.0
+    },
+    "Usability": {
+      "precision": 0.5555555555555556,
+      "recall": 0.5882352941176471,
+      "f1-score": 0.5714285714285714,
+      "support": 17.0
+    },
+    "accuracy": 0.6,
+    "macro avg": {
+      "precision": 0.5536188957241589,
+      "recall": 0.591587823940765,
+      "f1-score": 0.5321119356833642,
+      "support": 105.0
+    },
+    "weighted avg": {
+      "precision": 0.6269920833830609,
+      "recall": 0.6,
+      "f1-score": 0.5885924846128928,
+      "support": 105.0
+    }
+  },
+  "n_test": 105
+}

@@ -1,0 +1,19 @@
+task: T3
+dataset: secreq
+type: binary
+target_samples_per_label: 3240
+
+labels:
+  - name: Security
+    definition: "A security-relevant requirement contributes to a security objective and aligns with Common Criteria security functional components, covering access control, identification, authentication, audit, cryptographic support, data protection, user privacy, and system integrity."
+  - name: Non-Security
+    definition: "A non-security requirement does not contribute to any security objective and is not related to Common Criteria security functional components. It specifies functional behaviour, performance, usability, or other quality attributes unrelated to security."
+
+features:
+  Language: [English]
+  RequirementType: [Functional, Quality, Constraint]
+  AbstractionLevel: [HighLevel, DetailedLevel]
+  DescriptionType: [ProseNL]
+  Context: [Usage, ITSystem, Technical]
+  StakeholderViewpoint: [End User, Developer, Business Analyst]
+  Domain: [Payment Systems, Telecommunications Networks, Smart Card Infrastructure]

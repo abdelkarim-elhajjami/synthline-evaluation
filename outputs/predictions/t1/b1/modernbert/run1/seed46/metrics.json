@@ -1,0 +1,93 @@
+{
+  "task": "t1",
+  "config": "b1",
+  "classifier": "modernbert",
+  "model": "answerdotai/ModernBERT-base",
+  "run": 1,
+  "seed": 46,
+  "f1_weighted": 0.700177005867282,
+  "precision_weighted": 0.6775840481119983,
+  "recall_weighted": 0.7428571428571429,
+  "classification_report": {
+    "Availability": {
+      "precision": 0.6,
+      "recall": 0.5,
+      "f1-score": 0.5454545454545454,
+      "support": 6.0
+    },
+    "Fault Tolerance": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 4.0
+    },
+    "Legal": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
+      "support": 3.0
+    },
+    "Look and Feel": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 10.0
+    },
+    "Maintainability": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 5.0
+    },
+    "Operational": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 15.0
+    },
+    "Performance": {
+      "precision": 0.5714285714285714,
+      "recall": 0.9230769230769231,
+      "f1-score": 0.7058823529411765,
+      "support": 13.0
+    },
+    "Portability": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 2.0
+    },
+    "Scalability": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 5.0
+    },
+    "Security": {
+      "precision": 0.9583333333333334,
+      "recall": 0.92,
+      "f1-score": 0.9387755102040817,
+      "support": 25.0
+    },
+    "Usability": {
+      "precision": 0.6956521739130435,
+      "recall": 0.9411764705882353,
+      "f1-score": 0.8,
+      "support": 17.0
+    },
+    "accuracy": 0.7428571428571429,
+    "macro avg": {
+      "precision": 0.5538255223037832,
+      "recall": 0.5955381873028932,
+      "f1-score": 0.5627374916908912,
+      "support": 105.0
+    },
+    "weighted avg": {
+      "precision": 0.6775840481119983,
+      "recall": 0.7428571428571429,
+      "f1-score": 0.700177005867282,
+      "support": 105.0
+    }
+  },
+  "n_test": 105
+}

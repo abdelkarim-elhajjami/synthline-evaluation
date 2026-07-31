@@ -1,0 +1,1170 @@
+{
+  "run_id": "47af89f7-a2b3-4fc1-b60f-ff9f0b3b5cea",
+  "timestamp_utc": "2026-03-30T20:46:46.677554+00:00",
+  "llm": "openrouter/anthropic/claude-haiku-4.5",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "samples_requested": 1080,
+  "samples_produced": 935,
+  "samples_per_prompt": 20,
+  "verify": true,
+  "verify_threshold": 0.6,
+  "optimized": true,
+  "prompt_approach": "default",
+  "duration_seconds": 2616.22,
+  "alignment_verification": {
+    "alignment_threshold": 0.6,
+    "max_retries": 3,
+    "attempts_used": 4,
+    "requested_samples": 1080,
+    "accepted_samples": 935,
+    "alignment_deficit": 145,
+    "termination_reason": "max_retries_reached",
+    "scores": {
+      "accepted": {
+        "count": 935,
+        "min": 0.6001,
+        "mean": 0.744,
+        "max": 0.9663
+      },
+      "rejected": {
+        "count": 1307,
+        "min": 0.0273,
+        "mean": 0.3781,
+        "max": 0.5996
+      }
+    },
+    "total_generated_across_retries": 2242,
+    "accepted_per_attempt": [
+      489,
+      238,
+      135,
+      73
+    ],
+    "attempt_trace": [
+      {
+        "attempt": 1,
+        "pending_in": 1080,
+        "accepted": 489,
+        "rejected": 591,
+        "accepted_added": 489,
+        "rejected_configs": 54,
+        "duration_ms": 291746
+      },
+      {
+        "attempt": 2,
+        "pending_in": 591,
+        "accepted": 238,
+        "rejected": 353,
+        "accepted_added": 238,
+        "rejected_configs": 50,
+        "duration_ms": 141143
+      },
+      {
+        "attempt": 3,
+        "pending_in": 353,
+        "accepted": 135,
+        "rejected": 218,
+        "accepted_added": 135,
+        "rejected_configs": 39,
+        "duration_ms": 89063
+      },
+      {
+        "attempt": 4,
+        "pending_in": 218,
+        "accepted": 73,
+        "rejected": 145,
+        "accepted_added": 73,
+        "rejected_configs": 30,
+        "duration_ms": 50166
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirement:** Ensure semantic diversity across at least 8 distinct technical dimensions, such as: Operating Systems and versions, Cloud Infrastructure providers, Database Systems, Network conditions and Geography, Device Hardware specifications, Third-party Integrations, Data Processing approaches, and Authentication/Access mechanisms. Distribute requirements evenly to avoid clustering in any single dimension, with no more than 4 items addressing the same technical category. Each requirement must introduce distinct portability constraints and technical contexts to support robust classifier generalization.\"",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5534,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Requirement Generation:**\n\nTo ensure semantic diversity and avoid redundancy, the 20 requirements should comprehensively span multiple distinct portability dimensions, including but not limited to:\n- Operating system and platform compatibility (Windows, macOS, Linux variants, mobile OS)\n- Device form factors and hardware architectures (desktops, tablets, mobile devices, servers, legacy systems)\n- Cloud versus on-premises deployment models\n- Display technologies and visual adaptation (resolution, screen sizes, brightness, lighting conditions)\n- Environmental conditions (temperature ranges, humidity, altitude, electromagnetic interference, power supply specifications)\n- Network infrastructure and connectivity types (wired, wireless, bandwidth constraints, latency, geographic distribution)\n- Database and storage technology portability\n- Input/output methods and accessibility features\n- Virtualization and containerization platforms\n- Geographic and time zone considerations\n\nEach requirement must include specific, measurable technical parameters (version numbers, numeric ranges, technical specifications) and reference realistic healthcare use cases. Requirements should avoid clustering around a single technical dimension; instead, distribute across distinct portability aspects to maximize training signal diversity.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6411,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n- Ensure requirements span across distinct IT infrastructure layers: operating systems, cloud/virtualization platforms, containerization, message queue systems, caching layers, load balancing infrastructure, monitoring and observability systems, storage systems, API gateway platforms, network security appliances, vehicle telematics protocols, IoT platform integrations, real-time operating systems, edge computing environments, and third-party library/framework dependencies.\n- Minimize semantic overlap by consolidating database requirements into a single unified requirement addressing multi-database portability rather than separate requirements per database system.\n- Include explicit coverage of middleware components (message brokers, API gateways, caching systems), observability infrastructure (logging, monitoring, distributed tracing), and vehicle-specific communication standards (CAN-bus, OBD-II, telematics protocols).\n- Balance traditional platform portability (operating systems, browsers) with modern infrastructure requirements (edge computing, IoT platforms, containerized deployments, real-time systems).\n- Ensure no more than 10% semantic redundancy across the 20 requirements.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4847,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Semantic Diversity:**\n- Ensure comprehensive coverage across portability dimensions including: operating systems, cloud/infrastructure platforms, device types, connectivity protocols, hardware integration, database systems, environmental conditions, user interfaces, localization, and operational resilience.\n- Incorporate varied technical aspects such as vehicle telematics hardware (CAN-bus, OBD-II), sensor technologies (GPS, telemetry), physical environmental constraints (temperature ranges, altitude, vibration, electromagnetic interference), and network infrastructure (2G, 4G, 5G, satellite, WiFi).\n- Include requirements addressing database portability, messaging systems, caching layers, regulatory and safety standards, sensor fusion, and real-time processing constraints.\n- Maximize semantic separation between items by varying constraint types, scope levels, and technical focus areas.\n- Ensure all 20 items demonstrate distinct portability concerns without significant overlap.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5674,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure requirements demonstrate semantic diversity across at least eight distinct portability dimensions such as: server operating systems, cloud deployment platforms, client device types, deployment models (on-premises, cloud, containerized, hybrid), database systems, hardware architectures, network infrastructure configurations, middleware/integration systems, storage solutions, application servers, monitoring/logging systems, and resource heterogeneity. Each requirement shall address a distinct portability concern without redundancy, enabling downstream classifiers to learn cross-platform patterns, deployment architecture variations, middleware compatibility, infrastructure heterogeneity, and enterprise architecture contexts.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4326,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Requirements:**\n- Include requirements covering API/framework portability and different framework implementations relevant to fleet management systems.\n- Include requirements addressing multiple messaging broker and event streaming platforms beyond Kafka.\n- Include requirements for container orchestration platform alternatives and diversity.\n- Include requirements specifically addressing embedded systems, IoT gateways, vehicle telematics units, and in-vehicle computing platforms.\n- Ensure minimal semantic overlap by distributing requirements across distinct infrastructure layers (compute, connectivity, data, integration, security, edge/embedded systems) with at least 18+ distinct portability dimensions represented.\n- Prioritize requirements reflecting real-world fleet management deployment scenarios across heterogeneous infrastructure environments.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4407,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Guidance for Diversity:\n- Ensure semantic diversity across at least 10 distinct portability dimensions (e.g., device types, operating systems, hardware architectures, deployment environments, network conditions, databases, payment systems, physical environments, accessibility, browsers/clients).\n- Avoid redundancy within the same portability dimension; each item should address a unique technical aspect or sub-dimension.\n- Include specific, measurable details such as version numbers, screen dimensions, memory specifications, environmental parameters (temperature ranges, UTC zones), bandwidth ranges, and named platforms.\n- Distribute requirements across client-side, network-level, infrastructure-level, and operational-level portability concerns.\n- Frame all requirements from the end-user perspective regarding what users will encounter in different environments and operational contexts.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6534,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span distinct portability dimensions including operating systems and platforms, deployment models, database and backend systems, network environments, display and input hardware, environmental physics (thermal, electromagnetic, lighting, vibration), physical space constraints, storage and memory, accessibility standards, medical device integration, real-time synchronization, and offline functionality. Minimize semantic redundancy between requirements while maximizing coverage across these categories.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5637,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional Guidance for Diversity:\n- Ensure requirements address user-centric portability across devices and platforms (e.g., seamless experience across mobile, tablet, desktop; mid-session switching; consistent user context preservation).\n- Include requirements for accessibility portability, covering adaptation to assistive technologies, accessibility standards, and diverse user capabilities across platforms.\n- Incorporate localization and internationalization portability concerns (e.g., language support, currency, regional requirements, character sets).\n- Address portability for interactions between the e-commerce system and external systems (e.g., inventory management, CRM, logistics partners, payment processors) across different platforms and deployment contexts.\n- Include portability for different network conditions, connectivity scenarios (offline/online modes), and edge deployment contexts.\n- Cover backward compatibility and legacy system migration scenarios.\n- Avoid clustering similar technologies; distribute requirements across distinct portability domains (infrastructure, user experience, accessibility, integration, resilience).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5893,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n- Ensure coverage across at least 8 distinct portability dimensions (e.g., database/backend, hardware architecture, operating systems, cloud/deployment environments, GPU/accelerators, browser/frontend, storage media, computational precision, network constraints, geolocation).\n- Include specific version numbers, processor architectures, memory constraints, thermal conditions, network latency ranges, screen dimensions, response time thresholds, data scale metrics, and hardware specifications.\n- Reference diverse e-commerce subsystems (cart, catalog, authentication, checkout, inventory, search, notifications, wishlist, recommendations, analytics, reporting, session management).\n- Avoid semantic redundancy; each requirement must address a unique combination of portability concern and technical characteristic.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6505,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Guidance for Diversity:**\n- Distribute requirements across multiple distinct portability dimensions: operating systems (Windows, Linux, macOS), mobile platforms (iOS, Android), cloud infrastructure (AWS, Azure, GCP), database systems (PostgreSQL, MySQL, Oracle), hardware architectures (ARM, x86, AMD64), network conditions (latency, bandwidth, connectivity types), environmental conditions (temperature ranges, humidity, atmospheric pressure), device form factors (screen sizes, ruggedization ratings), and telematics protocols (CAN bus, OBD-II, J1939).\n- Ensure each requirement addresses a unique technical portability challenge rather than repeating similar deployment scenarios.\n- Include specific technical parameters (e.g., temperature ranges in °C, latency in milliseconds, RAM specifications in GB, GPS accuracy in meters, brightness in lux, processor types) to maintain detailed abstraction level.\n- Frame all requirements from a business analyst perspective emphasizing operational impact, infrastructure accommodation, service continuity, compliance, and deployment flexibility across heterogeneous environments.\n- Avoid semantic redundancy; if multiple requirements reference similar technologies (e.g., cloud platforms), ensure they emphasize different portability dimensions (e.g., geographic distribution vs. hybrid architecture flexibility).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5342,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n\nEnsure the 20 requirements demonstrate semantic diversity across multiple orthogonal dimensions, including but not limited to:\n- **Operating System/Platform Diversity**: Vary across Windows, macOS, Linux distributions, mobile OS (Android, iOS), Chrome OS, and other platform families.\n- **Deployment Infrastructure Diversity**: Include requirements addressing on-premises, cloud (AWS, Azure, GCP), containerized (Docker, Kubernetes), VM-based (VMware, Hyper-V, KVM), and hybrid deployment scenarios.\n- **Network/Connectivity Diversity**: Cover different network conditions (bandwidth variations, low-bandwidth scenarios), protocol support (IPv4/IPv6), and connectivity configurations (proxies, firewalls, VPNs, air-gapped environments).\n- **Device/Client Type Diversity**: Address different client architectures (x86-64, ARM processors), browser types, peripheral devices (scanners, printers, payment readers), and resource-constrained/edge devices.\n- **Feature/Functionality Scope Diversity**: Distribute requirements across distinct e-commerce functions (product browsing, cart management, checkout, payment processing, order tracking, filtering, wishlist management).\n- **Geographical/Regulatory Diversity**: Include requirements addressing multi-region support, character sets, currency formats, and regulatory environments.\n\nEach requirement must reference concrete IT infrastructure elements (specific OS versions, hardware architectures, databases, web servers, runtimes, network protocols) with detailed technical parameters to maintain DetailedLevel abstraction while maximizing semantic independence and minimizing conceptual redundancy.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5228,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n- Ensure all requirements are framed from the perspective of clinical end users (physicians, nurses, healthcare workers, patients) and their actual usage experiences, NOT from IT infrastructure, architects, or system administrators perspectives.\n- Ensure all requirements focus on how end users interact with, access, and use the system across different platforms and environments, NOT on backend infrastructure deployment, database selection, or system architecture choices.\n- Maximize semantic diversity across portability dimensions including but not limited to: operating systems, mobile/tablet platforms, browser compatibility, responsive design, network conditions (wired/wireless/low-bandwidth), hardware constraints, input methods (touch/keyboard/voice), accessibility features, medical device integration, language/localization support, offline functionality, data synchronization, and medical workflow portability across clinical settings.\n- Avoid clustering more than 2 requirements on any single portability dimension.\n- Exclude requirements focused on infrastructure choices (cloud platforms, hypervisors, containerization, database systems) unless explicitly tied to end-user experience or clinical workflow portability.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5799,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n- Ensure each requirement addresses a distinct portability dimension (e.g., operating systems, cloud deployment models, hardware architectures, device form factors, database ecosystems, network connectivity constraints, integration patterns, specialized environments).\n- Minimize semantic overlap by varying the specific platforms, technologies, and business contexts across requirements.\n- Include diverse fleet management scenarios representing different organizational profiles (startups, enterprises, government agencies, international operations, rural deployments, resource-constrained contexts).\n- Distribute requirements across multiple portability categories: horizontal portability (different platforms at similar abstraction levels), vertical portability (different deployment/architectural layers), technical ecosystem portability (integration with external systems), and constraint-based portability (resource-constrained or security-restricted environments).\n- Avoid redundant specification of identical platforms or near-identical deployment scenarios.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4558,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional Guidance:\n- Ensure semantic diversity across at least 14 distinct infrastructure dimensions (e.g., cloud platforms, deployment models, operating systems, databases, hardware architectures, application servers, message systems, caching layers, storage systems, network/security contexts, authentication systems, client diversity, infrastructure clustering, and third-party integrations).\n- Minimize redundancy between items; each requirement should target a distinct portability concern.\n- Maintain high-level abstraction by focusing on 'what platforms' and 'what environments' rather than implementation-specific technical details.\n- Ground all requirements in e-commerce operational contexts (e.g., payment processing, inventory management, transaction handling, shopping infrastructure).\n- Use technical requirement language appropriate for developer stakeholders (e.g., 'must be deployable,' 'shall support,' 'must be compatible').\n- Avoid pseudo-code, formal logic notation, or structured templates; use complete sentences in natural language prose format.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4923,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional guidance for semantic diversity:\n- Ensure coverage of offline-first functionality and progressive enhancement patterns across different connectivity states.\n- Include requirements addressing portability to legacy systems and backward compatibility with previous application versions.\n- Incorporate portability requirements across different regulatory frameworks and regional compliance contexts.\n- Address portability across different real-time communication protocols and WebSocket alternatives.\n- Maintain balance between device/platform portability, infrastructure/architectural portability, and usage context diversity (accessibility, geographic distribution, organizational infrastructure, network conditions).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5218,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure coverage across the following portability dimensions with minimal redundancy:\n   - Mobile and IoT ecosystems (wearables, medical sensors, smartwatches, IoT gateways)\n   - Regional compliance framework portability (HIPAA, GDPR, HL7/FHIR standards variants)\n   - Legacy system and mainframe integration compatibility\n   - Database and data warehouse platform portability (SQL, NoSQL, distributed databases)\n   - Network protocols and connectivity scenarios (5G, LoRaWAN, satellite, medical-grade networks, low-bandwidth, offline-capable)\n   - Accessibility and specialized clinical interface adaptations (screen readers, haptic feedback, EHR-specific displays)\n   - Medical device ecosystem integration and embedded systems\n   - Limit redundancy in cloud/virtualization requirements to 2-3 items maximum.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5708,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n- Ensure coverage across orthogonal portability dimensions including: server operating systems, mobile platforms, cloud infrastructure providers, containerization technologies, in-vehicle systems, edge computing devices, database systems, environmental constraints, network conditions, and client-side technologies (including progressive web apps, native desktop applications, and alternative interfaces).\n- Include requirements addressing alternative client technologies and regulatory compliance portability across different geographic jurisdictions and certification frameworks where applicable.\n- Maintain semantic distinctness by ensuring each requirement addresses a non-overlapping aspect of portability or a unique combination of technical constraints relevant to fleet management operations.\n- Prioritize requirements that reflect realistic deployment scenarios across diverse organizational contexts (private data centers, cloud-first organizations, security-sensitive operations, geographically distributed fleets).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5934,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nAdditional guidance for semantic diversity: Ensure the 20 requirements collectively span multiple distinct portability dimensions including but not limited to: operating systems, cloud infrastructure providers, mobile platforms, web browsers, containerization technologies, database systems, hardware architectures, network conditions, geographic deployment regions, runtime environments, server configurations, caching and content delivery systems, authentication mechanisms, and security/compliance environments. Each requirement should address a unique portability concern to maximize classifier training generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5515,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure requirements demonstrate high semantic diversity across multiple distinct portability dimensions, including but not limited to: server operating systems and infrastructure platforms, cloud and virtualization environments, mobile and client devices, database systems, hardware device compatibility, network and connectivity scenarios, authentication and enterprise integration systems, deployment architectures, and legacy system compatibility. Each requirement shall specify concrete technical details such as version numbers, vendor names, bandwidth ranges, hardware specifications, or specific deployment contexts to support classifier generalization. Requirements shall be phrased from end-user perspectives describing user-facing capabilities and accessibility constraints within IT infrastructure deployment scenarios.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5084,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Requirements for Semantic Diversity:**\n- Span at least 15 distinct portability dimensions including but not limited to: mobile operating systems, desktop operating systems, web browsers, wearable devices, cloud infrastructure providers, progressive web applications, legacy system compatibility, payment systems, screen sizes and resolutions, containerization technologies, enterprise virtualization, network connectivity scenarios, voice and AR platforms, point-of-sale systems, hybrid cloud deployments, accessibility technologies, regional compliance frameworks, gaming and smart device platforms, and IoT ecosystems.\n- Represent diverse end-user contexts including budget-conscious users, international users, users with accessibility needs, multitasking users, enterprise users, retail workers, educational users, and regulated industry users.\n- Include varied deployment models such as public cloud, private data centers, on-premises infrastructure, containerized orchestration, virtual desktop infrastructure, edge networks, and content delivery networks.\n- Address different interaction modes including touch interfaces, voice commands, keyboard navigation, assistive technologies, gesture-based controls, graphical user interfaces, and IoT device interfaces.\n- Ensure non-overlapping technical domains with minimal redundancy across the 20 requirements.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5655,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span distinct portability dimensions including operating systems, cloud platforms, mobile/client interfaces, database systems, network architectures, hardware configurations, storage solutions, backup/disaster recovery, edge computing, and legacy system integration. Minimize semantic overlap between requirements; avoid clustering multiple requirements addressing the same infrastructure concern unless essential for domain completeness.\n9. DomainCoverage: Prioritize healthcare-specific IT infrastructure scenarios (clinical workstations, medical imaging systems, patient data repositories, healthcare facility networks, medical device integration) to ensure requirements reflect realistic healthcare deployment contexts.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4602,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Guidance:**\n- Maximize semantic coverage across portability dimensions: OS/platform types, device form factors, deployment infrastructure models, hardware/telematics integration, network conditions, database compatibility, regional/geographic variations, authentication systems, communication protocols, and emerging technologies.\n- Minimize conceptual redundancy by ensuring each requirement addresses a distinct portability concern or usage context within fleet management operations.\n- Represent diverse end-user personas (drivers, dispatchers, fleet managers, field workers) and their distinct operational environments.\n- Avoid clustering multiple requirements around the same portability dimension unless they address meaningfully different usage patterns or operational contexts.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5061,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure requirements demonstrate semantic diversity across multiple portability dimensions including but not limited to: operating systems and architectures, cloud providers and deployment models, database technologies, runtime environments, application servers, external service integrations, containerization platforms, interface specifications, and constraint types (version compatibility, resource limitations, regulatory compliance, offline scenarios). Each requirement should address distinct portability challenges or usage contexts with minimal redundancy, focusing on concrete technical details such as specific version numbers, technology names, implementation concerns, and operational environments relevant to e-commerce applications.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5812,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span multiple dimensions including: cloud platforms (AWS, Azure, GCP, hybrid, on-premises), operating systems (Windows, Linux, Unix, mobile), databases (PostgreSQL, MySQL, Oracle, SQL Server), deployment architectures (monolithic, microservices, serverless, containerized, edge), infrastructure technologies (hypervisors, CDN, IoT, POS terminals), middleware services (message queues, caching, search engines, authentication), and cross-cutting concerns (failover, geographic redundancy, latency, data residency, observability). Avoid redundancy while ensuring each requirement introduces distinct technology contexts or infrastructure integration points relevant to business analyst perspectives.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4837,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Requirements for Semantic Diversity:\n- Distribute portability coverage across at least 7 distinct categories: Operating Systems, Cloud/Infrastructure, Mobile Platforms, Edge/IoT Devices, Database Systems, Environmental/Physical Conditions, and Network/Distributed Systems.\n- Ensure each requirement includes specific version numbers, explicit technology names, quantified specifications (e.g., RAM, storage, temperature ranges, latency values, GPS accuracy), and hardware architectures.\n- Avoid redundancy by ensuring complementary focus areas within overlapping domains (e.g., distinguish between processor architecture, thermal management, and computational resources when addressing hardware constraints).\n- Maintain developer-focused implementation perspective with imperative technical directives and reference to specific frameworks, protocols, and deployment platforms.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5777,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nDiversity Requirements:\n- Cover at least 10 distinct portability dimensions including: operating systems, deployment models (cloud, on-premises, hybrid, edge, air-gapped), infrastructure platforms, technology integrations, communication technologies, organizational contexts, geographic distribution, application delivery methods, device types, and external system ecosystems.\n- Ensure each requirement addresses a distinct portability aspect with minimal semantic overlap.\n- Avoid abstract or forward-looking technologies that lack immediate relevance to typical fleet management operations.\n- Maintain consistent, concrete business terminology appropriate for business analyst stakeholders.\n- Vary vocabulary and phrasing to prevent repetition while preserving high-level abstraction and ProseNL format.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4309,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. Diversity Requirement: Ensure semantic diversity across at least 8 distinct portability dimensions, including: Operating System/Browser portability, Cloud/Deployment platform adaptability, Mobile device compatibility, Network connectivity variations, Hardware infrastructure scalability, Database system compatibility, API/Protocol portability, and Version/Backward compatibility. Minimize thematic overlap between requirements; avoid redundant specifications of the same portability dimension across multiple items.\n9. Stakeholder Alignment: Ensure all requirements prioritize end-user-facing portability experiences. Requirements must articulate how end users perceive and benefit from portability across different IT systems and environments, rather than focusing on backend infrastructure integration details or business-level system interoperability concerns.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6025,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Diversity Instructions**:\n- Ensure requirements span at least 12 distinct portability categories, such as: operating systems, device types, deployment models, screen/display adaptability, integration/ecosystem compatibility, network/connectivity scenarios, cross-platform applications, database systems, resource constraints, geographic/international considerations, accessibility, and infrastructure/backup contexts.\n- Avoid semantic overlap; each requirement must address a non-overlapping or minimally-overlapping portability concern.\n- Cover hardware, software, deployment, connectivity, accessibility, and organizational dimensions.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.471,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure that each requirement:\n- Addresses a distinct portability dimension (e.g., operating systems, cloud platforms, databases, mobile devices, network architectures, authentication systems, medical device interfaces, virtualization, storage systems, geographically distributed environments, or communication protocols) without semantic redundancy.\n- Is grounded in realistic healthcare IT infrastructure contexts where end-users operate the system.\n- Focuses on what the system must support rather than how to implement it.\n- Avoids implementation details, specific versions, configuration parameters, or low-level technical specifications.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.419,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure requirements demonstrate high semantic diversity across multiple portability dimensions including but not limited to: operating systems and versions, processor architectures, cloud platforms, database systems, container and orchestration technologies, network architectures, data storage backends, authentication and security systems, messaging systems, scalability models, network constraints, peripheral devices, internationalization considerations, network security approaches, and virtualization technologies. Each requirement shall address distinct portability concerns with specific technical details such as version numbers, technology names, standards, and implementation patterns to support effective classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5197,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure substantial coverage across distinct portability dimensions including (but not limited to): operating systems and server environments, cloud and deployment platforms, mobile and client devices, database systems, user interface platforms, network architectures, hardware architectures, integration and interoperability systems, workflow and regulatory adaptations, authentication systems, infrastructure scaling scenarios, geographic and temporal support requirements, storage solutions, and connectivity scenarios. Minimize redundancy by distributing items across these dimensions such that each requirement addresses a meaningfully different portability context.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5012,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements cover distinct portability dimensions including: (a) operating systems and server architectures, (b) mobile and device platforms, (c) cloud and deployment infrastructure, (d) data storage and backend systems, (e) software components and communication standards, (f) enterprise integration and authentication, (g) offline/degraded-mode functionality, (h) legacy system interoperability, (i) performance characteristic preservation across platforms, and (j) regulatory and compliance adaptation. Minimize semantic overlap; avoid clustering more than 2-3 items within any single portability dimension. Consolidate or differentiate related requirements to maximize thematic distinction across the 20 items.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.48,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Requirements for Semantic Diversity:\n- Ensure requirements cover multiple infrastructure layers (operating systems, runtime environments, databases, web servers, cloud platforms, edge computing, containerization technologies).\n- Include diverse deployment models (cloud-native, on-premises, hybrid, edge/IoT, legacy systems).\n- Specify infrastructure components with concrete details: version numbers, architecture specifications (64-bit, 32-bit, processor types), configuration modes, and feature-specific details.\n- Frame requirements from a business analyst perspective, incorporating business decisions, cost considerations, organizational constraints, and risk mitigation.\n- Distribute requirements across multiple vendors and technology categories to maximize technical diversity while maintaining semantic distinction between items.\n- Minimize redundancy by varying the portability challenges addressed (OS compatibility, device adaptation, cloud provider portability, hardware architecture support, network infrastructure adaptation).\"",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4711,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Requirements:**\n8. Coverage: Ensure requirements span at least 13 distinct portability dimensions including: operating systems, CPU architectures, cloud providers, databases, application servers, container orchestration, message brokers, storage systems, authentication systems, load balancers, network constraints, runtime environments, and resource-constrained edge devices.\n9. Semantic Distinctiveness: Each requirement must address a unique portability concern; no two requirements shall target identical infrastructure layers, deployment models, or adaptation mechanisms.\n10. Domain-Specific Applicability: All requirements must remain contextually relevant to e-commerce operations (product catalogs, transactions, customer authentication, payment processing, inventory management); exclude mobile app native deployment, backward compatibility across application versions, legacy system interoperability, and real-time operating systems (RTOS) unless directly applicable to e-commerce infrastructure.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5381,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Requirements for Semantic Diversity:**\n- Ensure requirements span at least 7 different operating system families (e.g., Windows, macOS, Linux distributions, iOS, Android).\n- Include coverage of at least 3 distinct hardware architectures or processor types (e.g., x86-64, ARM, varying memory configurations).\n- Address at least 4 different network infrastructure scenarios (e.g., high-bandwidth, low-bandwidth, IPv4/IPv6, on-premise vs. cloud connectivity).\n- Cover at least 4 deployment models or cloud platforms (e.g., AWS, Azure, GCP, on-premise, containerized environments).\n- Include at least 3 backend systems or databases (e.g., PostgreSQL, MySQL, Oracle).\n- Incorporate at least 2 healthcare interoperability standards (e.g., HL7 v2.x, FHIR).\n- Reference at least 2 authentication or directory services (e.g., Active Directory, LDAP).\n- Address at least 5 distinct clinical use cases or end-user roles (e.g., physicians, nurses, clinicians, patients, radiologists).\n- Specify concrete technical parameters including version numbers, quantified specifications (screen resolutions, bandwidth, RAM, concurrent user counts), and named standards.\n- Ensure minimal semantic overlap between requirements; each requirement shall address a distinct portability concern without redundancy.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5063,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nGuidance for Diversity:\n- Ensure semantic diversity across at least nine distinct technical dimensions including: Operating Systems, Hardware Architectures, Cloud/Infrastructure Platforms, Databases and Storage Systems, Mobile Platforms, Messaging and Integration Protocols, Deployment Patterns, Geographic and Localization Contexts, and Domain-Specific Features.\n- Distribute items across these dimensions to minimize clustering and redundancy, with no more than three items per dimension.\n- For each requirement, explicitly integrate usage context by describing: (a) the people or roles interacting with the system, (b) the other systems or external entities involved, and (c) the specific usage patterns or operational scenarios that necessitate the portability requirement.\n- Each requirement must include concrete technical details such as specific version numbers, technology names, architectural components, or implementation parameters to maintain detailed abstraction level.\n- Verify that no two requirements address identical portability concerns; each must introduce a distinct technical or contextual dimension.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5492,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Diversity Requirements:**\n- Ensure semantic coverage across at least 13 distinct platform types (e.g., Windows, macOS, Linux distributions, iOS, Android, cloud platforms, containerization technologies, web browsers, databases, IoT/edge devices, and legacy systems).\n- Represent at least 6 distinct end-user personas (e.g., drivers, mechanics, supervisors, fleet managers, dispatchers, IT administrators, office staff, fleet coordinators).\n- Address at least 8 unique usage contexts (e.g., field operations, office administration, real-time monitoring, maintenance, remote/low-connectivity areas, peak demand scenarios, legacy system transitions, data center hosting).\n- Distribute requirements across at least 9 portability dimensions including: operating systems, mobile platforms, cloud and deployment environments, web browsers, database systems, connectivity and offline capabilities, hardware constraints, backward compatibility, and special operational environments.\n- Include specific version numbers, technical specifications, hardware requirements, integration details, and concrete deployment scenarios in each requirement.\n- Avoid redundancy clustering—each requirement must address a distinct portability scenario or combination of scenarios not substantially covered by other requirements in the set.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4837,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Diversity Requirements:**\n- Cover at least 8 distinct operating system families (Windows, macOS, multiple Linux distributions, etc.)\n- Include at least 4 different cloud platforms or deployment models (on-premises, AWS, Azure, GCP, hybrid, air-gapped, edge computing, etc.)\n- Represent at least 4 device categories (desktops/servers, tablets, smartphones, specialized medical devices/edge devices)\n- Address at least 3 different network contexts (high-bandwidth LAN, low-bandwidth remote, variable connectivity, air-gapped networks)\n- Span at least 3 distinct healthcare deployment environments (hospital systems, remote clinics, urgent care facilities, surgical suites, etc.)\n- Include at least 3 different integration standards or legacy system types (HL7 FHIR, Active Directory, mainframe systems, etc.)\n- Feature diverse user personas (clinicians, nurses, administrators, patients, IT staff, surgical teams)\n- Cover varying resource constraints (minimal resource edge environments, high-performance computing clusters, resource-constrained mobile devices)\n- Ensure semantic non-redundancy: no two requirements should address the same portability concern or represent duplicate platform/environment combinations",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5082,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Diversity:**\nEnsure requirements span distinct portability dimensions including: browser/client compatibility, mobile platforms, cloud infrastructure providers, display/device adaptability, network conditions and bandwidth constraints, deployment models (on-premises, SaaS, containerized), database system independence, payment systems integration, operating system compatibility, geographic/regulatory compliance adaptation, third-party system integration, edge computing deployment, legacy system support, localization and currency handling, retail point-of-sale integration, storage backend flexibility, web server diversity, messaging and asynchronous protocols, backup and disaster recovery infrastructure, and observability platforms. Minimize semantic overlap between requirements while maintaining relevance to e-commerce portability concerns.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.544,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Diversity:**\n- Ensure requirements span multiple distinct portability dimensions including but not limited to: operating systems and server platforms, cloud infrastructure vendors, containerization and orchestration technologies, processor architectures, database management systems, mobile and web client platforms, network topologies and architectures, storage infrastructure solutions, virtualization technologies, geographic distribution and localization, edge computing and resource-constrained environments, legacy system integration, authentication and identity management systems, disaster recovery and redundancy contexts, and vendor lock-in prevention strategies.\n- Avoid semantic redundancy; each requirement should represent a meaningfully different portability concern or deployment scenario.\n- Frame requirements from technical implementation and infrastructure decision perspectives relevant to developer audiences.\n- Maintain focus on technical and physical deployment contexts rather than functional capabilities.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5465,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\nGenerate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Semantic Diversity:**\nEnsure the 20 requirements collectively span distinct portability dimensions including: operating systems and browsers; mobile platforms; cloud and on-premises deployment models; containerization and virtualization; database and backend systems; geographic and regulatory contexts; third-party integrations; device types; legacy system compatibility; and network condition variability. Minimize semantic overlap by ensuring each requirement addresses a unique portability concern from a business analyst's usage-context perspective.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4775,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span at least 8 distinct technical portability dimensions including but not limited to: operating systems, device hardware diversity, network conditions, deployment infrastructure, UI/UX adaptability, feature-specific portability, accessibility and assistive technologies, and display technology variations. Minimize semantic overlap between requirements by ensuring each addresses a unique technical angle or e-commerce functional module (such as authentication, payment processing, catalog management, checkout, order tracking, user profiles, notifications, wishlist management, product reviews, filtering, or account settings).",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6651,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nDiversity Requirements:\n- Ensure requirements span at least 10 distinct portability dimensions (e.g., operating systems, cloud platforms, deployment models, network conditions, mobile devices, database systems, container orchestration, regulatory compliance, hardware/telematics diversity, environmental conditions, processor architectures, geographic adaptation, IoT/sensors, power infrastructure, organizational scale).\n- Minimize semantic overlap; limit items addressing the same dimension to no more than 2-3 per category.\n- Explicitly ground all requirements in fleet management operational contexts (vehicle tracking, field personnel access, telematics, fleet operations).\n- Maintain business analyst perspective by focusing on capability statements and organizational deployment flexibility rather than technical implementation details.\n- Each requirement must incorporate at least one technical or physical aspect (infrastructure, hardware, network, environment, sensors, or physical laws).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5054,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Quality Criteria for Diversity:**\n- Ensure maximum semantic diversity across the 20 requirements by covering distinct portability dimensions including: operating systems, cloud/deployment platforms, hardware architectures, display/UI adaptability, database systems, environmental/physical constraints, network/connectivity variations, device types, and regulatory/geographic contexts.\n- Avoid semantic overlap or duplication; each requirement must address a fundamentally different portability challenge.\n- Include quantified specifications (bandwidth ranges, temperature parameters, screen resolutions, processor types, memory requirements) to maintain detailed abstraction level.\n- Distribute requirements evenly across multiple technical categories to prevent thematic clustering.\n- Address both traditional deployment models and emerging technologies (edge computing, IoT, containerization, cloud-native architectures).\n- Include varied clinical use cases and real-world healthcare scenarios that reflect authentic portability challenges.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6125,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nAdditional Requirements for Diversity:\n- Ensure each requirement addresses orthogonal portability dimensions with no semantic duplication\n- Cover at least 10 distinct portability categories including but not limited to: operating system compatibility, cloud infrastructure adaptability, mobile device portability, containerization, database system compatibility, network topology constraints, environmental/physical conditions, edge computing, geographic distribution, and legacy system integration\n- Include specific version numbers, quantified parameters (e.g., temperature ranges, bandwidth, storage capacity, screen sizes, physical dimensions), and named technical standards for all items\n- Maintain consistent business-analyst perspective focused on organizational deployment scenarios, infrastructure decisions, and cross-organizational integration rather than implementation details\n- Provide detailed technical specifications for hardware, software, network, environmental, and performance requirements in each requirement",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5625,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Ensure diversity across at least 10 distinct portability dimensions including: operating systems, cloud platforms, virtualization/containerization, database systems, message queues and middleware, network and deployment contexts, authentication systems, client-side platforms, compliance and standards, and monitoring/observability infrastructure. Each requirement must ground portability needs in specific healthcare usage scenarios, deployment scales, or operational contexts. Avoid redundancy by addressing non-overlapping technical concerns with explicit version numbers, product names, and concrete implementation details.**",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5542,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n8. SemanticDiversity: Ensure requirements span distinct portability dimensions including operating systems, deployment models, network conditions, device form factors, database systems, integration patterns, edge computing environments, offline operational capabilities, accessibility standards, regulatory framework adaptation, API/middleware interoperability, legacy system connectivity, communication protocols, geographic/multi-region deployment, and storage infrastructure. Minimize semantic overlap by avoiding redundant coverage of the same portability dimension. Each requirement should introduce a substantively different aspect of platform or environment adaptation rather than restating existing concepts.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4691,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Guidance for Diversity:**\n- Vary across multiple IT infrastructure dimensions: operating systems (Windows Server, Linux distributions, macOS, mobile platforms), cloud platforms (AWS, Azure, GCP, OpenStack), databases (SQL Server, PostgreSQL, Oracle, MySQL), virtualization technologies (VMware, Hyper-V), containerization (Docker, Kubernetes), hardware architectures (x86-64, ARM), networking (IPv4/IPv6, firewalls, message queues), storage systems (SAN, object storage, NAS), and peripheral devices (barcode scanners, RFID readers, biometric devices).\n- Ensure each requirement addresses a distinct portability concern or infrastructure layer to maximize semantic diversity.\n- Include specific version numbers, product names, and technical specifications that are actionable and implementable.\n- Contextualize requirements within realistic healthcare deployment scenarios (bedside care, rural settings, legacy system integration, hybrid cloud, air-gapped environments, thin-client deployments).\n- Emphasize business-analyst perspective by addressing organizational flexibility, vendor selection, cost implications, infrastructure investment accommodation, and compliance considerations.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4869,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure the 20 requirements demonstrate:\n- Comprehensive coverage across distinct portability dimensions (e.g., operating systems, cloud platforms, hardware architectures, containerization, mobile interfaces, network connectivity, backend systems, hardware integration protocols).\n- Semantic diversity with no redundant or overlapping requirements; each requirement addresses a different portability scenario or technical platform.\n- Specific technical details including version numbers, named products, quantified metrics, and standards/protocols.\n- Business analyst perspective focusing on organizational infrastructure decisions, technology compatibility, deployment flexibility, and operational feasibility within IT systems contexts.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4564,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Guidance for Diversity:**\n- Ensure requirements span multiple distinct portability dimensions: operating systems, deployment models (cloud, on-premises, hybrid, containerized), hardware/device types (IoT, mobile, legacy, embedded), infrastructure conditions, integration/compatibility layers, and hardware integration protocols.\n- Incorporate technical context constraints related to environmental and physical factors: weather conditions (humidity, temperature extremes, precipitation), spatial and geometrical aspects (vehicle dimensions, GPS antenna placement, hardware mounting constraints), and extreme operational scenarios (altitude, vibration, electromagnetic interference, connectivity variations).\n- Avoid clustering items within single themes; distribute requirements across deployment contexts, hardware variants, environmental challenges, and integration points to maximize semantic independence and classifier generalization.\n- Maintain high-level abstraction by specifying portability capabilities and adaptability requirements without prescribing implementation mechanisms.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5624,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\n**Additional Diversity Requirements:**\n- Ensure semantic diversity across at least 9-10 distinct portability dimensions (e.g., OS/platform diversity, cloud vs. on-premises, database portability, hardware architectures, network environments, device types, virtualization/containerization, authentication systems, infrastructure constraints, storage backends).\n- Minimize thematic overlap—avoid redundancy in cloud platforms, database systems, and deployment scenarios. When overlap occurs, ensure each requirement addresses a distinct organizational or technical concern.\n- Distribute requirements evenly across identified dimensions to support balanced classifier generalization.\n- Maintain business-analyst perspective by emphasizing organizational flexibility, infrastructure compatibility, and operational implications rather than technical implementation details.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4858,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4597,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "# Rewritten Instruction\n\n\"Generate 20 diverse requirements satisfying the following constraints:\n\n1. ClassificationLabel: Portability — A portability requirement specifies the other platforms or environments to which the product must be ported, including adaptability to different operating systems, devices, or deployment contexts.\n\n2. Domain: E-commerce Application.\n\n3. StakeholderViewpoint: Business Analyst.\n\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n\n5. DescriptionType: ProseNL.\n\n6. Language: English.\n\n7. AbstractionLevel: DetailedLevel.\n\n**Additional Requirements for Semantic Diversity:**\n\nEnsure the 20 requirements collectively span at least 8 distinct deployment infrastructure types (e.g., cloud platforms, containerized environments, on-premises servers, serverless computing, edge computing, virtualization technologies, hybrid architectures, bare-metal systems).\n\nEnsure the 20 requirements collectively address at least 6 different device and endpoint categories (e.g., desktop operating systems, mobile platforms, IoT/kiosk devices, POS hardware, specialized retail equipment, wearables).\n\nEnsure the 20 requirements collectively cover at least 5 distinct database or data layer technologies (e.g., relational databases, NoSQL, in-memory systems, graph databases, distributed ledgers).\n\nEnsure the 20 requirements collectively encompass at least 6 different user personas or stakeholder interaction patterns (e.g., enterprise IT administrators, end customers, accessibility-dependent users, third-party integrators, logistics personnel, development teams).\n\nEnsure the 20 requirements collectively represent at least 7 different usage contexts or business scenarios (e.g., multi-region global operations, offline-first functionality, real-time synchronization, legacy system integration, compliance-driven deployment, peak-load scalability, geographically constrained access).\n\nMinimize semantic redundancy by ensuring no two requirements address the same combination of portability dimension, deployment context, and user interaction pattern.\"",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.539,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    }
+  ],
+  "source_run_id": "2d4edc98-b80f-47d4-b9bc-d1500a432c24",
+  "warnings": [
+    "parsing_degraded",
+    "verification_deficit"
+  ]
+}

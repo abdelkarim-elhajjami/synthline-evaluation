@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[project]
+name = "synthline-evaluation"
+version = "0.1.0"
+description = "Synthline evaluation"
+requires-python = ">=3.11"
+authors = [
+    { name = "Abdelkarim El Hajjami" },
+]
+dependencies = [
+    # Synthline SDK
+    "synthline>=0.2.0",
+    # Fine-tuning (HuggingFace Trainer)
+    "transformers>=4.40.0",
+    "accelerate>=1.1.0",
+    "huggingface_hub>=0.20.0",
+    # Data & metrics
+    "datasets>=2.18.0",
+    "pandas>=2.0.0",
+    "numpy>=1.21.0",
+    "scikit-learn>=1.0.0",
+    # Diversity evaluation
+    "sentence-transformers>=2.2.0",
+    # Alignment evaluation (DeBERTa-v3-large)
+    "torch>=2.0.0",
+    # Visualization
+    "matplotlib>=3.7.0",
+    "seaborn>=0.13.0",
+    # Config
+    "PyYAML>=6.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "jupyterlab>=4.0",
+    "ipywidgets>=8.0",
+]

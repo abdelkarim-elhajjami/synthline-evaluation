@@ -1,0 +1,1097 @@
+{
+  "run_id": "e886e046-dc1b-424c-9863-12455a3aef7e",
+  "timestamp_utc": "2026-03-11T06:42:16.801803+00:00",
+  "llm": "openrouter/meta-llama/llama-3.3-70b-instruct",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "samples_requested": 1080,
+  "samples_produced": 1080,
+  "verify": false,
+  "verify_threshold": null,
+  "optimized": true,
+  "prompt_approach": "default",
+  "duration_seconds": 483.94,
+  "alignment_verification": false,
+  "prompts": [
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance the diversity and comprehensiveness of the requirements, ensure that they cover a wide range of technical and regulatory aspects, including but not limited to data security, system architecture, clinical decision support, patient safety, and emerging technologies such as artificial intelligence, blockchain, and the Internet of Things. Additionally, incorporate regulations and standards from various geographical regions, including but not limited to the United States, the European Union, Australia, and Canada, to increase the universal applicability of the requirements. Each requirement should be unique, concise, and provide specific examples or explanations to make them concrete and unambiguous, thereby supporting downstream classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5779,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity and support downstream classifier generalization, ensure the generated requirements cover a broad spectrum of topics including, but not limited to, data security and confidentiality, patient engagement, regulatory compliance, accessibility, quality of care, research, interoperability, mobile health applications, telemedicine services, and compliance with emerging regulations such as the California Consumer Privacy Act (CCPA) and the European Union's Medical Device Regulation (MDR). Additionally, consider specific requirements for domains like pediatric care, mental health, and oncology, as well as detailed requirements for training, awareness, and patient rights.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5245,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel. \n\nEnsure the generated requirements demonstrate a wide range of topics, including but not limited to regulatory compliance, environmental impact, financial management, operational efficiency, emerging technologies, and various operational scenarios, to support downstream classifier generalization and cater to the business analyst's viewpoint. Incorporate diverse regulatory focuses, such as country-specific or region-specific regulations, and consider technical aspects like AI, IoT, and blockchain to add a forward-looking dimension to the requirements.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5539,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices. Ensure comprehensive coverage of various aspects of the IT system, including but not limited to network infrastructure, database management, cloud computing, and system performance).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance semantic diversity, ensure the requirements cover a broad range of topics beyond compliance and regulatory requirements, such as user experience, system performance, security, supply chain management, inventory control, and logistics. Strive for specificity and distinctness in each requirement, avoiding similarity and ensuring that each requirement provides unique guidance. Include requirements that address e-commerce platform functionalities, international and regional laws and standards, interoperability and integration with other systems, and user experience and accessibility beyond legal compliance.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5804,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity and support downstream classifier generalization, ensure that the requirements cover a wide range of topics within fleet management, including but not limited to data protection, driver safety, environmental impact, accessibility, financial regulations, and geographical diversity (incorporating laws and regulations from various regions such as the U.S., Europe, Australia, and Canada). Each requirement should introduce a unique aspect of fleet management, avoiding overlap in themes and ensuring that specific laws, regulations, and standards are clearly explained with sufficient context for a business analyst. Additionally, requirements related to data protection and security should specify the types of data being protected and the methods used for protection, while organizational and training requirements should be detailed and explicit.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5334,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws. Consider explicitly addressing technical solutions, infrastructure, security protocols, and emerging trends in e-commerce such as blockchain, artificial intelligence, or augmented reality).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel. Ensure the requirements cover a wide range of topics including but not limited to payment processing, customer data protection, accessibility, advertising, transaction records, health information protection, supply chain management, inventory management, customer service, marketing strategies, and analytics, to enhance semantic diversity and support downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5736,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity, consider incorporating varied sentence structures and lengths, utilizing different verbs and action words to begin each requirement, including specific examples or scenarios to illustrate the requirements, and ensuring each requirement has a unique set of keywords and phrases. Additionally, consider covering emerging technologies and detailed aspects of clinical decision support systems, medical device integration, and telehealth services to provide a comprehensive set of requirements.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.615,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure semantic diversity, the generated requirements should cover a wide range of topics related to the healthcare information system, including but not limited to: compliance with regulations (e.g., HIPAA, GDPR, FISMA), quality management (e.g., ISO 13485, CLIA), data protection (e.g., patient data privacy, security), clinical decision support systems, telemedicine and remote patient monitoring, healthcare data analytics and reporting, patient engagement and portals, interoperability and data exchange between healthcare systems, system performance and scalability, user experience and usability, accessibility (e.g., Section 508), workplace safety (e.g., OSHA), and employee notification (e.g., WARN Act). The requirements should also mention different regulatory bodies, such as CMS, FDA, and ONC, and cover various aspects of the healthcare information system to support downstream classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4932,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System, with a focus on encompassing a broad range of aspects including vehicle maintenance, driver management, route optimization, fuel management, and integration with other business systems.\n3. StakeholderViewpoint: Business Analyst, considering operational, security, and compliance needs from a business perspective.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, and specifically considering cloud deployment, network security, and database management).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, ensuring the requirements cover a wide range of standards and regulations from various regions, including but not limited to GDPR, HIPAA, and other international and industry-specific standards, and addressing different facets of the fleet management system.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4294,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo increase diversity, consider including requirements that:\n- Focus on specific e-commerce application features, such as search functionality, product recommendations, user account management, and order management.\n- Address emerging trends or technologies in e-commerce, such as artificial intelligence, augmented reality, or blockchain.\n- Cover a wide range of topics beyond data protection and user privacy, including consumer rights, accessibility, advertising, and dispute resolution.\n- Use varied sentence structures and phrases to reduce redundancy.\n- Ensure consistency in terminology and formatting for ease of reading and understanding.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6144,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure semantic diversity, the requirements should cover a broad spectrum of topics within the Healthcare Information System domain, including but not limited to data protection and privacy, accessibility standards, software development and quality control, interoperability and data exchange standards, physical and environmental safety, and regulatory compliance for electronic health records and medical devices. Additionally, the requirements should also touch on other critical aspects such as technical performance metrics, user experience and usability standards, training and support requirements, disaster recovery and business continuity planning, integration with other healthcare systems or technologies, data analytics, patient engagement, clinical workflow support, and telehealth features. The requirements should be written to support downstream classifier generalization by providing a wide range of legal, technical, and operational requirements that a Healthcare Information System might need to adhere to.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5463,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity and comprehensiveness, consider including a wide range of geographical regulations, detailed technical specifications, and perspectives from various stakeholders, including but not limited to drivers, fleet operators, and IT personnel. Additionally, incorporate emerging trends and technologies in fleet management, such as autonomous vehicles and advanced telematics, as well as a focus on user experience and cybersecurity measures. Ensure the requirements cover a broad spectrum of topics, including data privacy, safety standards, environmental regulations, and accessibility standards, to support downstream classifier generalization.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5006,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System, encompassing a wide range of topics including regulatory compliance, technical standards, data handling and security, environmental and safety regulations, labor laws, financial reporting, integration with other systems, user experience and interface design, vehicle maintenance and inspection scheduling, route optimization and planning, and fuel management.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, ensuring that the requirements cover various aspects of a Fleet Management System, including compliance with regional and international standards, emerging trends in fleet management such as electric vehicles and autonomous driving, and diverse technologies and infrastructure like cloud services and on-premise solutions.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5057,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity and support downstream classifier generalization, ensure that the requirements cover a broad range of topics relevant to e-commerce applications, including but not limited to payment security, data privacy, accessibility, advertising, transaction recordkeeping, supply chain management, inventory control, logistics, backend infrastructure, frontend development, and network security. Additionally, consider incorporating perspectives from various stakeholders, such as customers, developers, and marketers, while maintaining the business analyst's viewpoint. Aim to minimize overlap between requirements and include a wide range of technical considerations to capture the breadth of e-commerce operations.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5681,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4775,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nNote: The requirements should cover a wide range of topics within the Fleet Management System domain, including but not limited to environmental regulations, driver management, vehicle maintenance, reporting, data protection, tax obligations, compliance with various laws and standards, integration with other business systems, security measures for protecting user and vehicle data, features for optimizing routes and reducing fuel consumption, mechanisms for handling customer feedback and complaints, and support for multiple languages. Additionally, consider diverse end-user scenarios, specific fleet types, varying regulatory environments, geographic and regulatory diversity, and operational specifics to enhance semantic diversity and classifier generalization capabilities.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4853,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nNote: In generating these requirements, provide a focus on technical implementation details, include direct references to development practices, methodologies, or technical standards for software development, and cover a broader range of technical aspects such as geometrical dimensions, spatial aspects, weather conditions, or physical laws to enhance semantic diversity and support for downstream classifier generalization.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5837,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nIn generating these requirements, consider a broad spectrum of topics including, but not limited to, data protection, transaction security, accessibility, consumer protection, environmental impact, employment laws, international trade laws, state or regional laws, and the regulatory implications of emerging technologies. Ensure that the requirements are semantically diverse, covering various aspects of e-commerce applications such as payment processing, product descriptions, customer interactions, and tax compliance, while avoiding redundancy and overlap. Each requirement should be specific, detailed, and focused on legal or regulatory compliance, providing clear guidance on what the e-commerce application must do to meet relevant laws, regulations, and standards.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5284,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure a diverse and comprehensive set of requirements, consider incorporating:\n- Varied sentence structures and lengths\n- A broad range of e-commerce-specific scenarios and use cases\n- Additional laws, regulations, and standards that might apply to e-commerce applications\n- Both positive and negative requirements\n- Requirements addressing specific e-commerce features, such as product reviews and ratings\n- Enhanced diversity in specific legal requirements, including edge cases and less commonly referenced regulations\n- Inclusion of industry standards beyond those already mentioned (e.g., environmental sustainability, labor practices, technology-specific standards)\n- Focus on user interaction and experience, including clear legal language and intuitive controls.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.537,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance diversity, ensure that the generated requirements cover a broad spectrum of topics, including but not limited to compliance with various regulations, patient data management, security, accessibility, quality improvement, interoperability standards, data security, training and support for end-users, and considerations for emerging technologies. Balance specificity and generality, and ensure a consistent high level of abstraction across all requirements, focusing on what the system should do rather than how it should do it, to support downstream classifier generalization effectively.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4679,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4768,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User, with a focus on how these regulations protect or impact the users directly, including their rights and protections in e-commerce transactions.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance diversity, consider including requirements related to:\n- Digital content usage, ownership, and distribution\n- Emerging trends and technologies in e-commerce, such as virtual and augmented reality shopping experiences, artificial intelligence, and blockchain\n- Regulations from various countries or regions to reflect the global nature of e-commerce\n- Environmental sustainability, ethical standards, or social responsibility in the digital economy\n- Specific user-centric protections, such as data protection, accessibility, privacy, and transparency in transactions and communications.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5702,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, focusing on compliance with laws, regulations, and standards while considering a wide range of technical aspects such as system architecture, user interface, performance metrics, data analytics, and user experience, to ensure a comprehensive coverage of the fleet management system's operational needs, including edge cases and less common scenarios within fleet management.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5192,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application, considering various types such as B2B, B2C, and C2C, and exploring diverse aspects including but not limited to data protection, payment security, accessibility, consumer protection, and intellectual property.\n3. StakeholderViewpoint: End User, focusing on requirements that protect or inform the end-user in e-commerce transactions and interactions, including those related to security, performance, scalability, and sustainability.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws), with an emphasis on detailed specifications regarding legal compliance, security measures, user protections, and technical standards.\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, providing specific and informative requirements that cover a wide range of legal and technical requirements, including emerging regulations and standards related to AI, machine learning, accessibility, and environmental sustainability in e-commerce practices.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5692,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel. The requirements should cover a wide range of topics including, but not limited to, security, privacy, accessibility, compliance, usability, performance, scalability, integration with other systems, data analytics, environmental sustainability, social responsibility, supply chain management, intellectual property protection, and tax compliance, to ensure semantic diversity and support downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5776,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws. Ensure that all requirements are strictly technical in nature, covering system capabilities, data management, vehicle operation, and maintenance, as well as regulatory compliance from a technical standpoint.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel (Focus on what the system must accomplish in terms of compliance and functionality, without delving into specific implementation details, and ensure all requirements are high-level, avoiding references to specific regulations or technologies unless they are absolutely necessary for defining the system's functionality).\n\nTo enhance semantic diversity, ensure that the generated requirements cover a broad spectrum of topics within the Fleet Management System domain, including but not limited to data protection, security standards, accessibility, environmental regulations, labor laws, financial reporting, vehicle routing, logistics, customer service, and financial management. Also, consider including regulations and standards from various regulatory bodies and geographies, as well as the impact of emerging technologies on fleet management operations.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5064,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User, with a focus on directly addressing end-user needs, experiences, and interactions with the system, in addition to ensuring regulatory compliance and system security.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, ensuring that the requirements capture a wide range of topics, including but not limited to data protection, security, compliance, system management, performance, user interface standards, accessibility, and functionalities that directly impact end-users, while maintaining a focus on what the system should do rather than how it should do it.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5343,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance the output, consider including a wide range of topics such as data protection, accessibility, environmental regulations, labor laws, tax laws, geographical regulations (e.g., California's regulations on emissions, EU's regulations on privacy), emerging technologies (e.g., autonomous vehicles, electric vehicle incentives), cybersecurity threats, and compliance with global standards like ISO 27001. Ensure the requirements are diverse, covering various aspects of fleet management and legal compliance, and consider negative requirements to define system boundaries. Vary the language used to describe requirements, moving beyond a sole focus on \"System must\" statements to include more descriptive phrases.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5416,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system. Ensure coverage of various usage scenarios such as emergency response, remote patient monitoring, and detailed user interaction requirements like accessibility features).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel (Specify particular laws, standards, and functionalities that need to be implemented or complied with, and where possible, outline specific features or functionalities required for compliance, including system maintenance, update protocols, training for new features, and compliance updates, as well as detailed privacy and security measures for specific types of patient data).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5502,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws. Ensure a consistent emphasis on technical context, including specifics about implementation, procedural aspects, and the integration of systems and technologies.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nWhen generating the requirements, ensure that each item is distinct, covering a unique aspect of the e-commerce application, and provide specific and detailed requirements where possible. Include concrete examples or scenarios to illustrate the requirements, making them more tangible and easier to understand. The set should cover a wide range of topics, including but not limited to payment security, data protection, accessibility, consumer rights, and intellectual property, with a focus on technical aspects such as system performance, scalability, integration with third-party services, and emerging technologies like artificial intelligence and blockchain. Ensure that the requirements reflect the evolving nature of e-commerce, including cross-border transactions, mobile application security, cloud security, and compliance with emerging regulations.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5719,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5091,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards. Ensure that each requirement is uniquely focused and avoids redundancy with others.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User — Each requirement should directly address end-user concerns, rights, needs, or experiences in the context of e-commerce applications.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices. Requirements should strictly relate to the IT system context, avoiding broader corporate responsibilities unless directly relevant to the IT system's operation or compliance.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel — Each requirement should provide a detailed description, including specific examples, considerations, or standards for the e-commerce application, ensuring that no requirement is overly abstract or high-level. The requirements should cover a wide range of legal and regulatory aspects relevant to e-commerce applications, including but not limited to data security, accessibility, financial information protection, environmental regulations, labor laws, employment standards, geographical regional compliance, consumer protection laws, ethical business practices, and emerging technologies such as artificial intelligence, blockchain, and cryptocurrency. Ensure semantic diversity by including requirements that reflect the perspectives of end-users from different geographical regions and consider the evolving nature of e-commerce regulations and technologies.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4867,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System, with consideration of a wide range of topics including but not limited to data protection, regulatory compliance, system design, vehicle maintenance scheduling, route optimization, and system security.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, with a focus on providing detailed specifications and ensuring a balanced coverage of various international regulations and standards, such as those from the U.S., Europe, and other regions, to enhance global applicability.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5013,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, the requirements should cover a wide range of topics within the healthcare information system domain, including but not limited to data protection and privacy, security, usability and accessibility, regulatory compliance, and operational practices. The requirements should also consider emerging trends and less common aspects of healthcare information systems, such as the ethical use of artificial intelligence and machine learning, telehealth services, interoperability, system integration, clinical workflows, and business analyst concerns like cost-benefit analysis, resource allocation, and workflow optimization. Additionally, the requirements should aim to minimize redundancy and ensure a balance between technical and non-technical aspects, as well as clinical and patient-related aspects, to support comprehensive coverage of the healthcare information system's functionality and enhance downstream classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5735,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure the generated requirements adhere to the constraints while also considering a broad range of regulations, standards, and operational needs, including but not limited to diverse geographical regulations, patient and provider experiences, emerging technologies, and various aspects of healthcare information system usage, to enhance semantic diversity and support downstream classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4683,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nIn generating these requirements, ensure they not only satisfy the given constraints but also aim to enhance diversity by including considerations of emerging technologies (e.g., autonomous vehicles, advanced data analytics), deeper insights into specific end-user roles and needs (e.g., fleet manager, dispatcher, driver), and a broader geographical and regulatory scope that encompasses international regulations and standards beyond those mentioned (e.g., FMCSA, HIPAA, ADA, GDPR), to make the fleet management system adaptable to future developments and global operations. Additionally, focus on explicit end-user needs, technical implementation details, and a more global perspective to enhance the output's diversity and compliance with the specified constraints.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.589,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User, with a focus on directly addressing end-user needs and perspectives, such as data privacy preferences, user interface accessibility features, and support for patient-centered health information exchange.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws), encompassing a broad range of technical aspects including system performance, scalability, maintainability, cloud deployment, artificial intelligence integration, cybersecurity measures, data analytics capabilities, and emerging trends and technologies in healthcare IT.\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, ensuring the requirements cover various standards, regulations, and technical specifications relevant to healthcare information systems, including but not limited to HIPAA, GDPR, WCAG 2.1, FISMA, and health informatics standards, while also incorporating requirements related to user interface and experience, clinical decision support, integration with other healthcare systems, data analytics and reporting, and patient engagement and education.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5546,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, ensure the requirements cover a broad spectrum of healthcare IT functionalities and challenges, including but not limited to patient engagement, clinical research, healthcare analytics, telemedicine, usability, interoperability, and innovative technologies such as artificial intelligence, blockchain, cloud computing, and the Internet of Medical Things (IoMT). Incorporate requirements that address various facets of healthcare IT, such as compliance with different standards (e.g., HIPAA, IEC 62304, GDPR), data protection, security, auditing, and the implementation of specific technologies and protocols, while avoiding redundancy and ensuring each requirement provides unique insights into legal and regulatory considerations for healthcare information systems from a developer's viewpoint.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5271,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User, with a focus on direct user needs and interactions with the system, including operational efficiency, usability, and performance metrics.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, with specific references to standards, regulations, and exact functionalities required, ensuring a balance between detail and accessibility for end-users. To enhance semantic diversity, the set should cover a broad range of topics within fleet management, including but not limited to compliance, vehicle maintenance, driver management, data protection, environmental impact, and system integration, with a balanced approach to regulatory compliance and end-user experience.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5596,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance the output, consider covering a broader range of topics, including but not limited to data protection, payment security, accessibility, consumer rights, advertising standards, copyright compliance, customer service standards, transaction record-keeping, and compliance with various global regulations and standards (GDPR, PCI DSS, WCAG 2.1, etc.). Additionally, aim to incorporate diverse geographical jurisdictions and emerging trends in e-commerce, such as blockchain, artificial intelligence, and regulations related to digital services, to further enrich the semantic diversity of the requirements.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4885,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance the dataset's diversity and support for downstream classifier generalization, ensure the requirements cover a wide range of topics within the Fleet Management System domain, including but not limited to data protection, security standards, system access, legal compliance, operational aspects, financial regulations, health and safety standards, and industry-specific standards for fleet operations. The requirements should also reflect a balance across different components of the Fleet Management System, such as vehicle tracking, driver management, fuel management, and maintenance scheduling, while maintaining a focus on IT system aspects such as data storage, network communications, and software updates. Additionally, ensure consistency in the level of abstraction across all requirements, focusing on what needs to be achieved in terms of compliance with laws, regulations, and standards without detailing specific implementation steps.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.3704,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, consider covering a broader range of legal and regulatory topics, including but not limited to data protection, accessibility, consumer protection, intellectual property, financial regulations, environmental regulations, employment law, international trade, cryptocurrency transactions, AI and ML privacy concerns, and IoT security, ensuring an even distribution across different regulatory areas to support downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5145,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure that the generated requirements cover a broad range of topics, including but not limited to: \n- Compliance with different regulations (e.g., HIPAA, GDPR, PCI-DSS)\n- Security and access control (e.g., encryption, RBAC, audit controls)\n- Accessibility and usability (e.g., ADA, WCAG 2.1)\n- Data exchange and interoperability (e.g., CMS, HITSP)\n- Medical device integration and safety (e.g., FDA, IEC 62304)\n- Contingency planning and disaster recovery (e.g., NIST SP 800-34)\n- Patient safety and error reduction (e.g., AHRQ)\n- Workplace safety and health (e.g., OSHA)\n- Cybersecurity (e.g., NIST Cybersecurity Framework)\n- Specific technical requirements such as data encryption algorithms, secure coding practices, network segmentation, and identity and access management\n- Emerging trends and technologies in healthcare, including artificial intelligence, Internet of Things device integration, cloud computing, and blockchain\n- System performance and scalability\n- Data analytics and reporting capabilities\n- User experience and usability\n- Integration with emerging technologies\n- Data privacy and patient consent management\n- Audit logging and compliance reporting.\n\nThe requirements should be semantically diverse to support downstream classifier generalization, covering various aspects of healthcare information systems, standards, and regulations, while ensuring they are written from the developer's viewpoint and focus on the IT system context.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5408,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo ensure the generated requirements are semantically diverse and support downstream classifier generalization, consider covering a wide range of topics related to healthcare information systems, such as data security, compliance with regulations, system integration, patient safety, accessibility, and usability. Provide detailed explanations and examples for requirements that mention specific regulations or standards, and incorporate technical details and specific use cases where possible. Aim to minimize overlap between requirements and explore diverse scenarios to enhance semantic diversity.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6098,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nIn generating these requirements, consider including a broad range of topics related to healthcare information systems, such as compliance with various regulations (e.g., HIPAA, GDPR, PCI DSS), technical security measures (e.g., encryption, access controls, malware protection), data management and patient safety standards, interoperability and data sharing standards, and quality management systems. Additionally, aim to cover emerging technologies and trends in healthcare IT, such as cloud computing, artificial intelligence, the Internet of Things (IoT), and telemedicine, as well as specific scenarios involving different healthcare specialties or global health standards. Ensure the requirements are semantically diverse, supporting downstream classifier generalization across different domains and aspects of healthcare information systems, and consider the technical context by including specific details on standards, regulations, and compliances related to technical aspects of healthcare information systems.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5681,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance the quality and diversity of the requirements, consider incorporating a range of topics including but not limited to hours of service, data protection, workplace safety, information security, accessibility, payment processing security, environmental standards, and emerging trends such as autonomous vehicle regulations and cybersecurity practices for vehicle-to-everything (V2X) communications. Ensure variability in the structure and phrasing of the requirements, and strike a balance between specificity and generalizability. Additionally, include scenarios that cover both compliance and non-compliance, edge cases, and regional or local regulations to add realism and diversity to the dataset.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.503,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, consider including requirements that address emerging technologies and trends in e-commerce, such as the integration of Artificial Intelligence (AI) and machine learning (ML), the use of blockchain for secure transactions, compliance with environmental and social responsibility standards, and the handling of IoT (Internet of Things) data. Additionally, incorporate requirements focused on specific e-commerce functionalities, such as order management, inventory control, customer service, taxes, shipping, and product safety, while ensuring a broad coverage of legal and regulatory aspects, including data protection, payment security, accessibility, and consumer protection, across various geographic regions and industries.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5631,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System, considering various types of fleets (e.g., passenger vehicles, trucks, buses, or specialized vehicles) and geographical regions (e.g., European Union, the United States, or other countries).\n3. StakeholderViewpoint: Developer, with a focus on implementation details and specific development standards that developers must adhere to, including technical requirements for emerging technologies (e.g., autonomous vehicles, electric vehicles, or vehicle-to-everything communication).\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system, and specific use cases or scenarios such as managing vehicle inspections, tracking driver hours, or optimizing routes).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, while incorporating more specific technical implementation details required by laws or standards, and covering aspects of sustainability, social responsibility, user experience, and interface requirements from a legal and accessibility standpoint.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5515,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User, with a focus on directly addressing end-user needs and protection, including aspects such as data privacy, system usability, and safety features.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, cloud services, IoT devices, network security protocols, and operational processes).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, incorporating a wide range of legal and regulatory aspects from various regions, including but not limited to the United States, the European Union, Australia, and Canada, and covering different IT system aspects, functional requirements, performance requirements, and user experience requirements to enhance semantic diversity and support downstream classifier generalization.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5154,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance diversity, the requirements should cover a broad range of contemporary and emerging e-commerce-related legal and regulatory issues, including but not limited to:\n- Data security and privacy (e.g., PCI-DSS, GDPR, HIPAA, and newer regulations like the California Privacy Rights Act)\n- Accessibility (e.g., ADA, Section 508)\n- Consumer protection (e.g., COPPA, TCPA, EFTA)\n- Financial regulations (e.g., GLBA, FTC guidelines)\n- Environmental considerations (e.g., RoHS)\n- Electronic transactions (e.g., UETA, ESIGN)\n- International regulations (e.g., ITAR)\n- Cloud computing compliance\n- Cybersecurity frameworks beyond NIST\n- AI and machine learning compliance\n- Blockchain and cryptocurrency transactions in e-commerce\n\nThese requirements should be framed to support downstream classifier generalization by addressing various aspects of e-commerce application development, including payment processing, data protection, accessibility, security practices, and emerging technologies, ensuring a comprehensive coverage of legal, security, and technical standards relevant to e-commerce applications.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5298,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity, consider including requirements related to specific technical aspects such as data encryption, secure coding practices, cloud computing security, and regional or country-specific regulations, in addition to the existing range of topics like payment security, data protection, accessibility, and consumer protection laws.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5062,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure semantic diversity and support downstream classifier generalization, consider a broad range of functionalities and compliance aspects, including but not limited to: vehicle tracking and management, regulatory compliance (tax, safety, environmental, labor laws, and international regulations), maintenance and inspection scheduling, data security and privacy, reporting and analysis for various purposes, integration with other systems, user access control, insurance management, user experience, system performance under various conditions, and scalability, as well as niche industry standards or regulations that apply to specific sectors within fleet management.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4856,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance diversity, ensure the requirements cover a broad range of topics beyond data protection and security, such as user experience, usability, performance, specific features or functionalities (e.g., product recommendations, order management), and emerging trends or technologies (e.g., artificial intelligence, blockchain, Internet of Things). Include requirements that address various aspects of e-commerce applications, like customer data, financial transactions, and online interactions, while maintaining a high level of abstraction and avoiding overly specific or detailed requirements.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5157,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Legal — A legal requirement specifies constraints originating from applicable laws, regulations, and standards that the product must comply with, including both statutory legal compliance and industry or company standards. (Originate from laws and standards.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity, ensure that the requirements cover a wide range of topics, including but not limited to data security, authentication, accessibility, compliance with various regulations, system functionality, user interface, and user experience. Aim to include varied sentence structures and phrases to improve robustness. Avoid similarity in structure and content among requirements, and break down lengthy requirements into more focused ones. Explore specific scenarios or edge cases within the healthcare information system domain, and delve into the implications of these requirements on the IT system's design and operation, including end-user interaction, implementation challenges, and system integration with other healthcare technologies.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6091,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    }
+  ]
+}

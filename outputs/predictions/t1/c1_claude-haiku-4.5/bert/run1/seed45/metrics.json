@@ -1,0 +1,93 @@
+{
+  "task": "t1",
+  "config": "c1_claude-haiku-4.5",
+  "classifier": "bert",
+  "model": "bert-base-uncased",
+  "run": 1,
+  "seed": 45,
+  "f1_weighted": 0.6609371729171227,
+  "precision_weighted": 0.7228446934329288,
+  "recall_weighted": 0.6761904761904762,
+  "classification_report": {
+    "Availability": {
+      "precision": 0.3,
+      "recall": 1.0,
+      "f1-score": 0.46153846153846156,
+      "support": 6.0
+    },
+    "Fault Tolerance": {
+      "precision": 0.3333333333333333,
+      "recall": 0.25,
+      "f1-score": 0.2857142857142857,
+      "support": 4.0
+    },
+    "Legal": {
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1-score": 0.75,
+      "support": 3.0
+    },
+    "Look and Feel": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6,
+      "f1-score": 0.631578947368421,
+      "support": 10.0
+    },
+    "Maintainability": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 5.0
+    },
+    "Operational": {
+      "precision": 1.0,
+      "recall": 0.4666666666666667,
+      "f1-score": 0.6363636363636364,
+      "support": 15.0
+    },
+    "Performance": {
+      "precision": 0.7058823529411765,
+      "recall": 0.9230769230769231,
+      "f1-score": 0.8,
+      "support": 13.0
+    },
+    "Portability": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1-score": 0.6666666666666666,
+      "support": 2.0
+    },
+    "Scalability": {
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1-score": 0.75,
+      "support": 5.0
+    },
+    "Security": {
+      "precision": 0.8888888888888888,
+      "recall": 0.96,
+      "f1-score": 0.9230769230769231,
+      "support": 25.0
+    },
+    "Usability": {
+      "precision": 0.7,
+      "recall": 0.4117647058823529,
+      "f1-score": 0.5185185185185185,
+      "support": 17.0
+    },
+    "accuracy": 0.6761904761904762,
+    "macro avg": {
+      "precision": 0.6086155674390968,
+      "recall": 0.6555916632387221,
+      "f1-score": 0.5839506762951738,
+      "support": 105.0
+    },
+    "weighted avg": {
+      "precision": 0.7228446934329288,
+      "recall": 0.6761904761904762,
+      "f1-score": 0.6609371729171227,
+      "support": 105.0
+    }
+  },
+  "n_test": 105
+}

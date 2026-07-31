@@ -1,0 +1,1097 @@
+{
+  "run_id": "797a3da2-283a-4886-91e8-dec6372dbddb",
+  "timestamp_utc": "2026-03-11T05:11:07.644951+00:00",
+  "llm": "openrouter/meta-llama/llama-3.3-70b-instruct",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "samples_requested": 1080,
+  "samples_produced": 1080,
+  "verify": false,
+  "verify_threshold": null,
+  "optimized": true,
+  "prompt_approach": "default",
+  "duration_seconds": 469.18,
+  "alignment_verification": false,
+  "prompts": [
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance semantic diversity, ensure the requirements cover a wide range of aspects, including:\n- Interactions with other healthcare applications and services.\n- Handling of various types of data (e.g., patient records, medical imaging, insurance claims) and how maintainability affects these.\n- User experience aspects for developers (e.g., ease of use of development tools, documentation quality, community support).\n- Regulatory compliance and adherence to healthcare standards and laws.\n- Specific metrics or thresholds for maintainability (e.g., update timelines, response times).\n- The intersection of maintainability with other quality attributes (e.g., security, usability, performance) within the healthcare information system context.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5748,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability. To enhance diversity, consider a wide range of maintainability aspects such as detailed descriptions of maintenance workflows, roles and responsibilities of maintainers, training and support for maintainers, scalability, adaptability to changing regulations or technological advancements, and specific measurable outcomes or performance metrics).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5004,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nEnsure that the requirements are semantically diverse, covering various aspects of maintainability, and include a mix of specific and measurable language, as well as concise and to-the-point descriptions. Incorporate diverse linguistic and structural expressions, such as varying sentence types and vocabulary, to support downstream classifier generalization. Additionally, include a range of requirements that focus on different aspects of the system, such as modularity, testability, analysability, modifiability, and ease of maintenance, and consider including negative requirements or scenarios to provide a comprehensive view of the system's behavior.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5559,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance the quality of the generated requirements, ensure that they exhibit a high level of semantic diversity, covering a broad spectrum of maintainability aspects and their implications on the end-user experience. Each requirement should be uniquely detailed, contributing to the overall maintainability and usability of the e-commerce application. The requirements should be explicitly written from the end-user's perspective, focusing on how maintainability features such as modularity, reusability, analysability, modifiability, and testability enhance their experience. Varying the language and structure of the requirements while maintaining clarity and specificity is also crucial for enhancing semantic diversity and overall quality.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5765,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance the quality and diversity of the output, ensure that the generated requirements cover a broad spectrum of maintainability aspects, including but not limited to deployment and update processes, modular architecture, data analysis, user interface, automated testing, scalability, performance, internationalization, and localization. Additionally, incorporate requirements that address security, compliance, and technical debt management strategies to further enrich the semantic diversity of the items. Each requirement should be written in a clear and specific manner, considering measurable outcomes where applicable, and should directly reflect the concerns and responsibilities of a business analyst. Ensure a balanced distribution across all specified maintainability characteristics to support downstream classifier generalization effectively.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5721,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance the diversity of the generated requirements, consider including a broader range of topics such as security and privacy considerations, data analytics, environmental and regulatory compliance, integration with emerging technologies, and user training and support mechanisms. Aim to create requirements with varying levels of specificity, different keywords and phrases, and diverse sentence structures to maximize semantic diversity and support downstream classifier generalization. Ensure that each requirement is unique and contributes to the overall diversity of the set, avoiding similar phrases and focusing on different aspects of the Fleet Management System.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4795,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nIn generating these requirements, ensure to include a mix of requirements that explicitly address different maintainability aspects, such as modularity, reusability, analyzability, modifiability, and testability, providing detailed descriptions of how the system supports these features. Additionally, focus on the specific needs and challenges that business analysts face in the context of fleet management, including decision-making, optimization of fleet operations, and compliance with regulations. Lastly, strive for semantic diversity by covering various aspects of the fleet management system, including but not limited to system design, maintainability, performance, security, usability, and integration with other systems, as well as considering user experience, accessibility, error handling, and robust security measures.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5826,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance the diversity and coverage of maintainability aspects, consider including requirements related to security updates, compatibility, integration with third-party services, accessibility features, scalability, data backup and recovery, and compliance with regulations. Additionally, focus on tying maintainability to business outcomes, such as revenue, customer satisfaction, and operational costs, and emphasize the role of the business analyst in ensuring maintainability requirements are met.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6303,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability. Consider including aspects such as cost and resource optimization, specific IT infrastructure elements like data storage and cloud services, compliance with regulatory requirements, and the integration of emerging technologies.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst, ensuring that the requirements also reflect concerns relevant to other stakeholders such as fleet managers, drivers, and maintenance personnel.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, and considers specific challenges like security measures, green initiatives, and regulatory compliance).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, focusing on overall system characteristics while ensuring that the requirements delve into sufficient specifics to enhance semantic diversity, such as explicit references to modularity, reusability, analyzability, modifiability, and testability, and cover a broad range of functionalities and features within fleet management.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5407,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.0,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo ensure diversity and minimize redundancy, the generated requirements should cover a wide range of maintainability aspects, including but not limited to:\n- Analysability: The ease with which the system's structure and components can be understood and analyzed for maintenance and modification.\n- Modifiability: The ease with which the system can be modified without introducing errors or affecting existing functionality.\n- Specific scenarios such as disaster recovery, data migration from legacy systems, and integration with existing healthcare protocols and standards (e.g., HL7, ICD-10).\n- Emphasis on the End User's perspective, including their needs, pain points, and workflows in a healthcare setting.\n- Consideration of security, compliance with healthcare regulations (e.g., HIPAA), and the handling of sensitive patient data.\n- Focus on aspects that might be overlooked, such as remote access and updates, performance monitoring, scalability, adaptability, and compatibility with various hardware configurations and communication protocols.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5134,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, database management, network infrastructure, and cloud services).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, incorporating specific metrics, concrete scenarios, and detailed IT system components to enhance diversity, including aspects such as preventive maintenance, performance optimization, security audits, and the impact of maintainability on development workflow, team collaboration, and customer satisfaction.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5639,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability, Fault Tolerance, Error Handling, Configuration Management.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst, considering multiple stakeholder perspectives, including healthcare professionals, patients, and system administrators.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws, system integration, data migration, disaster recovery).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, with specific metrics and evaluation criteria, such as cost savings, user satisfaction, regulatory compliance, and clear benchmarks for measurability.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6056,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application, with a focus on specific pain points or challenges such as handling high traffic and large volumes of user data, ensuring seamless integrations with third-party services, providing personalized recommendations and content, managing inventory and logistics, and handling customer support and feedback.\n3. StakeholderViewpoint: End User, with all requirements directly focused on the experience and needs of the end-user, including aspects such as ease of use, clear instructions, efficient navigation, minimizing downtime, and overall user experience.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, ensuring a balance between technical aspects of system maintenance and user-centric aspects of the e-commerce application, and covering a wide range of maintainability aspects including modularity and reusability, testability and analysability, security and compliance, scalability and reliability, customization and personalization, automation and AI-powered tools, and collaboration and communication, with a comprehensive set of requirements that address specific e-commerce functionalities such as payment processing, order management, inventory control, cart management, checkout processes, product recommendations, and loyalty programs.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6163,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System, with considerations for specific healthcare aspects such as patient data privacy, medical research, clinical decision support, and regulatory compliance (e.g., HIPAA).\n3. StakeholderViewpoint: Business Analyst, focusing on business outcomes, return on investment (ROI), competitive advantage, and the needs of various stakeholders including clinicians, patients, IT support, and administrators.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system, such as electronic health records (EHRs), medical imaging, telehealth platforms, and considerations for disaster recovery, remote healthcare services, and integration with other healthcare systems).\n5. DescriptionType: ProseNL.\n6. Language: English, using formal, professional vocabulary and constructs commonly found in healthcare and business analysis fields.\n7. AbstractionLevel: HighLevel, focusing on strategic and conceptual aspects rather than technical implementation details, and ensuring consistency in the level of abstraction across all requirements to support downstream classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5722,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System, with specific consideration for various subsystems such as electronic health records, telemedicine platforms, and medical billing systems, to ensure a comprehensive approach.\n3. StakeholderViewpoint: Business Analyst, with an emphasis on incorporating the needs, concerns, and perspectives of other stakeholders, including healthcare providers, patients, and IT staff, to provide a well-rounded view.\n4. Context: ITSystem, focusing on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in, including hardware, communications platforms, other software systems, peripheral devices, and the broader technological environment.\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, with the inclusion of concrete examples and case studies to illustrate the maintainability requirements and support downstream classifier generalization.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5269,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo ensure the generated requirements are semantically diverse and can support downstream classifier generalization, consider incorporating a wide range of aspects related to maintainability, including but not limited to: modularity, reusability, analysability, modifiability, testability, supportability, performance, scalability, security, and compliance. Additionally, varying sentence structures and considering non-functional requirements, edge cases, and exceptions will enhance diversity. The requirements should reflect the trade-offs between different aspects of maintainability and potential conflicts with other system qualities, such as performance, security, and usability, while maintaining a focus on the developer's viewpoint and the context of the IT system.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6087,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nEnsure that each requirement brings a unique perspective or aspect to the table, avoiding similar items that are worded differently but convey the same meaning. Also, maintain a high level of abstraction, focusing on overall system requirements rather than specific technical details, and cover a wide range of aspects within the fleet management system, including customization, maintainability, integration, performance, security, and analytical capabilities.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5377,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5391,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System, with a focus on healthcare-specific aspects such as handling patient data, integrating with medical devices, complying with healthcare regulations like HIPAA, and supporting telemedicine services.\n3. StakeholderViewpoint: Developer, with requirements that explicitly benefit developers, such as mentioning specific development tools, integration with development environments, or support for version control systems.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, databases, networks, and cloud services).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, with specific metrics, timelines, and technical details, and a focus on diverse maintainability aspects tailored to healthcare information systems, including compliance with medical standards, integration with electronic health records (EHRs), and support for specific healthcare information system challenges.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5687,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability. Considerations should also include security-related maintainability, such as vulnerability patching and secure coding practices, as well as scalability, user experience, and compliance with e-commerce regulations and standards.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system, and how maintainability impacts or is influenced by user experience).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5295,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance the diversity and effectiveness of the requirements, ensure that:\n- The requirements cover a wide range of topics within the Fleet Management System domain, including testing and debugging, integration and modularity, performance monitoring and analysis, security and maintainability, reusability and scalability, and developer tools and support.\n- The requirements address different aspects of maintainability, such as analysability, modifiability, testability, and reusability.\n- The requirements are specific, concrete, and provide detailed examples or metrics where applicable.\n- The requirements avoid overlap and redundancy, and are phrased in distinct and unique ways to convey similar ideas.\n- The requirements vary in length, complexity, and specificity to support downstream classifier generalization.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5982,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User, focusing on the end-user's experience and needs, ensuring that requirements are stated from their perspective and emphasizes their impact on usability, accessibility, and overall interaction with the system.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, providing specific, quantifiable metrics and examples where applicable to illustrate the maintainability requirements, and ensuring a broad range of technologies, features, and scenarios are covered to support downstream classifier generalization, avoiding redundancy and similarity in requirements, and emphasizing technical aspects of maintainability such as debugging, logging, backup, and recovery processes.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.633,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application, with specific focus on unique aspects of e-commerce such as handling seasonal spikes, integrating with third-party services, ensuring regulatory compliance, optimizing for various shopping experiences, and enhancing accessibility features.\n3. StakeholderViewpoint: Developer, emphasizing the perspective of developers in maintaining, updating, and ensuring the efficiency of the e-commerce application, including considerations for development efficiency, system performance, security, and integration.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, focusing on concepts and overall system properties rather than specific technical implementations, and covering a broad spectrum of maintainability aspects including security practices, usability for developers, and compatibility with various systems and devices.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5838,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability, as well as considerations for security, usability, and performance-related maintainability issues).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws).\n5. DescriptionType: ProseNL, with varied sentence structures and lengths, and the use of different synonyms for similar concepts to enhance linguistic diversity.\n6. Language: English.\n7. AbstractionLevel: HighLevel, focusing on overall system properties and capabilities, such as system architecture, coding practices, testing, and integration, without delving into low-level technical details, and covering a broad range of maintainability aspects to support downstream classifier generalization.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6047,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability. Ensure that the requirements cover a wide range of these aspects, avoiding excessive focus on any single one.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices. Consider the integration and interaction of these components in the requirements.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel (Ensure requirements are specific, measurable, achievable, relevant, and time-bound (SMART), providing clear, actionable goals for system developers and maintainers, and avoiding vague or outcome-focused statements. Use varied and creative language to express requirements, minimizing repetition and similarity between them.).",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5622,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo ensure the requirements provide a comprehensive coverage of maintainability in the context of e-commerce applications, the output should aim to include a wide range of aspects, such as compliance with regulatory standards, environmental sustainability, accessibility features, advanced analytics, AI integration, and emerging technologies, while minimizing overlap and repetition, and exploring both technical and non-technical perspectives to support downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6248,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, consider incorporating requirements that address security aspects, user experience, scalability, integration with emerging technologies, interoperability, and specific maintenance tasks, in addition to the standard maintainability features. This will support more comprehensive downstream classifier generalization.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5744,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability. To enhance diversity, consider incorporating more detailed aspects such as data visualization tools for error analysis, specific metrics for measuring modifiability like cyclomatic complexity, and mechanisms for collecting and incorporating developer feedback.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws, and considerations for energy efficiency, heat dissipation, and physical space requirements for hardware).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel. The requirements should cover a wide range of technical aspects, including but not limited to system architecture, data processing, interoperability, security, user interface, clinical workflows, and performance metrics. To support downstream classifier generalization, ensure the requirements are semantically diverse, using varied sentence structures and wording, and focusing on different metrics and measures such as response times, data exchange latency, and recovery times, while avoiding undue similarity in focus or structure.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6306,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws. To enhance diversity, consider delving deeper into specific technical challenges and solutions relevant to e-commerce applications, such as cloud infrastructure, database management, web service integration, and cybersecurity measures.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel. The requirements should cover a broad range of maintainability aspects, including both quantitative and qualitative metrics, and explore the trade-offs between maintainability and other quality attributes such as performance, usability, or security, while avoiding repetition and ensuring each requirement is concise and directly focused on the maintainability aspect.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5751,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure the generated requirements are semantically diverse and support downstream classifier generalization, the output should cover a wide range of technical aspects relevant to e-commerce applications from a developer's viewpoint. This includes, but is not limited to, aspects like data analytics integration, user experience considerations, incorporation of artificial intelligence and machine learning features, security, data integrity, compliance, scalability, performance, and emerging trends such as Cloud-native applications or serverless architecture. Additionally, the requirements should be stated at a high level of abstraction, focusing on general concepts and capabilities rather than specific, detailed metrics or implementations.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.614,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance semantic diversity, ensure that the generated requirements cover a wide range of aspects within the fleet management system, including but not limited to vehicle tracking, driver management, fuel management, route planning, vehicle maintenance, and insurance management. Additionally, consider including requirements that explicitly address different facets of maintainability, such as error handling, reusability of code or components, automated testing features, and edge cases or potential future expansions of the fleet management system. Aim to create a comprehensive set of requirements that support downstream classifier generalization and improve the overall quality of the system.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5497,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Developer, considering indirect implications for other stakeholders such as patients and healthcare providers.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system, and specific healthcare challenges or regulations, such as HIPAA compliance and handling sensitive patient data).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel, with specific metrics and targets where applicable to ensure measurability and clarity, and focusing on unique challenges or solutions in the healthcare domain, such as integrating with medical devices or handling large datasets of patient information.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5309,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability. Ensure each requirement clearly states how it improves maintainability, such as by reducing downtime, improving update efficiency, or enhancing error resolution.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst (incorporating specific business or operational metrics where relevant, such as ROI, user satisfaction, in relation to maintainability).\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws. Emphasize how technical choices directly impact maintainability).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel (focusing on what the system should be able to do, including a broad range of technical strategies for achieving maintainability, such as cloud computing, containerization, or specific software development methodologies, and where possible, quantify expected benefits in terms of maintainability metrics).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5592,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, the generated requirements should:\n- Avoid redundancy and overlap by ensuring each requirement is distinct and unrelated to others.\n- Explore different aspects of the fleet management system, including but not limited to: vehicle allocation and scheduling, driver management and training, safety and risk management, compliance with regulations and industry standards, and integration with other business systems.\n- Use varied keywords, phrases, and sentence structures to support downstream classifier generalization.\n- Be specific and concrete, avoiding vague or open-ended descriptions.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5462,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws. Ensure that the technical aspects explored are diverse and include specific technologies, data formats, or integration standards relevant to healthcare information systems.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel. Ensure each requirement is uniquely contributing to the overall set, avoiding redundancy and overlap, and explicitly addresses end-user needs, incorporating domain-specific medical or healthcare terminology where relevant to enhance nuance and diversity.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4533,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance semantic diversity and support downstream classifier generalization, ensure that the generated requirements cover a wide range of aspects within the e-commerce application domain, including but not limited to: \n- User interface and experience\n- System performance and scalability\n- Maintainability, including modularity, reusability, analysability, modifiability, and testability\n- Customizability and flexibility\n- Security and updates\n- Integration with other services\n- Automated troubleshooting and logging\n- Personalization and recommendation systems\n- Documentation and support\n- Accessibility features for users with disabilities\n- Integration with social media or other external services\n- Support for multiple languages or currencies\n- Advanced search and filtering capabilities.\n\nAim to generate requirements that are unique and diverse, avoiding similar or overlapping items, and focus on specific and unique aspects of the e-commerce application to increase the chances of supporting downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5415,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo improve semantic diversity, consider incorporating requirements that address specific scenarios, such as managing different types of vehicles, compliance with regulatory requirements, and potential challenges like data privacy and cybersecurity risks. Additionally, include diverse stakeholder perspectives and detailed descriptions of system functionalities to provide a richer set of features and capabilities.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5254,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance the semantic diversity of the generated requirements, consider incorporating a wide range of scenarios and aspects, such as security and compliance requirements (e.g., HIPAA), integration with other healthcare systems or services, user experience and training for healthcare professionals, disaster recovery and business continuity planning, the use of emerging technologies (e.g., AI, blockchain), and environmental and energy efficiency considerations for the IT infrastructure. Additionally, include specific examples related to regulatory compliance, security, patient data privacy and consent management, and integration with emerging technologies to support broader generalization by downstream classifiers.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5937,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System, with explicit references to clinical or medical aspects, emerging technologies, patient-centric features, and advanced data analytics.\n3. StakeholderViewpoint: Developer, with a focus on the operational phase and usage context.\n4. Context: Usage, emphasizing aspects related to the system's operation, maintenance, and updates, such as troubleshooting, testing, and integration with other systems.\n5. DescriptionType: ProseNL, with detailed and interpretable requirements.\n6. Language: English.\n7. AbstractionLevel: HighLevel, focusing on what the system should be able to do, with consistent abstraction across all requirements, and avoiding specific implementation details.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5539,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance the semantic diversity of the generated requirements and support downstream classifier generalization, ensure that the output covers a wide range of aspects related to maintainability, including but not limited to modularity, reusability, testability, integration with other systems, performance monitoring, scalability, reliability, development tools, error handling, documentation, and knowledge transfer. Additionally, consider incorporating requirements that address specific scenarios such as security, data privacy, compliance, legacy system integration, user training, disaster recovery, business continuity planning, and environmental considerations, to further enrich the dataset.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5213,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nIn addressing the requirements, consider incorporating a wide range of scenarios to enhance semantic diversity, including but not limited to:\n- Cybersecurity and data privacy aspects in relation to maintainability.\n- Different types of end users (e.g., doctors, nurses, administrators) and their specific needs.\n- Situations where the system needs to adapt to new healthcare protocols, regulations, or technological advancements.\n- Detailed considerations of system scalability and how maintainability supports it.\n- Specificity to various healthcare specialties or settings.\n- Edge cases and accessibility features.\n- Integration of cutting-edge technologies for enhanced maintainability.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.493,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User, with consideration for different roles such as fleet managers, drivers, and maintenance personnel.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system, as well as specific scenarios like handling vehicle recalls, managing fleet distribution, and integrating with logistics or supply chain management software).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, incorporating quantitative aspects where applicable, such as specific timelines for updates, thresholds for system performance, or metrics for evaluating maintainability, while ensuring a balance across modularity, reusability, analysability, modifiability, and testability to support a comprehensive understanding of maintainability in the context of fleet management systems.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.4621,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity and address end-user needs, ensure that the requirements cover a broad spectrum of e-commerce application functionalities, including but not limited to payment processing, inventory management, user account management, and product recommendation systems. Incorporate requirements that directly benefit the end-user, such as minimal disruption during maintenance, clear communication about downtime, and ease of use. Also, consider including a wide range of technical solutions, strategies, and aspects like interoperability, security, and specific technical areas such as database design, version control, automated testing, and error handling, to enrich the diversity of the set. Ensure each requirement is unique and introduces a distinct scenario or constraint to support downstream classifier generalization.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6157,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.6538,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User, with a focus on explicitly addressing end-user experiences, such as usability, accessibility, and information presentation, and considering various end-user roles within the healthcare system (e.g., doctors, nurses, administrators).\n4. Context: ITSystem (Focuses on aspects, characteristics, and context objects of the IT infrastructure the system is going to be deployed and is going to operate in. Includes: hardware, communications platforms, other software systems, peripheral devices, and the interaction with other healthcare IT systems, medical devices, or peripheral devices).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, with the aim of maintaining a balance between abstraction and detail to ensure requirements are actionable and measurable, and where possible, including specific, measurable outcomes.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "ITSystem",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5886,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System, with consideration of diverse scenarios or contexts within the domain (e.g., emergency response systems, patient engagement platforms, clinical decision support, patient data management, interoperability with other healthcare systems).\n3. StakeholderViewpoint: Developer, ensuring all requirements are clearly written from the developer's viewpoint, focusing on their needs and challenges in developing and maintaining the system, such as developer productivity, error resolution times, or the ease of implementing new features.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws), with a broad range of technical contexts addressed (e.g., data analytics, user interface customization, network architecture, security, scalability, usability).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel, focusing on overall system properties (e.g., scalability, flexibility) and including considerations of emerging technologies or trends in healthcare IT (e.g., AI, blockchain), while maintaining a level of specificity and measurability where applicable (e.g., specific metrics for maintainability, compliance with regulations like HIPAA).",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5975,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo enhance diversity, include a range of specific scenarios or examples, such as handling large volumes of medical imaging data, integrating with other healthcare systems or devices, ensuring accessibility for users with disabilities, supporting multiple languages or regional settings, addressing specific security or compliance requirements (e.g., HIPAA), incorporating emerging technologies or trends in healthcare information systems (e.g., AI, blockchain, edge computing), and balancing technical aspects with end-user benefits and implications.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.601,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system. Ensure that all items are clearly focused on the usage context, rather than design or architecture.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel (Ensure that all items are written at a high level of abstraction, focusing on general requirements and capabilities rather than specific technical details, and rephrase items that are too specific or detailed to make them more general and high-level.).\n\nAdditionally, ensure that the generated requirements provide a wide range of maintainability aspects, including but not limited to modularity, testability, analytics, security, documentation, and integration with other systems, and avoid similar or overlapping items to improve semantic diversity and support downstream classifier generalization, covering various specific aspects of fleet management.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5168,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Developer.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance diversity, consider incorporating a broader range of maintainability aspects, such as scalability, flexibility, portability, and detailed specifications on analysability and modifiability. Include explicit mentions of reusability, diverse scenarios like handling different types of products, internationalization, and personalization. Also, consider specifics on training and documentation for developers, as well as detailed performance metrics under various loads and conditions, including peak usage times, holiday seasons, or special promotional events, to ensure the requirements support downstream classifier generalization effectively.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Developer",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5751,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: E-commerce Application.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo ensure semantic diversity, the generated requirements should cover a wide range of aspects related to maintainability in e-commerce applications, including but not limited to modularity, reusability, analysability, modifiability, testability, supportability, scalability, performance, security, adaptability, and flexibility. The requirements should also consider various business aspects such as inventory management, supply chain integration, user experience (UX) improvements, integration with other business systems (e.g., CRM, ERP), metrics for measuring maintainability and performance (e.g., MTTR, MTBF), business continuity planning, disaster recovery, and compliance with evolving standards and regulations (e.g., accessibility standards, data protection regulations). The requirements should be written from the perspective of a business analyst and should be technically focused, providing detailed information about the specific requirement, including estimated times, specific features, and technical aspects.",
+      "features": {
+        "Domain": "E-commerce Application",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5978,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: Business Analyst.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: HighLevel.\n\nTo ensure a diverse set of requirements, consider incorporating a wide range of technical aspects, such as system architecture, integration, scalability, and performance. Additionally, vary the language and structure of the requirements to reflect different types of maintainability concerns, including security patches, user training, or hardware upgrades. Include requirements that discuss the fleet management system's interaction with other systems or external factors (like weather conditions, traffic patterns) and how maintainability is affected by or supports these interactions. Furthermore, provide specific examples of how the maintainability features would be implemented or measured, while still keeping the descriptions at a high level, and ensure the requirements collectively address a broad spectrum of system life cycle phases.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "Business Analyst",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "HighLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5421,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Healthcare Information System.\n3. StakeholderViewpoint: End User.\n4. Context: Usage (Focuses on aspects, characteristics, and context objects related to the usage of the system. Includes: usage patterns, people and other systems which directly or indirectly interact with the system.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.",
+      "features": {
+        "Domain": "Healthcare Information System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Usage",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5812,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    },
+    {
+      "prompt": "Generate 20 diverse requirements satisfying the following constraints:\n1. ClassificationLabel: Maintainability — A maintainability requirement specifies the time necessary to make changes to the product and the level of support the product requires, including ease of maintenance, supportability, and testability. (Capability of a product to be modified effectively and efficiently by intended maintainers. Includes: Modularity, Reusability, Analysability, Modifiability, Testability.).\n2. Domain: Fleet Management System.\n3. StakeholderViewpoint: End User.\n4. Context: Technical (Focuses on aspects, characteristics, and context objects related to technical and physical aspects which have an impact on the definition of the requirements for the system. Includes: geometrical dimensions, spatial aspects, weather conditions, physical laws.).\n5. DescriptionType: ProseNL.\n6. Language: English.\n7. AbstractionLevel: DetailedLevel.\n\nTo enhance semantic diversity, consider including requirements that focus on various aspects of the Fleet Management System, such as environmental factors, regulatory compliance, financial management, customer service, data security, system scalability, and compliance with regulations. Additionally, use varied language and sentence structures, including different verb tenses, sentence lengths, and vocabulary, to create distinct and unique requirements. Ensure that the requirements cover a wide range of topics and are diverse in terms of their focus, complexity, and wording.",
+      "features": {
+        "Domain": "Fleet Management System",
+        "StakeholderViewpoint": "End User",
+        "Context": "Technical",
+        "DescriptionType": "ProseNL",
+        "Language": "English",
+        "AbstractionLevel": "DetailedLevel"
+      },
+      "samples_produced": 20,
+      "optimized": true,
+      "pace_score": 0.5795,
+      "pace": {
+        "iterations": 0,
+        "actors": 0,
+        "candidates": 0,
+        "alpha": 0.5
+      }
+    }
+  ]
+}

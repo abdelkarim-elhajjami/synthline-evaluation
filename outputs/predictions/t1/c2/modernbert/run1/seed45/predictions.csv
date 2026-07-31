@@ -1,0 +1,106 @@
+text,true,predicted
+Washing parameters will be updated during scheduled maintenance hours.,Maintainability,Operational
+The web application shall add no more than 5 seconds of perceivable overhead time to any necessary web and database transaction time.,Performance,Availability
+ABS shall handle all expected and unexpected errors in ways that prevent loss in information and long downtime period.,Fault Tolerance,Fault Tolerance
+The washing process must use a non binding  neutral data format  such as xml  when receiving and processing lead data.,Operational,Legal
+The product shall be expected to operate within the maximum maintenance budget for a minimum of 2 years.,Maintainability,Availability
+The WCS system shall have the ability to connect other designated WCS databases currently not included in the system.,Scalability,Operational
+A surface computer shall not require a user to log in.,Security,Security
+All aspects of the website shall be accessed by a web browser over the Internet.,Operational,Operational
+The product shall respond fast to keep up-to-date data in the display.,Performance,Performance
+Each page shall contain a similar format with action items in one location and navigation buttons in a different location.,Look and Feel,Usability
+The CMA report shall be returned no later 60 seconds after the user has entered the CMA report criteria.,Performance,Performance
+The look and feel of the system shall conform to the user interface standards of the smart device.,Look and Feel,Operational
+The product shall provide players no access to information that might reveal the identity of another player,Security,Security
+The system shall operate within the Windows XP Professional operating system.,Operational,Operational
+The application shall be able to complete every user transaction within one fourth of a second of receiving the request over the network.,Performance,Performance
+Normal users can just read information but they cannot edit or modify anything except their personal and some other information.,Security,Security
+The system shall able to operate within a business office environment typical of the Nursing Department at DePaul University.,Operational,Portability
+If a user account is revoked  it can only be re-instantiated by the System Administrator.,Security,Security
+90% of untrained realtors shall be able to install the product on their device without printed instructions,Usability,Performance
+The product shall be able to be installed in any operating environment within 2 days.,Operational,Operational
+The system shall refresh the display every 60 seconds.,Performance,Performance
+The Commissioner will be the only authorized user per league to adjust league settings.,Security,Security
+The application should be portable with iOS and Android.,Portability,Portability
+The lead washing process will operate within the established physical web service structure.,Operational,Security
+The website should have an African feel  but should not alienate non-Africans.  The website should use animation on pages which are describing the services  to grab the users attention and encourage them to sign up.,Look and Feel,Look and Feel
+Only the System Administrator shall be able to reset a revoked user logon account,Security,Security
+The system shall show a tabbed display (or equivalent functionality) with the campus map on one tab and info on the most recently announced building on the other.,Look and Feel,Look and Feel
+Only managers are able to perform search queries for reservations by user.  100% of all search queries for reservations by user shall be from logons of only management logons.,Security,Security
+The product must be designed using Design Patterns and coding best practices.  90% of maintenance software developers are able to integrate new functionality into the product with 2 working days.,Maintainability,Maintainability
+The response time shall be fast enough to maintain the flow of the game. The response time shall be no more than 2 seconds for 95% of responses and no more than 4% for the remaining responses.,Performance,Performance
+The streaming server will support a maximum of 700 movies; new servers can be added to support more movies.,Scalability,Operational
+The system shall provide multi language support.,Usability,Operational
+The product must be able to interface with any HTML browser.  The product shall transmit data between the user and the product without problems. The product shall display HTML properly in 80% of all HTML browsers tested (minimum is to test 8 browsers).,Operational,Usability
+The website will use standard Internet conventions when interacting with the user.,Usability,Usability
+The Disputes application shall comply with the corporate standards for user interface creation for internally and externally used applications.,Look and Feel,Legal
+The website shall be capable of supporting 100 000 customers.,Scalability,Scalability
+The product must support Internet Explorer 5.5 and above.,Operational,Operational
+The system shall have a professional appearance,Look and Feel,Operational
+The WCS system shall use appropriate nomenclature and terminology as defined by the Corporate Community Grants organization. All interfaces and reports will undergo usability tests by CCR users.,Usability,Usability
+The WCS system shall have the ability to include data for regions outside the United States and be accessed by users outside of the United States if approved by CCR management.,Scalability,Legal
+Customers must have a valid login id to enter into the site.,Security,Operational
+The software system needs a robust security mechanism in place so that unauthorized users are not allowed access to parts of the system.,Security,Security
+The search results shall be returned no later 30 seconds  after the user has entered the search criteria,Performance,Performance
+The system shall allow the user to scroll the campus map from the campus map tab.,Usability,Usability
+The system shall utilize HTTPS communication to ensure data confidentiality.,Security,Security
+All movies shall be streamed on demand  at any time of the day.,Availability,Operational
+Dr Susan Poslusny and Dr Julie Donalek are the only people who shall have access to students\92 personal information.,Security,Security
+The System shall granularly control access rights to all major subsystems.  It should be possible to assign access rights to all subsystems independently.,Security,Security
+The logo and the current basic design of registration system should be displayed. The system should be attractive according to the clients. The design and the color should make users feel comfortable when using the system instead of flashing useless colors on the screen. The design should also reflect the seriousness of the environment.,Look and Feel,Look and Feel
+Only collision estimators shall search for recycled parts.  Users without the collision estimator role shall not have access to the search for recycled parts.,Security,Security
+The product shall be robust with fault tolerance.The product shall have fault tolerance by using recovery technique compensatory transaction and routing around failures.,Fault Tolerance,Fault Tolerance
+When purchasing a streaming movie or pre-paid card via credit card  the processing time should have a maximum response time of 15 seconds.,Performance,Performance
+The system shall automatically log out all customers after a period of inactivity.,Security,Fault Tolerance
+The system shall be evoked by typing “pine” into a command or shell prompt.,Operational,Operational
+The product shall provide Error Tracking Services.The product shall help the System Administrators and DBAs to resolve transaction errors 99% of the time.,Usability,Availability
+Movies shall be encoded and streamed via Windows Media Player 9.0.,Operational,Operational
+All business rules specified in the Disputes System shall be in compliance to the guidelines of Regulation E and Regulation Z.,Legal,Legal
+The product shall allow for intuitive searching of available conference rooms.,Usability,Usability
+The website will comply with W3C standards.,Legal,Operational
+The Disputes application shall interface with the Statement Database. The Statement Database provides the transaction details to the Disputes System. All transaction details must be obtained from the Statement Database,Operational,Operational
+The product must make use of web/application server technology.  Open source examples include Apache web server  Tomcat  and the JBoss application server.,Operational,Portability
+The system should use the company colors and logos.,Look and Feel,Operational
+Users shall be required to log into the system for all operations except the operations on the login page.,Security,Usability
+Aside from server failure  the software product shall achieve 99.99% up time.,Availability,Availability
+All Web pages generated by the system shall be fully downloadable in no more than 10 seconds over a 40KBps modem connection.,Performance,Performance
+The product shall comply with insurance regulations regarding claims processing.,Legal,Operational
+The website shall not be offensive to religious or ethnic groups.,Look and Feel,Operational
+The message board shall contain the 5 most recently posted messages on the league page. The messages will contain up to the first 150 characters of the message.,Look and Feel,Performance
+The system shall not leave any cookies on the customer’s computer containing the user’s password.,Security,Security
+All login attempts shall be done so in a secure manner.,Security,Security
+The product shall allow the user to select a chosen language from one of the target market countries.,Usability,Operational
+The application shall have a downtime of at most 10 minutes per year.,Availability,Performance
+The maximum wait time for a user navigating from one screen to another within the Disputes application shall be no more than 5 seconds.,Performance,Performance
+Responses to view information shall take no longer than 5 seconds to appear on the screen.,Performance,Performance
+A correct combination of username and password is required for a user to login.,Security,Security
+The product shall be updated on a regular basis.The product will have a new major feature introduced every six months and quarterly maintenance releases every six months.,Maintainability,Operational
+The reliability of the overall program depends on the reliability of the separate components. The main pillar of reliability of the system is the backup of the database which is continuously maintained and updated to reflect the most recent changes.,Fault Tolerance,Availability
+The website shall make its user aware of its information practices before collection data from them via a Privacy Policy  accessible on all pages of the website.,Security,Security
+The Disputes application shall ensure that only authorized users are allowed to logon to the application.,Security,Security
+The system will fully function in major browsers.,Portability,Portability
+The interface shall be easy to use. 90% of users should be able to successfully use the system to generate a report on their first use. The interface should adhere to IBM usability standards.,Usability,Usability
+System shall let administrator de-activate a customer account in under 1 minute. Customer will no longer be able to access the website.,Performance,Performance
+The menus of the system must be easily navigable by the users with buttons that are easy to understand.,Usability,Usability
+The product shall free of computer viruses.,Security,Security
+100% of the cardmember and merchant services representatives shall use the Disputes application regularly after a 2-day training course.,Usability,Availability
+A new user shall be able to navigate through the league and team pages within 30 seconds of reaching the start-up page.,Usability,Performance
+The product shall information Security. The product shall enable privacy by encryption WS-Security and Integrity Checking.,Security,Security
+Only valid data shall be entered into the system. No invalid data shall be entered into the system.,Security,Security
+The product shall achieve a 98% uptime. The product shall not fail more than 2% of the available online time.,Availability,Availability
+The product shall increase productivity of Collision Estimators. 80% of the Collision Estimators shall agree their productivity has increase within 1 month of using the product.,Usability,Maintainability
+The product must support Mozilla Firefox 1.0 and above.,Operational,Operational
+The system shall interface with the faculty central server.,Operational,Operational
+The system shall interface with CampusConnect\92s central server,Operational,Operational
+The product shall be available 24 hours per day  seven days per week.,Availability,Availability
+The Operational Interface shall have a Mean Time Between Failures of no less than 7 days.,Fault Tolerance,Availability
+The System shall allow for a minimum of  6 users to work at the same time.,Performance,Availability
+The product shall continue to operate during upgrade  change or new resource addition.The product shall be able to continue to operate with no interruption in service due to new resource additions.,Maintainability,Fault Tolerance
+The system shall help the user avoid making mistakes while scheduling classes and clinicals for the nursing students.,Usability,Usability
+The verbiage used within the system shall be consistent with Standard English and the terminology of the national Nursing Community.,Usability,Operational
+It should not take more than 90 seconds for a registered user to place an order.,Usability,Performance
+The product shall be capable of handling the existing 1000 users. This number is expected to grow 5 times within the next year.,Scalability,Scalability
+All customer information will be stored on a secure database  accessible only to authorized personnel.,Security,Security
+If projected  the data must be readable.  On a 10x10 projection screen  90% of viewers must be able to read Event / Activity data from a viewing distance of 30,Usability,Performance
+The system shall provide a contractual agreement with an internet service provider for T3 access with 99.9999% availability.,Availability,Availability
+Each user shall either be trusted or not trusted.,Security,Operational
