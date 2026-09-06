@@ -101,3 +101,40 @@ def normalize_synthetic_df(df: pd.DataFrame) -> pd.DataFrame:
     return df.rename(columns=rename) if rename else df
 
 
+def synthetic_source_tasks(task: str) -> tuple[str, ...]:
+    """Raw pools used for training, in prepare_synthetic.py assembly order."""
+    return ("t2", "t1") if task == "t2" else (task,)
+
+
+def load_synthetic_frames(task: str, config: str, run: int) -> list[tuple[Path, pd.DataFrame]]:
+    """Load the full training corpus while retaining generation attributes.
+
+    T2 reuses all T1 NFR rows from the same config/run after its Functional
+    rows. Keep duplicates and original labels here: binary training labels
+    must not replace the generation attributes used for alignment evaluation.
+    """
+    frames = []
+    for source_task in synthetic_source_tasks(task):
+        run_dir = SYNTHETIC_DIR / source_task / config / f"run{run}"
+        if not run_dir.is_dir():
+            raise FileNotFoundError(f"Missing synthetic pool for {task}: {run_dir}")
+        paths = [
+            p / "data.csv" for p in sorted(run_dir.iterdir())
+            if p.is_dir() and p.name != "__pycache__" and (p / "data.csv").is_file()
+        ]
+        if not paths:
+            raise FileNotFoundError(f"No data.csv files in required pool: {run_dir}")
+        count = 0
+        for path in paths:
+            df = normalize_synthetic_df(pd.read_csv(path))
+            if "text" not in df.columns:
+                raise ValueError(f"Missing text column: {path}")
+            valid = df["text"].map(lambda text: isinstance(text, str) and bool(text.strip()))
+            if not valid.all():
+                raise ValueError(f"Missing, blank or non-string text in {path}")
+            count += len(df)
+            frames.append((path, df))
+        if count == 0:
+            raise ValueError(f"Required synthetic pool is empty: {run_dir}")
+    return frames
+

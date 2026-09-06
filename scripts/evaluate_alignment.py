@@ -13,13 +13,12 @@ from __future__ import annotations
 
 import argparse
 import json
-from pathlib import Path
 
 import pandas as pd
 import torch
 from transformers import pipeline
 
-from _shared import ROOT, SYNTHETIC_DIR, normalize_synthetic_df
+from _shared import ROOT, load_synthetic_frames, synthetic_source_tasks
 
 METRICS_DIR = ROOT / "outputs" / "metrics"
 
@@ -31,38 +30,29 @@ SKIP_COLUMNS = {"text"}
 
 
 def load_generated_data(task: str, config: str, run: int) -> list[dict]:
-    """Load all generated samples for a task/config/run.
+    """Load the full synthetic training corpus for a task/config/run.
 
     Reads FM constraint values directly from CSV columns (Label, Domain,
     StakeholderViewpoint, Context, etc.).  Columns are the union of all
     features used during generation; some rows may leave a subset empty.
+    T2 includes reused T1 NFR rows with their original generation attributes.
     """
-    run_dir = SYNTHETIC_DIR / task / config / f"run{run}"
-    if not run_dir.exists():
-        raise FileNotFoundError(f"No data found at {run_dir}")
-
     samples = []
-    for label_dir in sorted(run_dir.iterdir()):
-        if not label_dir.is_dir() or label_dir.name == "__pycache__":
-            continue
-        csv_path = label_dir / "data.csv"
-
-        if csv_path.exists():
-            df = normalize_synthetic_df(pd.read_csv(csv_path))
-            feature_cols = [c for c in df.columns if c not in SKIP_COLUMNS]
-
-            for _, row in df.iterrows():
-                features = {}
-                for col in feature_cols:
-                    val = row[col]
-                    if pd.notna(val) and str(val).strip():
-                        features[col] = str(val).strip()
-
-                samples.append({
-                    "text": row.get("text", ""),
-                    "features": features,
-                    "label_dir": label_dir.name,
-                })
+    for csv_path, df in load_synthetic_frames(task, config, run):
+        feature_cols = [c for c in df.columns if c not in SKIP_COLUMNS]
+        for _, row in df.iterrows():
+            features = {}
+            for col in feature_cols:
+                val = row[col]
+                if pd.notna(val) and str(val).strip():
+                    features[col] = str(val).strip()
+            if not verbalize_features(features):
+                raise ValueError(f"Missing generation hypothesis in {csv_path}, row {row.name}")
+            samples.append({
+                "text": row["text"],
+                "features": features,
+                "label_dir": csv_path.parent.name,
+            })
 
     return samples
 
@@ -112,11 +102,9 @@ def compute_alignment(samples: list[dict], nli_pipe) -> dict:
         pairs = []
         for s in batch:
             hypothesis = verbalize_features(s["features"])
-            if hypothesis:
-                pairs.append({"text": s["text"], "text_pair": hypothesis})
-
-        if not pairs:
-            continue
+            if not hypothesis:
+                raise ValueError("Cannot evaluate alignment without generation attributes")
+            pairs.append({"text": s["text"], "text_pair": hypothesis})
 
         # NLI: pass premise/hypothesis pairs to text-classification pipeline
         results = nli_pipe(
@@ -177,6 +165,12 @@ def evaluate(task: str, config: str, run: int) -> None:
     out_dir = METRICS_DIR / task / config / f"run{run}"
     out_dir.mkdir(parents=True, exist_ok=True)
     summary = {k: v for k, v in result.items() if k != "scores"}
+    summary.update({
+        "scope": "full_synthetic_training_corpus",
+        "source_tasks": list(synthetic_source_tasks(task)),
+        "evaluation_model": EVAL_MODEL,
+        "hypotheses": "original_generation_attributes",
+    })
     with open(out_dir / "alignment.json", "w") as f:
         json.dump(summary, f, indent=2)
 

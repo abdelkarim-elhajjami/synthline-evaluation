@@ -105,6 +105,31 @@ python scripts/aggregate_results.py
 python scripts/make_forest_plot.py
 ```
 
+### Scope of synthetic data quality evaluation
+
+Both quality evaluators load the complete synthetic corpus used for training,
+preserving row order and repeated texts. For T2, they concatenate the Functional
+pool from T2 with the NFR pool from T1, using the same configuration and run.
+Generate both pools before evaluating T2; a missing or empty pool is an error.
+Missing or blank texts are rejected instead of silently reducing the corpus.
+
+Alignment evaluates the original generation attributes of each text. Reused NFR
+rows retain their subtype-specific hypotheses even though classifier training
+maps their labels to Non-Functional. Diversity includes FR–FR, NFR–NFR and FR–NFR
+pairs. INGF counts each trigram once per text; APS retains the existing cosine
+normalization, sampling seed and pair draws, with smaller temporary arrays.
+
+The stored T2 C1–C4/run1 quality metrics and summary CSV include this correction.
+The original measurements, recalculation script and provenance are retained in
+[the T2 correction record](outputs/corrections/t2-full-corpus/README.md).
+Training data, classifier predictions and F1 results are unchanged.
+
+Run the regression tests without downloading models:
+
+```bash
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 python -m unittest discover -s tests -v
+```
+
 ## Generator Sensitivity
 
 T1 and T3 are also re-run with Claude Haiku 4.5 as the generator:

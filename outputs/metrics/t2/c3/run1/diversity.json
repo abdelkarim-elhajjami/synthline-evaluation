@@ -1,5 +1,15 @@
 {
-  "ingf": 0.0002544440444790389,
-  "aps": 0.3517038736328522,
-  "n_samples": 10519
+  "ingf": 0.00013738774150112655,
+  "aps": 0.3241147619049048,
+  "n_samples": 19630,
+  "scope": "full_synthetic_training_corpus",
+  "source_tasks": [
+    "t2",
+    "t1"
+  ],
+  "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+  "provenance": {
+    "method": "recomputed_full_corpus",
+    "record": "outputs/corrections/t2-full-corpus/results.json"
+  }
 }

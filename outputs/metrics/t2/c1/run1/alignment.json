@@ -1,7 +1,18 @@
 {
-  "mean": 0.6745633701041266,
-  "min": 0.01540972851216793,
-  "max": 0.9814888834953308,
-  "std": 0.15170347224902414,
-  "count": 11880
+  "mean": 0.6699755651064069,
+  "min": 0.00034129503183066845,
+  "max": 0.9946463704109192,
+  "std": 0.2201791299004716,
+  "count": 23760,
+  "scope": "full_synthetic_training_corpus",
+  "source_tasks": [
+    "t2",
+    "t1"
+  ],
+  "evaluation_model": "MoritzLaurer/deberta-v3-large-zeroshot-v2.0",
+  "hypotheses": "original_generation_attributes",
+  "provenance": {
+    "method": "pooled_original_nli_summaries",
+    "record": "outputs/corrections/t2-full-corpus/results.json"
+  }
 }
