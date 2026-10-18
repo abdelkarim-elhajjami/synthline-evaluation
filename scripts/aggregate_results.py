@@ -272,6 +272,60 @@ def compute_sensitivity_bootstrap(
     return pd.DataFrame(rows)
 
 
+def compute_sensitivity_contrasts(
+    seed_df: pd.DataFrame,
+    classifier: str,
+    n_resamples: int = 10_000,
+    rng_seed: int = 0,
+) -> pd.DataFrame:
+    """Bootstrap 95% CI on Δ̄ for the three ablation contrasts with Claude.
+
+    Applies the procedure of compute_bootstrap_ci to the Claude cells of the
+    sensitivity tasks. It uses its own generator, so the rows computed by the
+    other functions are unchanged.
+    """
+    comparisons = [
+        ("c1", "c3", "AV effect (baseline)"),
+        ("c2", "c4", "AV effect (PACE)"),
+        ("c1", "c2", "PACE effect"),
+    ]
+    suffix = "_claude-haiku-4.5"
+    rng = np.random.default_rng(rng_seed)
+    rows = []
+
+    clf_df = seed_df[seed_df["classifier"] == classifier]
+
+    for task in sorted(SENSITIVITY_CONFIGS):
+        task_df = clf_df[clf_df["task"] == task]
+        for base_a, base_b, label in comparisons:
+            config_a, config_b = base_a + suffix, base_b + suffix
+            paired = task_df[task_df["config"].isin([config_a, config_b])].pivot(
+                index="seed", columns="config", values="f1_weighted"
+            ).dropna()
+            if len(paired) < 5:
+                continue
+            a = paired[config_a].values
+            b = paired[config_b].values
+            deltas = b - a
+            idx = rng.integers(0, len(deltas), size=(n_resamples, len(deltas)))
+            ci_low, ci_high = np.percentile(deltas[idx].mean(axis=1), [2.5, 97.5])
+            rows.append({
+                "task": task,
+                "classifier": classifier,
+                "comparison": f"{config_a} vs {config_b}",
+                "label": f"{label} (Claude)",
+                "mean_a": round(float(np.mean(a)), 4),
+                "mean_b": round(float(np.mean(b)), 4),
+                "delta_mean": round(float(np.mean(deltas)), 4),
+                "delta_std": round(float(np.std(deltas, ddof=1)), 4),
+                "ci_low": round(float(ci_low), 4),
+                "ci_high": round(float(ci_high), 4),
+                "ci_excludes_zero": bool(ci_low > 0 or ci_high < 0),
+            })
+
+    return pd.DataFrame(rows)
+
+
 def add_data_quality(summary_df: pd.DataFrame) -> pd.DataFrame:
     """Add alignment and diversity metrics (not seed-dependent)."""
     rows = []
@@ -353,6 +407,10 @@ def main() -> None:
         sb = compute_sensitivity_bootstrap(seed_df, classifier)
         if not sb.empty:
             sens_boot_dfs.append(sb)
+    for classifier in CLASSIFIERS:
+        sc = compute_sensitivity_contrasts(seed_df, classifier)
+        if not sc.empty:
+            sens_boot_dfs.append(sc)
     bootstrap_df = pd.concat(boot_dfs, ignore_index=True) if boot_dfs else pd.DataFrame()
     if sens_boot_dfs:
         bootstrap_df = pd.concat([bootstrap_df, *sens_boot_dfs], ignore_index=True)
